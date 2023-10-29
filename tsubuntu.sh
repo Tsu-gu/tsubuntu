@@ -127,7 +127,7 @@ while true; do
                             ;;
                          5)
                             echo "Activating Ubuntu Pro..."
-			    sudo pro attach C1sjgthZDjnuPrZN38USjVhrKpmCK 
+			    sudo pro attach YOURTOKEN 
  			    sudo pro disable livepatch 
  			    pro status
 
