@@ -1,5 +1,5 @@
 # tsubuntu
-Chris-Titus-style script but for Ubuntu **22.04**
+Chris-Titus-style script but for Ubuntu **22.04.**
 Enter the corresponding number, hit Enter, enter another number, and if you are satisfied with your choices, hit Enter again. 
 ```
 wget https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh
