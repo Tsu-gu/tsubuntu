@@ -3,9 +3,8 @@
 # Extract Ubuntu codename
 UBUNTU_CODENAME=$(cat /etc/*-release | grep UBUNTU_CODENAME | cut -d= -f2 | tr -d '\r')
 
-# Check for Ubuntu codename
 if [[ "$UBUNTU_CODENAME" == "jammy" ]]; then
-  echo "Ubuntu Jammy detected. Installing tiling extension."
+    echo "Ubuntu Jammy detected. Installing tiling extension."
 
   # ---the first extension---
   echo "Installing corner tiling extension..."
@@ -21,9 +20,8 @@ if [[ "$UBUNTU_CODENAME" == "jammy" ]]; then
   rm "$downloadedzip"
   cd ..
   mv "$folder" "$HOME/.local/share/gnome-shell/extensions/"
-
-elif [[ "$UBUNTU_CODENAME" == "noble" ]]; then
+elif [[ "$UBUNTU_CODENAME" == "jammy" ]]; then
   echo "Ubuntu 24 (Noble) detected. Tiling extension is already built in."
 else
-  echo "Ubuntu $UBUNTU_CODENAME detected. Tiling extension not needed or specific instructions required."
+    echo "Something went wrong."
 fi
