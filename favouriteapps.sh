@@ -11,4 +11,5 @@ mkdir $HOME/AppImages/.icons/
 mv filen.png $HOME/AppImages/.icons/
 
 wget https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/filen.desktop
+sed -i 's|/home/tsugu|$HOME|g' filen.desktop
 mv filen.desktop $HOME/.local/share/applications/
