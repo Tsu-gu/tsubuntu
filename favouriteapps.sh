@@ -7,8 +7,8 @@ cp filen_x86_64.AppImage $HOME/AppImages/filen.appimage
 rm filen_x86_64.AppImage
 
 wget https://github.com/Tsu-gu/tsubuntu/blob/main/filen.png
-mkdir $HOME/Appimages/.icons/
-mv filen.png $HOME/Appimages/.icons/
+mkdir $HOME/AppImages/.icons/
+mv filen.png $HOME/AppImages/.icons/
 
 wget https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/filen.desktop
 mv filen.desktop $HOME/.local/share/applications/
