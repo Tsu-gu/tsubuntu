@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install gnome-shell-extension-manager gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor -y
+sudo apt install gnome-tweaks flatpak unzip dconf-editor gnome-shell-extensions -y
 echo "--------------------------------------------"
 echo "Adding Flathub..."
 echo "--------------------------------------------"
@@ -9,7 +9,7 @@ echo "--------------------------------------------"
 echo "Installing AppImage installer..."
 echo "--------------------------------------------"
 
-flatpak install --assumeyes flathub it.mijorus.gearlever
+# flatpak install --assumeyes flathub it.mijorus.gearlever
 
 echo "--------------------------------------------"
 echo "Enabling right click > new file..."
@@ -72,8 +72,9 @@ echo "--------------------------------------------"
 echo "Setting up useful shortcuts (try Super + E)"
 echo "--------------------------------------------"
 
-gsettings set org.gnome.shell.keybindings screenshot "['Print']"
-gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
+
+
+gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot "['<Shift><Super>s']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
@@ -85,7 +86,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 touch "$HOME/Desktop/Finish_Setup.sh"
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
 echo '#!/bin/bash
-gnome-extensions enable clipboard-history@alexsaveau.dev
+gnome-extensions enable clipboard-indicator@tudmotu.com
 sleep 1
 gnome-extensions enable tiling-assistant@leleat-on-github
 sleep 1
