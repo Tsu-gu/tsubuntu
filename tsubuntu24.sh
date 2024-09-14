@@ -33,6 +33,22 @@ cd $HOME
 mv $folder2 $HOME/.local/share/gnome-shell/extensions/
 
 echo "--------------------------------------------"
+echo "Installing desktop icons extension and disabling the broken one..."
+echo "--------------------------------------------"
+cd $HOME
+downloadedzip2="gtk4-dingsmedius.gitlab.com.v83.shell-extension.zip"
+linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v83.shell-extension.zip"
+folder2="gtk4-ding@smedius.gitlab.com"
+
+mkdir $folder2
+cd $folder2
+wget $linktozip2
+unzip $downloadedzip2
+rm $downloadedzip2
+cd $HOME
+mv $folder2 $HOME/.local/share/gnome-shell/extensions/
+
+echo "--------------------------------------------"
 echo "Tweaking the file manager and ubuntu dock..."
 echo "--------------------------------------------"
 
@@ -67,7 +83,8 @@ chmod +x "$HOME/Desktop/Finish_Setup.sh"
 echo '#!/bin/bash
 gnome-extensions enable clipboard-history@alexsaveau.dev
 sleep 1
-gnome-extensions enable tiling-assistant@leleat-on-github
+gnome-extensions disable dingthatbuntu@uses
+gnome-extensions enable gtk4-ding@smedius.gitlab.com
 sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
