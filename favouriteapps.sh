@@ -1,6 +1,10 @@
 #!/bin/bash
-# flatpak install -assumeyes flathub it.mijorus.gearlever org.qbittorrent.qBittorrent org.gimp.GIMP org.kde.kdenlive org.nicotine_plus.Nicotine 
-# snap install vlc keepassxc
+sudo snap install vlc keepassxc
+sudo apt install syncthing
+flatpak install -assumeyes flathub it.mijorus.gearlever org.qbittorrent.qBittorrent org.gimp.GIMP org.kde.kdenlive org.nicotine_plus.Nicotine 
+
+
+# filen install and integration into the desktop
 wget https://cdn.filen.io/desktop/release/filen_x86_64.AppImage
 mkdir $HOME/AppImages/
 cp filen_x86_64.AppImage $HOME/AppImages/filen.appimage
@@ -17,3 +21,4 @@ cp new_filen.desktop $HOME/.local/share/applications/filen.desktop
 chmod +x $HOME/.local/share/applications/filen.desktop
 rm new_filen.desktop
 rm filen.desktop
+read -p "Press Enter to close...."

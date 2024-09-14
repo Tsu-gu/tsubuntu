@@ -1,15 +1,11 @@
 #!/bin/bash
-sudo apt install gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor -y
+sudo apt install gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor libfuse2 -y
+# libfuse2 in order for all AppImages to run
 echo "--------------------------------------------"
 echo "Adding Flathub..."
 echo "--------------------------------------------"
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-echo "--------------------------------------------"
-echo "Installing AppImage installer..."
-echo "--------------------------------------------"
-
-flatpak install --assumeyes flathub it.mijorus.gearlever
 
 echo "--------------------------------------------"
 echo "Enabling right click > new file..."

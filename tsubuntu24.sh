@@ -7,12 +7,6 @@ echo "--------------------------------------------"
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo "--------------------------------------------"
-echo "Installing AppImage installer..."
-echo "--------------------------------------------"
-
-flatpak install --assumeyes flathub it.mijorus.gearlever
-
-echo "--------------------------------------------"
 echo "Enabling right click > new file..."
 echo "--------------------------------------------"
 touch $HOME/Templates/NewFile.txt
