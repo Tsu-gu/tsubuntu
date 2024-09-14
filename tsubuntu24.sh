@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install gnome-shell-extension-manager gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 -y
+sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 -y
 # libfuse2 in order for all AppImages to run
 echo "--------------------------------------------"
 echo "Adding Flathub..."

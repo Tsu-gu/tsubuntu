@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo apt install gnome-shell-extension-manager gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor -y
+sudo apt install gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor -y
 echo "--------------------------------------------"
 echo "Adding Flathub..."
 echo "--------------------------------------------"

@@ -9,7 +9,7 @@ echo "--------------------------------------------"
 echo "Installing AppImage installer..."
 echo "--------------------------------------------"
 
-# flatpak install --assumeyes flathub it.mijorus.gearlever
+flatpak install --assumeyes flathub it.mijorus.gearlever
 
 echo "--------------------------------------------"
 echo "Enabling right click > new file..."
