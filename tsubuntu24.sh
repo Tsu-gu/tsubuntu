@@ -1,11 +1,11 @@
 #!/bin/bash
-sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 -y
+#sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 -y
 # libfuse2 in order for all AppImages to run
 echo "--------------------------------------------"
 echo "Adding Flathub..."
 echo "--------------------------------------------"
 
-sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+#sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo "--------------------------------------------"
 echo "Enabling right click > new file..."
 echo "--------------------------------------------"
@@ -83,7 +83,8 @@ chmod +x "$HOME/Desktop/Finish_Setup.sh"
 echo '#!/bin/bash
 gnome-extensions enable clipboard-history@alexsaveau.dev
 sleep 1
-gnome-extensions disable dingthatbuntu@uses
+gnome-extensions disable ding@rastersoft.com
+sleep 1
 gnome-extensions enable gtk4-ding@smedius.gitlab.com
 sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
