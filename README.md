@@ -11,5 +11,3 @@ https://tsugu.xyz/tsubuntu.html
 
 20.04 Focal Fossa
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu20.sh && chmod +x tsubuntu20.sh && ./tsubuntu20.sh`
-
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu20.sh && chmod +x LadFetch.sh && ./LadFetch.sh
