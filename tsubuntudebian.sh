@@ -121,9 +121,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Primary><Shift>Escape'
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'terminal'
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'gnome-terminal'
-gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Primary><Alt>t'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name 'terminal'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'gnome-terminal'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding '<Primary><Alt>t'
 
 
 touch "$HOME/Desktop/Finish_Setup.sh"
@@ -136,10 +136,17 @@ sleep 1
 gnome-extensions enable dash-to-dock@micxgx.gmail.com
 sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'LEFT'"
+sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
+sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed true
+sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/click-action "'minimize-or-previews'"
+sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'switch-workspace'"
+sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
+sleep 1
 gnome-extensions enable tiling-assistant@leleat-on-github
 sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
