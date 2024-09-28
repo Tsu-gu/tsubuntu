@@ -137,38 +137,10 @@ gnome-extensions enable dash-to-dock@micxgx.gmail.com
 sleep 1
 gnome-extensions enable tiling-assistant@leleat-on-github
 sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'LEFT'"
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed true
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/click-action "'minimize-or-previews'"
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'switch-workspace'"
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
-sleep 1
-rm "$HOME/Desktop/Finish_Setup.sh"
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
 
-touch "$HOME/Desktop/dock-setup.sh"
-chmod +x "$HOME/Desktop/dock-setup.sh"
-echo '#!/bin/bash
-dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'LEFT'"
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed true
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/click-action "'minimize-or-previews'"
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'switch-workspace'"
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
-sleep 1
-' >> "$HOME/Desktop/dock-setup.sh"
 
 
 
