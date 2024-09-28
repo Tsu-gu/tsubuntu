@@ -1,5 +1,5 @@
 # tsubuntu
-A config script but for Ubuntu **20.04**, **22.04. and 24.04**
+A config script for Ubuntu **20.04**, **22.04**, **24.04** and **Debian 12**. 
 
 
 https://tsugu.xyz/tsubuntu.html
