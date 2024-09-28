@@ -17,6 +17,13 @@ echo "Applying setting 5"
 dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
 sleep 1
 echo "Applying setting 6"
+dconf write /org/gnome/shell/extensions/dash-to-dock/custom-theme-shrink true
+sleep 1
+echo "Applying setting 7"
+
+dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity '0.40000000000000002'
+sleep 1
+echo "Applying setting 8"
 
 dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
 sleep 1
@@ -31,3 +38,7 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'switch-work
 sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
 sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/custom-theme-shrink true
+sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity '0.40000000000000002'
+echo "Done."
