@@ -129,14 +129,17 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 touch "$HOME/Desktop/Finish_Setup.sh"
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
 echo '#!/bin/bash
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
-gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'quit'
 gnome-extensions enable clipboard-history@alexsaveau.dev
 sleep 1
 gnome-extensions enable gtk4-ding@smedius.gitlab.com
 sleep 1
 gnome-extensions enable dash-to-dock@micxgx.gmail.com
 sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'LEFT'"
+dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
+dconf write /org/gnome/shell/extensions/dash-to-dock/click-action "'minimize-or-previews'"
+dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'switch-workspace'"
+dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
 gnome-extensions enable tiling-assistant@leleat-on-github
 sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
