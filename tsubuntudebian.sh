@@ -137,6 +137,18 @@ gnome-extensions enable dash-to-dock@micxgx.gmail.com
 sleep 1
 gnome-extensions enable tiling-assistant@leleat-on-github
 sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
+sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'LEFT'"
+sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed true
+sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/click-action "'minimize-or-previews'"
+sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'switch-workspace'"
+sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
+sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
@@ -156,7 +168,6 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'switch-work
 sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
 sleep 1
-rm "$HOME/Desktop/dock-setup.sh"
 ' >> "$HOME/Desktop/dock-setup.sh"
 
 
