@@ -1,4 +1,11 @@
 #!/bin/bash
+echo "--------------------------------------------"
+
+echo "Before you run this, make sure your user is in the sudoers file."
+echo "su"
+echo "sudo usermod -aG sudo $USER"
+echo "reboot"
+echo "--------------------------------------------"
 sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd -y
 # libfuse2 in order for all AppImages to run
 sudo systemctl enable --now snapd.socket
@@ -88,13 +95,12 @@ mv $folder4 $HOME/.local/share/gnome-shell/extensions/
 echo "--------------------------------------------"
 echo "Tweaking the file manager and ubuntu dock..."
 echo "--------------------------------------------"
-gsettings set org.gnome.desktop.wm.preferences button-layout "close,minimize,maximize:"
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
-gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
-gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'quit'
+
 echo "--------------------------------------------"
 echo "Remember numlock state..."
 echo "--------------------------------------------"
@@ -114,10 +120,17 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'gnome-system-monitor'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Primary><Shift>Escape'
 
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ name 'terminal'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ command 'gnome-terminal'
+gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Primary><Alt>t'
+
 
 touch "$HOME/Desktop/Finish_Setup.sh"
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
 echo '#!/bin/bash
+gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
+gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'quit'
 gnome-extensions enable clipboard-history@alexsaveau.dev
 sleep 1
 gnome-extensions enable gtk4-ding@smedius.gitlab.com
