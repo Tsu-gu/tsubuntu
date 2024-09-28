@@ -1,13 +1,12 @@
 #!/bin/bash
 echo "--------------------------------------------"
-
-echo "Before you run this, make sure your user is in the sudoers file."
+echo "Before you run this, make sure your user is in the sudoers file:"
 echo "su"
 echo "sudo usermod -aG sudo $USER"
 echo "reboot"
 echo "--------------------------------------------"
-sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd -y
-# libfuse2 in order for all AppImages to run
+sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd mtp-tools gvfs-backends -y
+# libfuse2 in order for all AppImages to run, mtp-tools for being able to plug in your phone and transfer data
 sudo systemctl enable --now snapd.socket
 # for classic snaps to run
 sudo ln -s /var/lib/snapd/snap /snap
@@ -92,10 +91,15 @@ cd $HOME
 mv $folder4 $HOME/.local/share/gnome-shell/extensions/
 
 
+
 echo "--------------------------------------------"
-echo "Tweaking the file manager and ubuntu dock..."
+echo "Adding (_)([])(X) buttons..."
 echo "--------------------------------------------"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+
+echo "--------------------------------------------"
+echo "Tweaking the file manager..."
+echo "--------------------------------------------"
 gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
@@ -126,17 +130,22 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding '<Primary><Alt>t'
 
 
+# I know how stupid this looks but when I tried to put the content of dock-setup.sh into this echo section it would not work properly. 
 touch "$HOME/Desktop/Finish_Setup.sh"
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
 echo '#!/bin/bash
 gnome-extensions enable clipboard-history@alexsaveau.dev
 sleep 1
+echo "Enabling the clipboard history extension..."
 gnome-extensions enable gtk4-ding@smedius.gitlab.com
 sleep 1
+echo "Enabling the desktop icons extension..."
 gnome-extensions enable dash-to-dock@micxgx.gmail.com
 sleep 1
+echo "Enabling the dash to dock extension..."
 gnome-extensions enable tiling-assistant@leleat-on-github
 sleep 1
+echo "Enabling the tiling assistant extension..."
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
@@ -144,7 +153,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && 
 
 
 
-echo "--------------------------------------------------------------"
-echo "Restart your PC and then run Finish_Setup.sh (on your desktop)"
-echo "--------------------------------------------------------------"
-read -p "Press Enter to close...."
+echo "--------------------------------------------"
+echo "Restart your PC and run Finish_Setup.sh"
+echo "--------------------------------------------"
+read -p "You can find it in the Desktop folder. Press Enter to close...."
