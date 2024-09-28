@@ -142,7 +142,7 @@ rm "$HOME/Desktop/Finish_Setup.sh"
 
 
 touch "$HOME/Desktop/dock-setup.sh"
-chmod +x "$HOME/Desktop/deck-setup.sh"
+chmod +x "$HOME/Desktop/dock-setup.sh"
 echo '#!/bin/bash
 dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
 sleep 1
