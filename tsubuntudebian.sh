@@ -135,9 +135,18 @@ gnome-extensions enable gtk4-ding@smedius.gitlab.com
 sleep 1
 gnome-extensions enable dash-to-dock@micxgx.gmail.com
 sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'LEFT'"
+gnome-extensions enable tiling-assistant@leleat-on-github
 sleep 1
+rm "$HOME/Desktop/Finish_Setup.sh"
+' >> "$HOME/Desktop/Finish_Setup.sh"
+
+
+touch "$HOME/Desktop/dock-setup.sh"
+chmod +x "$HOME/Desktop/deck-setup.sh"
+echo '#!/bin/bash
 dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
+sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'LEFT'"
 sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed true
 sleep 1
@@ -147,10 +156,10 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'switch-work
 sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
 sleep 1
-gnome-extensions enable tiling-assistant@leleat-on-github
-sleep 1
-rm "$HOME/Desktop/Finish_Setup.sh"
-' >> "$HOME/Desktop/Finish_Setup.sh"
+rm "$HOME/Desktop/dock-setup.sh"
+' >> "$HOME/Desktop/dock-setup.sh"
+
+
 
 echo "--------------------------------------------------------------"
 echo "Restart your PC and then run Finish_Setup.sh (on your desktop)"
