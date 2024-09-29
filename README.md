@@ -1,5 +1,5 @@
 # tsubuntu
-A config script for Ubuntu **20.04**, **22.04**, **24.04** and **Debian 12**. 
+A config script for Ubuntu **20.04**, **22.04**, **24.04**, **Debian 12** and **Fedora**. 
 ![screenshot](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu-debian.webp)
 I have tested each of these in a VM multiple times. if you encounter any bugs or unexpected behavious, feel free to open a PR.
 
