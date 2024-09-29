@@ -150,4 +150,3 @@ echo "--------------------------------------------"
 echo "Restart your PC and run Finish_Setup.sh"
 echo "--------------------------------------------"
 read -p "You can find it in the Desktop folder. Press Enter to close...."
-
