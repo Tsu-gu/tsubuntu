@@ -34,7 +34,9 @@ sleep 1
 echo "--------------------------------------------"
 echo "Removing the extra padding"
 echo "--------------------------------------------"
-dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity '0.80000000000000002'
+dconf write /org/gnome/shell/extensions/dash-to-dock/transparency-mode "'FIXED'"
+sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity '0.66000000000000003'
 sleep 1
 echo "--------------------------------------------"
 echo "Applying background opacity"
@@ -48,5 +50,5 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/click-action "'minimize-or-
 dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'switch-workspace'"
 dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
 dconf write /org/gnome/shell/extensions/dash-to-dock/custom-theme-shrink true
-dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity '0.80000000000000002'
+dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity '0.66000000000000003'
 echo "Done."
