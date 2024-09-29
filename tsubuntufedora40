@@ -23,8 +23,8 @@ echo "--------------------------------------------"
 echo "Installing clipboard management extension..."
 echo "--------------------------------------------"
 cd $HOME
-downloadedzip1="clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
-linktozip1="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
+downloadedzip1="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
+linktozip1="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
 folder1="clipboard-history@alexsaveau.dev"
 
 mkdir $folder1
@@ -39,8 +39,8 @@ echo "--------------------------------------------"
 echo "Installing desktop icons extension..."
 echo "--------------------------------------------"
 cd $HOME
-downloadedzip2="gtk4-dingsmedius.gitlab.com.v60.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v60.shell-extension.zip"
+downloadedzip2="gtk4-dingsmedius.gitlab.com.v86.shell-extension.zip"
+linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v86.shell-extension.zip"
 folder2="gtk4-ding@smedius.gitlab.com"
 
 mkdir $folder2
@@ -55,8 +55,8 @@ echo "--------------------------------------------"
 echo "Installing corner tiling extension..."
 echo "--------------------------------------------"
 cd $HOME
-downloadedzip3="tiling-assistantleleat-on-github.v45.shell-extension.zip"
-linktozip3="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v45.shell-extension.zip"
+downloadedzip3="tiling-assistantleleat-on-github.v48.shell-extension.zip"
+linktozip3="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v48.shell-extension.zip"
 folder3="tiling-assistant@leleat-on-github"
 
 mkdir $folder3
@@ -71,8 +71,8 @@ echo "--------------------------------------------"
 echo "Installing dash to dock..."
 echo "--------------------------------------------"
 cd $HOME
-downloadedzip4="dash-to-dockmicxgx.gmail.com.v84.shell-extension.zip"
-linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v84.shell-extension.zip"
+downloadedzip4="dash-to-dockmicxgx.gmail.com.v96.shell-extension.zip"
+linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v96.shell-extension.zip"
 folder4="dash-to-dock@micxgx.gmail.com"
 
 mkdir $folder4
