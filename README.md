@@ -17,3 +17,6 @@ https://tsugu.xyz/tsubuntu.html
 
 **Debian 12 Bookworm**
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh`
+
+**Fedora 40**
+`wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora40.sh && chmod +x tsubuntufedora40.sh && ./tsubuntufedora40.sh`
