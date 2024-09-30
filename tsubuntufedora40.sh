@@ -1,4 +1,5 @@
 #!/bin/bash
+# Fedora does not support gnome-software-plugin-snap
 sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor fuse fuse-libs snapd -y
 # fuse in order for all AppImages to run
 # for classic snaps to run. If you really hate snap, just remove these lines. Also I think fedora can't run snaps in confinement anyways due to using SELinux.
