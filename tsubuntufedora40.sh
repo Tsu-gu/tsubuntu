@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor fuse fuse-libs snapd gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
+sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor fuse fuse-libs snapd -y
 # fuse in order for all AppImages to run
 # for classic snaps to run. If you really hate snap, just remove these lines. Also I think fedora can't run snaps in confinement anyways due to using SELinux.
 sudo ln -s /var/lib/snapd/snap /snap
