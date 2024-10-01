@@ -104,8 +104,9 @@ echo "This script installed a software center app "
 echo "with support for Snap, Flatpak and native   "
 echo "packages. This makes the default snap-store "
 echo "redundant.                                  "
-read -p "Do you want to remove the Snap Store? [y/n]: " choice
 echo "--------------------------------------------"
+read -p "Do you want to remove the Snap Store? [y/n]: " choice
+
 
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
     sudo snap remove snap-store
