@@ -2,13 +2,13 @@
 echo "--------------------------------------------"
 echo "          Tsubuntu for Ubuntu 24.04         "
 echo "--------------------------------------------"
-sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
+# sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
 # libfuse2 in order for all AppImages to run
 echo "--------------------------------------------"
 echo "Adding Flathub..."
 echo "--------------------------------------------"
 
-sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+# sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo "--------------------------------------------"
 echo "Enabling right click > new file..."
 echo "--------------------------------------------"
