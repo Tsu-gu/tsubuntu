@@ -111,8 +111,18 @@ read -p "Do you want to remove the Snap Store? [y/n]: " choice
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
     sudo snap remove snap-store
 else
+    echo "Ight, won't do that."
+fi
     echo "Restart your PC and then run Finish_Setup.sh"
     echo "(on your desktop)"
     echo "--------------------------------------------"
-    read -p "Press Enter to close...."
+    
+read -p "Do you want to remove your entire DE? [y/n]: " choice2
+
+
+if [[ "$choice2" == "y" || "$choice2" == "Y" ]]; then
+    echo "removing desktop"
+else
+    echo "Ight, won't remove your desktop"
 fi
+        read -p "Press Enter to close...."
