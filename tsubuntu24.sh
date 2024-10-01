@@ -53,7 +53,7 @@ cd $HOME
 mv $folder2 $HOME/.local/share/gnome-shell/extensions/
 
 echo "--------------------------------------------"
-echo "Tweaking the file manager and ubuntu dock..."
+echo "Tweaking the file manager and Ubuntu dock..."
 echo "--------------------------------------------"
 
 gsettings set org.gnome.nautilus.preferences show-create-link 'true'
@@ -62,6 +62,12 @@ gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'quit'
+
+echo "--------------------------------------------"
+echo "Tweaking the text editor...                 "
+echo "--------------------------------------------"
+gsettings set org.gnome.TextEditor show-line-numbers 'true'
+gsettings set org.gnome.TextEditor spellcheck 'false'
 echo "--------------------------------------------"
 echo "Remember numlock state..."
 echo "--------------------------------------------"
