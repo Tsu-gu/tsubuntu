@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "--------------------------------------------"
+echo "            Tsubuntu for Fedora 40          "
+echo "--------------------------------------------"
 # Fedora does not support gnome-software-plugin-snap
 sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor fuse fuse-libs snapd -y
 # fuse in order for all AppImages to run
