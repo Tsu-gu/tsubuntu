@@ -1,9 +1,14 @@
 #!/bin/bash
 echo "--------------------------------------------"
-echo "Before you run this, make sure your user is in the sudoers file:"
+echo "           Tsubuntu for Debian 12           "
+echo "--------------------------------------------"
+echo "Before you run this, make sure your user is "
+echo "in the sudoers file:                        "
+echo "                                            "
 echo "su"
 echo "sudo usermod -aG sudo $USER"
 echo "reboot"
+echo "                                            "
 echo "--------------------------------------------"
 sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd mtp-tools gvfs-backends gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
 # libfuse2 in order for all AppImages to run, mtp-tools for being able to plug in your phone and transfer data
