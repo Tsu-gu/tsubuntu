@@ -110,6 +110,11 @@ gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
+echo "--------------------------------------------"
+echo "Tweaking the text editor...                 "
+echo "--------------------------------------------"
+gsettings set org.gnome.TextEditor show-line-numbers 'true'
+gsettings set org.gnome.TextEditor spellcheck 'false'
 
 echo "--------------------------------------------"
 echo "Remember numlock state..."
