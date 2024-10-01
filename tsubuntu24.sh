@@ -36,7 +36,8 @@ cd $HOME
 mv $folder2 $HOME/.local/share/gnome-shell/extensions/
 
 echo "--------------------------------------------"
-echo "Installing desktop icons extension and disabling the broken one..."
+echo "Installing desktop icons extension and      "
+echo "disabling the broken one..."
 echo "--------------------------------------------"
 cd $HOME
 downloadedzip2="gtk4-dingsmedius.gitlab.com.v83.shell-extension.zip"
@@ -93,7 +94,8 @@ sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
-echo "--------------------------------------------------------------"
-echo "Restart your PC and then run Finish_Setup.sh (on your desktop)"
-echo "--------------------------------------------------------------"
+echo "--------------------------------------------"
+echo "Restart your PC and then run Finish_Setup.sh"
+echo "(on your desktop)"
+echo "--------------------------------------------"
 read -p "Press Enter to close...."
