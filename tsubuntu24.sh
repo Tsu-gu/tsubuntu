@@ -99,7 +99,13 @@ gnome-extensions enable gtk4-ding@smedius.gitlab.com
 sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
-
+echo "--------------------------------------------"
+echo "This script installed a software center app "
+echo "with support for Snap, Flatpak and native   "
+echo "packages. This makes the default snap-store "
+echo "redundant. I don't want to mess with your   "
+echo "apps so I won't touch it, but if you wish to"
+echo "remove it, type in:  snap remove snap-store "
 echo "--------------------------------------------"
 echo "Restart your PC and then run Finish_Setup.sh"
 echo "(on your desktop)"
