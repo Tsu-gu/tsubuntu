@@ -2,13 +2,13 @@
 echo "--------------------------------------------"
 echo "          Tsubuntu for Ubuntu 24.04         "
 echo "--------------------------------------------"
-# sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
+sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
 # libfuse2 in order for all AppImages to run
 echo "--------------------------------------------"
 echo "Adding Flathub..."
 echo "--------------------------------------------"
 
-# sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo "--------------------------------------------"
 echo "Enabling right click > new file..."
 echo "--------------------------------------------"
@@ -111,18 +111,24 @@ read -p "Do you want to remove the Snap Store? [y/n]: " choice
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
     sudo snap remove snap-store
 else
-    echo "Ight, won't do that."
+    echo "--------------------------------------------"
+    echo "Understandable. Keeping the snap-store."
+    echo "--------------------------------------------"
+
 fi
+    echo "--------------------------------------------"
     echo "Restart your PC and then run Finish_Setup.sh"
     echo "(on your desktop)"
     echo "--------------------------------------------"
+    read -p "Press Enter to close...."
+
+
+
     
-read -p "Do you want to remove your entire DE? [y/n]: " choice2
-
-
-if [[ "$choice2" == "y" || "$choice2" == "Y" ]]; then
-    echo "removing desktop"
-else
-    echo "Ight, won't remove your desktop"
-fi
-        read -p "Press Enter to close...."
+# read -p "Do you want to remove your entire DE? [y/n]: " choice2
+# if [[ "$choice2" == "y" || "$choice2" == "Y" ]]; then
+#    echo "removing desktop"
+# else
+#    echo "Ight, won't remove your desktop"
+# fi
+#        read -p "Press Enter to close...."
