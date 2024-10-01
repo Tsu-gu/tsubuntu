@@ -108,8 +108,34 @@ echo "--------------------------------------------"
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
     sudo snap remove snap-store
 else
+  
+
+
+echo "install qbittorrent?"
+if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+    sudo apt install qbittorrent
+else
     echo "Restart your PC and then run Finish_Setup.sh"
     echo "(on your desktop)"
     echo "--------------------------------------------"
     read -p "Press Enter to close...."
+
+
+    
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 fi
