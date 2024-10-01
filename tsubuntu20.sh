@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "--------------------------------------------"
+echo "          Tsubuntu for Ubuntu 20.04         "
+echo "--------------------------------------------"
 sudo apt install gnome-tweaks flatpak unzip dconf-editor gnome-shell-extensions gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
 echo "--------------------------------------------"
 echo "Adding Flathub..."
