@@ -1,14 +1,14 @@
 #!/bin/bash
 dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
-sleep 1
 echo "--------------------------------------------"
 echo "Extending the dock to the edges"
 echo "--------------------------------------------"
-dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'LEFT'"
 sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'LEFT'"
 echo "--------------------------------------------"
 echo "Moving the dock to the left"
 echo "--------------------------------------------"
+sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed true
 sleep 1
 echo "--------------------------------------------"
@@ -30,17 +30,18 @@ echo "--------------------------------------------"
 echo "Applying middle click action"
 echo "--------------------------------------------"
 dconf write /org/gnome/shell/extensions/dash-to-dock/custom-theme-shrink true
-sleep 1
 echo "--------------------------------------------"
 echo "Removing the extra padding"
 echo "--------------------------------------------"
+sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/transparency-mode "'FIXED'"
-sleep 1
-dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity '0.66000000000000003'
-sleep 1
 echo "--------------------------------------------"
 echo "Applying background opacity"
 echo "--------------------------------------------"
+sleep 1
+dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity '0.66000000000000003'
+sleep 1
+
 
 # Re-running the same set of commands. This gave me a lot of trouble so I want to ensure everything works fine.
 dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
