@@ -1,4 +1,7 @@
 #!/bin/bash
+echo "--------------------------------------------"
+echo "          Install favourite apps            "
+echo "--------------------------------------------"
 sudo dpkg --add-architecture i386
 sudo apt install syncthing steam-installer
 sudo snap install vlc keepassxc
@@ -23,4 +26,5 @@ chmod +x $HOME/.local/share/applications/filen.desktop
 rm new_filen.desktop
 rm filen.desktop
 # Note to self: make sure filen autostarts.
+echo "--------------------------------------------"
 read -p "Press Enter to close...."
