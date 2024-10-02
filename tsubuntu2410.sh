@@ -76,10 +76,6 @@ chmod +x "$HOME/Desktop/Finish_Setup.sh"
 echo '#!/bin/bash
 gnome-extensions enable clipboard-history@alexsaveau.dev
 sleep 1
-gnome-extensions disable ding@rastersoft.com
-sleep 1
-gnome-extensions enable gtk4-ding@smedius.gitlab.com
-sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 echo "--------------------------------------------"
