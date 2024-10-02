@@ -1,4 +1,5 @@
 #!/bin/bash
+# Fun fact: this was my first distro 
 echo "--------------------------------------------"
 echo "          Tsubuntu for Ubuntu 20.04         "
 echo "--------------------------------------------"
