@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo dpkg --add-architecture i386
-sudo snap install vlc keepassxc
 sudo apt install syncthing steam-installer
+sudo snap install vlc keepassxc
 flatpak install -assumeyes flathub it.mijorus.gearlever org.qbittorrent.qBittorrent org.gimp.GIMP org.kde.kdenlive org.nicotine_plus.Nicotine 
 
 
@@ -22,5 +22,5 @@ cp new_filen.desktop $HOME/.local/share/applications/filen.desktop
 chmod +x $HOME/.local/share/applications/filen.desktop
 rm new_filen.desktop
 rm filen.desktop
-
+# Note to self: make sure filen autostarts.
 read -p "Press Enter to close...."
