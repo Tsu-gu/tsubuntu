@@ -1,6 +1,8 @@
 # tsubuntu
 A config script for Ubuntu **20.04**, **22.04**, **24.04**, **Debian 12** and **Fedora**. 
-![screenshot](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/ubuntu24tsubuntu.webp)
+
+![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/ubuntu24tsubuntu.webp)
+
 I have tested each of these in a VM multiple times. if you encounter any bugs or unexpected behavious, feel free to open a PR.
 
 https://tsugu.xyz/tsubuntu.html
