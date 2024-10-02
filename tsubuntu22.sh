@@ -63,13 +63,11 @@ gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'quit'
 
-echo "--------------------------------------------"
 echo "Remember numlock state..."
 echo "--------------------------------------------"
 
 gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state 'true'
 
-echo "--------------------------------------------"
 echo "Setting up useful shortcuts (try Super + E)"
 echo "--------------------------------------------"
 
@@ -93,7 +91,24 @@ sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
-echo "--------------------------------------------------------------"
-echo "Restart your PC and then run Finish_Setup.sh (on your desktop)"
-echo "--------------------------------------------------------------"
-read -p "Press Enter to close...."
+echo "--------------------------------------------"
+echo "This script installed a software center app "
+echo "with support for Snap, Flatpak and native   "
+echo "packages. This makes the default snap-store "
+echo "redundant.                                  "
+echo "--------------------------------------------"
+read -p "Do you want to remove the Snap Store? [y/n]: " choice
+
+
+if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+    sudo snap remove snap-store
+else
+    echo "--------------------------------------------"
+    echo "Understandable. Keeping the snap-store."
+    echo "--------------------------------------------"
+fi
+    echo "--------------------------------------------"
+    echo "Restart your PC and then run Finish_Setup.sh"
+    echo "(on your desktop)"
+    echo "--------------------------------------------"
+    read -p "Press Enter to close...."
