@@ -62,13 +62,11 @@ gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'quit'
 
-echo "--------------------------------------------"
 echo "Remember numlock state..."
 echo "--------------------------------------------"
 
 gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state 'true'
 
-echo "--------------------------------------------"
 echo "Setting up useful shortcuts (try Super + E)"
 echo "--------------------------------------------"
 
