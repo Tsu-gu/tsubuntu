@@ -5,9 +5,6 @@ A config script for Ubuntu **20.04**, **22.04**, **24.04**, **Debian 12** and **
 
 I have tested each of these in a VM multiple times. if you encounter any bugs or unexpected behavious, feel free to open a PR.
 
-https://tsugu.xyz/tsubuntu.html
-
-
 **24.10 Oracular Oriole** [Untested, I just updated the extension versions]
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu24.sh && chmod +x tsubuntu24.sh && ./tsubuntu24.sh`
