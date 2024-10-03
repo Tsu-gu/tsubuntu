@@ -7,7 +7,6 @@ sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-edi
 # libfuse2 in order for all AppImages to run
 echo "--------------------------------------------"
 echo "Adding Flathub..."
-echo "--------------------------------------------"
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo "--------------------------------------------"
