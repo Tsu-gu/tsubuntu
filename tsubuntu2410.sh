@@ -26,11 +26,12 @@ echo "--------------------------------------------"
 cd $HOME
 downloadedzip2="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
+alternativelinktozip2="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extensions/$downloadedzip2"
 folder2="clipboard-history@alexsaveau.dev"
 
 mkdir $folder2
 cd $folder2
-wget $linktozip2
+wget --server-response $linktozip2 || wget $alternativelinktozip2
 unzip $downloadedzip2
 rm $downloadedzip2
 cd $HOME
