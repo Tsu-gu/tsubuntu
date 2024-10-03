@@ -1,4 +1,5 @@
 #!/bin/bash
+extensionsrepo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extensions/"
 echo "--------------------------------------------"
 echo "          Tsubuntu for Ubuntu 24.10         "
 echo "--------------------------------------------"
@@ -26,7 +27,7 @@ echo "--------------------------------------------"
 cd $HOME
 downloadedzip2="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
-alternativelinktozip2="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extensions/$downloadedzip2"
+alternativelinktozip2="$extensionsrepo$downloadedzip2"
 folder2="clipboard-history@alexsaveau.dev"
 
 mkdir $folder2
