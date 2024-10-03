@@ -25,7 +25,7 @@ echo "Installing clipboard management extension..."
 echo "--------------------------------------------"
 cd $HOME
 downloadedzip2="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.45555555"
+linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
 alternativelinktozip2="$extensionsrepo$downloadedzip2"
 folder2="clipboard-history@alexsaveau.dev"
 
