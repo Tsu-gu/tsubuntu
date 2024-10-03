@@ -7,7 +7,7 @@ I have tested each of these in a VM multiple times. if you encounter any bugs or
 * * *
 **24.10 Oracular Oriole** [Untested, I just updated the extension versions]
 
-`wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu24.sh && chmod +x tsubuntu24.sh && ./tsubuntu24.sh`
+`wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2410.sh && chmod +x tsubuntu2410.sh && ./tsubuntu2410.sh`
 
 **24.04 Noble Numbat**
 
