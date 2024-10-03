@@ -80,12 +80,12 @@ gnome-extensions enable clipboard-history@alexsaveau.dev
 sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
-echo "--------------------------------------------"
+echo -e "\e[1;31m--------------------------------------------\e[0m"
 echo "This script installed a software center app "
 echo "with support for Snap, Flatpak and native   "
 echo "packages. This makes the default snap-store "
 echo "redundant.                                  "
-echo "--------------------------------------------"
+echo -e "\e[1;31m--------------------------------------------\e[0m"
 read -p "Do you want to remove the Snap Store? [y/n]: " choice
 
 
