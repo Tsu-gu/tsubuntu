@@ -60,7 +60,6 @@ echo "--------------------------------------------"
 gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state 'true'
 
 echo "Setting up useful shortcuts (try Super + E)"
-echo "--------------------------------------------"
 
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
