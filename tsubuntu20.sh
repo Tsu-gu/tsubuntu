@@ -3,6 +3,8 @@
 echo "--------------------------------------------"
 echo "          Tsubuntu for Ubuntu 20.04         "
 echo "--------------------------------------------"
+
+# I tend to avoid PPAs, but having webp support is worth it
 sudo add-apt-repository ppa:ubuntuhandbook1/webp-pixbuf-loader -y
 sudo apt install webp-pixbuf-loader gnome-tweaks flatpak unzip dconf-editor gnome-shell-extensions gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
 
