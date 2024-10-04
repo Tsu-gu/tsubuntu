@@ -3,12 +3,12 @@ extensionsrepo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extension
 echo "┌──────────────────────────────────────────┐"
 echo "│         Tsubuntu for Ubuntu 24.10        │"
 echo "└──────────────────────────────────────────┘"
-
+sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
 echo "└──────────────────────────────────────────┘"
 
-# sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+ sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 
 
