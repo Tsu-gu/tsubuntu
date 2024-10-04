@@ -1,30 +1,29 @@
 #!/bin/bash
-echo "--------------------------------------------"
-echo "           Tsubuntu for Debian 12           "
-echo "--------------------------------------------"
-echo "Before you run this, make sure your user is "
-echo "in the sudoers file. Running this as root   "
-echo "directly will not work.                     "    
-echo "                                            "
-echo "su"
-echo "sudo usermod -aG sudo $USER"
-echo "reboot"
-echo "                                            "
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│         Tsubuntu for Debian 12           │"
+echo "└──────────────────────────────────────────┘"
+echo "│Before you run this, make sure your user  │"
+echo "│is in the sudoers file. Running this as   │"
+echo "│root directly will not work.              │"    
+echo "│                                          │"
+echo "│su                                        │"
+echo "│sudo usermod -aG sudo $USER               │"
+echo "│reboot                                    │"
+echo "└──────────────────────────────────────────┘"
 sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd mtp-tools gvfs-backends gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
 # libfuse2 in order for all AppImages to run, mtp-tools for being able to plug in your phone and transfer data
 sudo systemctl enable --now snapd.socket
 # for classic snaps to run. If you really hate snap, just remove these lines.
 sudo ln -s /var/lib/snapd/snap /snap
 
-echo "--------------------------------------------"
-echo "Adding Flathub..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Adding Flathub...                         │"                        
+echo "└──────────────────────────────────────────┘"
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-echo "--------------------------------------------"
-echo "Enabling right click > new file..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Enabling right click > new file...        │"                        
+echo "└──────────────────────────────────────────┘"
 touch $HOME/Templates/NewFile.txt
 
 # extensions making gnome usable
@@ -32,9 +31,9 @@ touch $HOME/Templates/NewFile.txt
 # Yes, this is necessary. It took me a long while to figure out why this damned script would only install one extension.
 mkdir $HOME/.local/share/gnome-shell/extensions/
 
-echo "--------------------------------------------"
-echo "Installing clipboard management extension..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing clipboard history extension... │"                        
+echo "└──────────────────────────────────────────┘"
 cd $HOME
 downloadedzip1="clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
 linktozip1="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
@@ -48,9 +47,11 @@ rm $downloadedzip1
 cd $HOME
 mv $folder1 $HOME/.local/share/gnome-shell/extensions/
 
-echo "--------------------------------------------"
-echo "Installing desktop icons extension..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing desktop icons extension...     │"                        
+echo "└──────────────────────────────────────────┘"
+
+
 cd $HOME
 downloadedzip2="gtk4-dingsmedius.gitlab.com.v60.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v60.shell-extension.zip"
@@ -64,9 +65,10 @@ rm $downloadedzip2
 cd $HOME
 mv $folder2 $HOME/.local/share/gnome-shell/extensions/
 
-echo "--------------------------------------------"
-echo "Installing corner tiling extension..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing corner tiling extension...     │"                        
+echo "└──────────────────────────────────────────┘"
+
 cd $HOME
 downloadedzip3="tiling-assistantleleat-on-github.v45.shell-extension.zip"
 linktozip3="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v45.shell-extension.zip"
@@ -80,9 +82,10 @@ rm $downloadedzip3
 cd $HOME
 mv $folder3 $HOME/.local/share/gnome-shell/extensions/
 
-echo "--------------------------------------------"
-echo "Installing dash to dock..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing dash to dock...                │"                        
+echo "└──────────────────────────────────────────┘"
+
 cd $HOME
 downloadedzip4="dash-to-dockmicxgx.gmail.com.v84.shell-extension.zip"
 linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v84.shell-extension.zip"
@@ -98,30 +101,34 @@ mv $folder4 $HOME/.local/share/gnome-shell/extensions/
 
 
 
-echo "--------------------------------------------"
-echo "Adding (_)([])(X) buttons..."
-echo "--------------------------------------------"
-gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+echo "┌──────────────────────────────────────────┐"
+echo "│Adding (_)([])(X) buttons...              │"                        
+echo "└──────────────────────────────────────────┘"
 
-echo "Tweaking the file manager..."
-echo "--------------------------------------------"
+
+gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+echo "┌──────────────────────────────────────────┐"
+echo "│Tweaking the file manager...              │"                        
+echo "└──────────────────────────────────────────┘"
 gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 
-echo "Tweaking the text editor...                 "
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Tweaking the text editor...               │"                        
+echo "└──────────────────────────────────────────┘"
 gsettings set org.gnome.TextEditor show-line-numbers 'true'
 gsettings set org.gnome.TextEditor spellcheck 'false'
 
-echo "Remember numlock state..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Remember numlock state...                 │"                        
+echo "└──────────────────────────────────────────┘"
 
 gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state 'true'
-
-echo "Setting up useful shortcuts (try Super + E)"
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Setting up shortcuts (try Super + E)      │"
+echo "└──────────────────────────────────────────┘"
 
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
@@ -157,11 +164,8 @@ echo "Enabling the tiling assistant extension..."
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
-
-
-
-
-echo "--------------------------------------------"
-echo "Restart your PC and run Finish_Setup.sh"
-echo "--------------------------------------------"
-read -p "You can find it in the Desktop folder. Press Enter to close...."
+echo "┌──────────────────────────────────────────┐"
+echo "│Restart your PC and then run              │"
+echo "│Finish_Setup.sh, located on your desktop  │"
+echo "└──────────────────────────────────────────┘"
+read -p "Press Enter to close...."
