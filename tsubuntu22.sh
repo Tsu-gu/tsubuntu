@@ -1,22 +1,25 @@
 #!/bin/bash
-echo "--------------------------------------------"
-echo "          Tsubuntu for Ubuntu 22.04         "
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│         Tsubuntu for Ubuntu 22.04        │"
+echo "└──────────────────────────────────────────┘"
 sudo apt install gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software webp-pixbuf-loader -y
 # libfuse2 in order for all AppImages to run
-echo "--------------------------------------------"
-echo "Adding Flathub..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Adding Flathub...                         │"                        
+echo "└──────────────────────────────────────────┘"
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-echo "--------------------------------------------"
-echo "Enabling right click > new file..."
-echo "--------------------------------------------"
+
+echo "┌──────────────────────────────────────────┐"
+echo "│Enabling right click > new file...        │"                        
+echo "└──────────────────────────────────────────┘"
 touch $HOME/Templates/NewFile.txt
 
-echo "Enabling webp support..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Enabling webp support...                  │"
+echo "└──────────────────────────────────────────┘"
+
 # well, technically the support is enabled by installing webp-pixbuf-loader, but why run apt install twice for the sake of aesthetics
 xdg-mime default org.gnome.eog.desktop image/webp
 
@@ -25,9 +28,9 @@ xdg-mime default org.gnome.eog.desktop image/webp
 # Yes, this is necessary. It took me a long while to figure out why this damned script would only install one extension.
 mkdir $HOME/.local/share/gnome-shell/extensions/
 
-echo "--------------------------------------------"
-echo "Installing clipboard management extension..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing clipboard history extension... │"                        
+echo "└──────────────────────────────────────────┘"
 cd $HOME
 downloadedzip2="clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
@@ -41,9 +44,11 @@ rm $downloadedzip2
 cd $HOME
 mv $folder2 $HOME/.local/share/gnome-shell/extensions/
 
-echo "--------------------------------------------"
-echo "Installing corner tiling extension..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing corner tiling extension...     │"                        
+echo "└──────────────────────────────────────────┘"
+
+
 cd $HOME
 downloadedzip1="tiling-assistantleleat-on-github.v36.shell-extension.zip"
 linktozip1="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v36.shell-extension.zip"
@@ -58,9 +63,9 @@ cd $HOME
 mv $folder1 $HOME/.local/share/gnome-shell/extensions/
 
 
-echo "--------------------------------------------"
-echo "Tweaking the file manager and ubuntu dock..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Tweaking the file manager and the dock... │"                        
+echo "└──────────────────────────────────────────┘"
 gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
@@ -68,13 +73,15 @@ gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'quit'
 
-echo "Remember numlock state..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Remember numlock state...                 │"                        
+echo "└──────────────────────────────────────────┘"
 
 gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state 'true'
 
-echo "Setting up useful shortcuts (try Super + E)"
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Setting up shortcuts (try Super + E)      │"
+echo "└──────────────────────────────────────────┘"
 
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
@@ -96,24 +103,24 @@ sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
-echo "--------------------------------------------"
-echo "This script installed a software center app "
-echo "with support for Snap, Flatpak and native   "
-echo "packages. This makes the default snap-store "
-echo "redundant.                                  "
-echo "--------------------------------------------"
+echo -e "\e[1;31m┌──────────────────────────────────────────┐\e[0m"
+echo "│This script installed a software center   │"
+echo "│app with support for Snap, Flatpak and    │"
+echo "│native packages. This makes the default   │"
+echo "│Snap Store redundant.                     │"
+echo -e "\e[1;31m└──────────────────────────────────────────┘\e[0m"
 read -p "Do you want to remove the Snap Store? [y/n]: " choice
 
 
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
     sudo snap remove snap-store
 else
-    echo "--------------------------------------------"
-    echo "Understandable. Keeping the snap-store."
-    echo "--------------------------------------------"
+    echo "┌──────────────────────────────────────────┐"
+    echo "│Understandable. Keeping the snap-store.   │"
+    echo "└──────────────────────────────────────────┘"
 fi
-    echo "--------------------------------------------"
-    echo "Restart your PC and then run Finish_Setup.sh"
-    echo "(on your desktop)"
-    echo "--------------------------------------------"
+    echo "┌──────────────────────────────────────────┐"
+    echo "│Restart your PC and then run              │"
+    echo "│Finish_Setup.sh, located on your desktop  │"
+    echo "└──────────────────────────────────────────┘"
     read -p "Press Enter to close...."
