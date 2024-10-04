@@ -1,12 +1,11 @@
 #!/bin/bash
 # Fun fact: this was my first distro 
-# sudo add-apt-repository ppa:helkaluin/webp-pixbuf-loader -y
-# sudo apt install webp-pixbuf-loader
-# sudo add-apt-repository --remove ppa:helkaluin/webp-pixbuf-loader -y
 echo "--------------------------------------------"
 echo "          Tsubuntu for Ubuntu 20.04         "
 echo "--------------------------------------------"
-sudo apt install gnome-tweaks flatpak unzip dconf-editor gnome-shell-extensions gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
+sudo add-apt-repository ppa:ubuntuhandbook1/webp-pixbuf-loader -y
+sudo apt install webp-pixbuf-loader gnome-tweaks flatpak unzip dconf-editor gnome-shell-extensions gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
+
 echo "--------------------------------------------"
 echo "Adding Flathub..."
 echo "--------------------------------------------"
@@ -16,6 +15,12 @@ echo "--------------------------------------------"
 echo "Enabling right click > new file..."
 echo "--------------------------------------------"
 touch $HOME/Templates/NewFile.txt
+
+echo "Enabling webp support..."
+xdg-mime default org.gnome.eog.desktop image/webp
+
+
+
 
 # extensions making gnome usable
 
@@ -54,6 +59,7 @@ unzip $downloadedzip1
 rm $downloadedzip1
 cd $HOME
 mv $folder1 $HOME/.local/share/gnome-shell/extensions/
+
 
 
 echo "--------------------------------------------"
