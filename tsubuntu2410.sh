@@ -1,17 +1,21 @@
 #!/bin/bash
 extensionsrepo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extensions/"
-echo "--------------------------------------------"
-echo "          Tsubuntu for Ubuntu 24.10         "
-echo "--------------------------------------------"
-sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software -y
-# libfuse2 in order for all AppImages to run
-echo "--------------------------------------------"
-echo "Adding Flathub..."
+echo "┌──────────────────────────────────────────┐"
+echo "│         Tsubuntu for Ubuntu 24.10        │"
+echo "└──────────────────────────────────────────┘"
 
-sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-echo "--------------------------------------------"
-echo "Enabling right click > new file..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Adding Flathub...                         │"                        
+echo "└──────────────────────────────────────────┘"
+
+# sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+
+
+echo "┌──────────────────────────────────────────┐"
+echo "│Enabling right click > new file...        │"                        
+echo "└──────────────────────────────────────────┘"
+
 touch $HOME/Templates/NewFile.txt
 
 # extensions making gnome usable
@@ -21,8 +25,12 @@ mkdir $HOME/.local/share/gnome-shell/extensions/
 
 # Seems like version 45 supports both gnome 46 and 47, and is the latest.
 
-echo "Installing clipboard management extension..."
-echo "--------------------------------------------"
+
+
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing clipboard history extension... │"                        
+echo "└──────────────────────────────────────────┘"
+
 cd $HOME
 downloadedzip2="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
@@ -38,9 +46,10 @@ cd $HOME
 mv $folder2 $HOME/.local/share/gnome-shell/extensions/
 
 
-echo "--------------------------------------------"
-echo "Tweaking the file manager and Ubuntu dock..."
-echo "--------------------------------------------"
+
+echo "┌──────────────────────────────────────────┐"
+echo "│Tweaking the file manager and the dock... │"                        
+echo "└──────────────────────────────────────────┘"
 
 gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
@@ -49,17 +58,23 @@ gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'quit'
 
-echo "Tweaking the text editor...                 "
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Tweaking the text editor...               │"                        
+echo "└──────────────────────────────────────────┘"
+
 gsettings set org.gnome.TextEditor show-line-numbers 'true'
 gsettings set org.gnome.TextEditor spellcheck 'false'
 
-echo "Remember numlock state..."
-echo "--------------------------------------------"
+
+echo "┌──────────────────────────────────────────┐"
+echo "│Remember numlock state...                 │"                        
+echo "└──────────────────────────────────────────┘"
+
 
 gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state 'true'
-
-echo "Setting up useful shortcuts (try Super + E)"
+echo "┌──────────────────────────────────────────┐"
+echo "│Setting up shortcuts (try Super + E)      │"
+echo "└──────────────────────────────────────────┘"
 
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
@@ -78,24 +93,24 @@ gnome-extensions enable clipboard-history@alexsaveau.dev
 sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
-echo -e "\e[1;31m--------------------------------------------\e[0m"
-echo "This script installed a software center app "
-echo "with support for Snap, Flatpak and native   "
-echo "packages. This makes the default snap-store "
-echo "redundant.                                  "
-echo -e "\e[1;31m--------------------------------------------\e[0m"
+echo -e "\e[1;31m┌──────────────────────────────────────────┐\e[0m"
+echo "│This script installed a software center   │"
+echo "│app with support for Snap, Flatpak and    │"
+echo "│native packages. This makes the default   │"
+echo "│snap-store redundant.                     │"
+echo -e "\e[1;31m└──────────────────────────────────────────┘\e[0m"
 read -p "Do you want to remove the Snap Store? [y/n]: " choice
 
 
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
     sudo snap remove snap-store
 else
-    echo "--------------------------------------------"
-    echo "Understandable. Keeping the snap-store."
-    echo "--------------------------------------------"
+    echo "┌──────────────────────────────────────────┐"
+    echo "│Understandable. Keeping the snap-store.   │"
+    echo "└──────────────────────────────────────────┘"
 fi
-    echo "--------------------------------------------"
-    echo "Restart your PC and then run Finish_Setup.sh"
-    echo "(on your desktop)"
-    echo "--------------------------------------------"
+    echo "┌──────────────────────────────────────────┐"
+    echo "│Restart your PC and then run              │"
+    echo "│Finish_Setup.sh, located on your desktop  │"
+    echo "└──────────────────────────────────────────┘"
     read -p "Press Enter to close...."
