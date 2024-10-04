@@ -1,5 +1,8 @@
 #!/bin/bash
 # Fun fact: this was my first distro 
+# sudo add-apt-repository ppa:helkaluin/webp-pixbuf-loader -y
+# sudo apt install webp-pixbuf-loader
+# sudo add-apt-repository --remove ppa:helkaluin/webp-pixbuf-loader -y
 echo "--------------------------------------------"
 echo "          Tsubuntu for Ubuntu 20.04         "
 echo "--------------------------------------------"
