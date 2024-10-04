@@ -17,7 +17,7 @@ touch $HOME/Templates/NewFile.txt
 
 echo "Enabling webp support..."
 echo "--------------------------------------------"
-
+# well, technically the support is enabled by installing webp-pixbuf-loader, but why run apt install twice for the sake of aesthetics
 xdg-mime default org.gnome.eog.desktop image/webp
 
 # extensions making gnome usable
