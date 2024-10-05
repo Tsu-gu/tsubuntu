@@ -43,7 +43,7 @@ mv $folder1 $HOME/.local/share/gnome-shell/extensions/
 
 # the version for this stayed the same. On extensions.gnome.org the version is labeled as 83.
 echo "┌──────────────────────────────────────────┐"
-echo "│Installing clipboard history extension... │"                        
+echo "│Installing desktop icons extension...     │"                        
 echo "└──────────────────────────────────────────┘"
 cd $HOME
 downloadedzip2="gtk4-dingsmedius.gitlab.com.v86.shell-extension.zip"
@@ -98,14 +98,15 @@ echo "└───────────────────────�
 
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 
-echo "Tweaking the file manager..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Tweaking the file manager...              │"                        
+echo "└──────────────────────────────────────────┘"
 gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
 echo "┌──────────────────────────────────────────┐"
-echo "│Tweaking the file manager...              │"                        
+echo "│Tweaking the text editor...               │"                        
 echo "└──────────────────────────────────────────┘"
 gsettings set org.gnome.TextEditor show-line-numbers 'true'
 gsettings set org.gnome.TextEditor spellcheck 'false'
