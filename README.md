@@ -1,8 +1,8 @@
 # tsubuntu
-
+The main point of this script is to tweak Ubuntu to behave the way I like it. The secondary point is tweaking other distros to behave as close to this setup as possible. 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh`
+This will auto-detect which OS you are running and launch the appropriate script. If it fails, just launch the right script yourself.
 
-(This will auto-detect which OS you are running and launch the appropriate script. If it fails, just launch the right script yourself.)
 
 ![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/buntu.webp)
 # Most notable tweaks include: 
@@ -19,7 +19,7 @@
 - Super + E opens the file manager
 - Ctrl + Alt + T opens the terminal
 
-I have tested each of these in a VM multiple times. if you encounter any bugs or unexpected behaviours, feel free to open a PR.
+_I have tested each of these in a VM multiple times. if you encounter any bugs or unexpected behaviours, feel free to open a PR._
 * * *
 **24.10 Oracular Oriole** 
 
