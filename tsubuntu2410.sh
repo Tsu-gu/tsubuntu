@@ -40,7 +40,7 @@ folder2="clipboard-history@alexsaveau.dev"
 mkdir $folder2
 cd $folder2
 wget --server-response $linktozip2 || wget $alternativelinktozip2
-unzip $downloadedzip2
+unzip -q $downloadedzip2
 rm $downloadedzip2
 cd $HOME
 mv $folder2 $HOME/.local/share/gnome-shell/extensions/
