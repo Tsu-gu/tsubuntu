@@ -31,7 +31,7 @@ I have tested each of these in a VM multiple times. if you encounter any bugs or
 * * *
 
 
-**Fedora 41** [Untested, I just updated the extension versions]
+**Fedora 41** 
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora41.sh && chmod +x tsubuntufedora41.sh && ./tsubuntufedora41.sh`
 
