@@ -1,13 +1,12 @@
 # tsubuntu
 The main point of this script is to tweak Ubuntu to behave the way I like it. The secondary point is tweaking other distros to behave as close to this setup as possible. 
 
-───────────────────────────────────────────────
-
+* * *
 This will auto-detect which OS you are running and launch the appropriate script. If it fails, just launch the right script yourself.
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh`
 
-──────────────────────────────────────────────
+* * *
 
 
 ![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/buntu.webp)
