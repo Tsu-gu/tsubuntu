@@ -1,5 +1,4 @@
 # tsubuntu
-A config script for Ubuntu **20.04**, **22.04**, **24.04**, **24.10**, **Debian 12** and **Fedora**. 
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh`
 
