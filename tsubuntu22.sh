@@ -34,11 +34,12 @@ echo "└───────────────────────�
 cd $HOME
 downloadedzip2="clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
+alternativelinktozip2="$extensionsrepo$downloadedzip2"
 folder2="clipboard-history@alexsaveau.dev"
 
 mkdir $folder2
 cd $folder2
-wget $linktozip2
+wget --server-response $linktozip2 || wget $alternativelinktozip2
 unzip $downloadedzip2
 rm $downloadedzip2
 cd $HOME
@@ -52,11 +53,12 @@ echo "└───────────────────────�
 cd $HOME
 downloadedzip1="tiling-assistantleleat-on-github.v36.shell-extension.zip"
 linktozip1="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v36.shell-extension.zip"
+alternativelinktozip1="$extensionsrepo$downloadedzip1"
 folder1="tiling-assistant@leleat-on-github"
 
 mkdir $folder1
 cd $folder1
-wget $linktozip1
+wget --server-response $linktozip1 || wget $alternativelinktozi1
 unzip $downloadedzip1
 rm $downloadedzip1
 cd $HOME
