@@ -34,6 +34,6 @@ elif [[ "$OS_ID" == "fedora" ]]; then
         exit 1
     fi
 else
-    echo "Unsupported distro: $NAME, version $OS_VERSION"
+    echo "Unsupported distro: $OS_VERSION"
     exit 1  
 fi
