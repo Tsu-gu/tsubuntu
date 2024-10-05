@@ -4,7 +4,7 @@
 
 (This will auto-detect which OS you are running and launch the appropriate script. If it fails, just launch the right script yourself.)
 
-![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/ubuntu24tsubuntu.webp)
+![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/buntu.webp)
 
 I have tested each of these in a VM multiple times. if you encounter any bugs or unexpected behaviours, feel free to open a PR.
 * * *
