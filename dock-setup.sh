@@ -1,43 +1,46 @@
 #!/bin/bash
 dconf write /org/gnome/shell/extensions/dash-to-dock/extend-height true
-echo "--------------------------------------------"
-echo "Extending the dock to the edges"
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Extending the dock to the edges           │"
+echo "└──────────────────────────────────────────┘"
 sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/dock-position "'LEFT'"
-echo "--------------------------------------------"
-echo "Moving the dock to the left"
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Moving the dock to the left               │"
+echo "└──────────────────────────────────────────┘"
 sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/dock-fixed true
 sleep 1
-echo "--------------------------------------------"
-echo "Disabling auto-hiding"
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Disabling auto-hiding                     │"
+echo "└──────────────────────────────────────────┘"
 dconf write /org/gnome/shell/extensions/dash-to-dock/click-action "'minimize-or-previews'"
 sleep 1
-echo "--------------------------------------------"
-echo "Applying clicking on an icon to minimize"
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Applying clicking on an icon to minimize  │"
+echo "└──────────────────────────────────────────┘"
 dconf write /org/gnome/shell/extensions/dash-to-dock/scroll-action "'switch-workspace'"
 sleep 1
-echo "--------------------------------------------"
-echo "Applying switch workspace by scrolling"
-echo "--------------------------------------------"
+
+echo "┌──────────────────────────────────────────┐"
+echo "│Applying switch workspace by scrolling    │"
+echo "└──────────────────────────────────────────┘"
 dconf write /org/gnome/shell/extensions/dash-to-dock/middle-click-action "'quit'"
 sleep 1
-echo "--------------------------------------------"
-echo "Applying middle click action"
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Applying middle click action              │"
+echo "└──────────────────────────────────────────┘"
 dconf write /org/gnome/shell/extensions/dash-to-dock/custom-theme-shrink true
-echo "--------------------------------------------"
-echo "Removing the extra padding"
-echo "--------------------------------------------"
+
+echo "┌──────────────────────────────────────────┐"
+echo "│Removing the extra padding                │"
+echo "└──────────────────────────────────────────┘"
 sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/transparency-mode "'FIXED'"
-echo "--------------------------------------------"
-echo "Applying background opacity"
-echo "--------------------------------------------"
+
+echo "┌──────────────────────────────────────────┐"
+echo "│Applying background opacity               │"
+echo "└──────────────────────────────────────────┘"
 sleep 1
 dconf write /org/gnome/shell/extensions/dash-to-dock/background-opacity '0.66000000000000003'
 sleep 1
