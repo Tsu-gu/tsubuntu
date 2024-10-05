@@ -1,4 +1,5 @@
-# Tsubuntu
+![logo](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/logo.png)
+
 The main point of this script is to tweak Ubuntu to behave the way I like it. The secondary point is tweaking other distros to behave as close to this setup as possible. 
 
 * * *
