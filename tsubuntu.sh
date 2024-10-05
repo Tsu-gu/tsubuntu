@@ -1,5 +1,5 @@
 #!/bin/bash
-# For Ubuntu 24.04, 22.04, 20.04, Debian 12, and Fedora 40/41
+# For Ubuntu 24.10, 24.04, 22.04, 20.04, Debian 12, and Fedora 40/41
 
 # Get OS ID and version from /etc/os-release
 source /etc/os-release
