@@ -1,4 +1,5 @@
 #!/bin/bash
+extensionsrepo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extensions/"
 echo "┌──────────────────────────────────────────┐"
 echo "│         Tsubuntu for Debian 12           │"
 echo "└──────────────────────────────────────────┘"
@@ -37,11 +38,12 @@ echo "└───────────────────────�
 cd $HOME
 downloadedzip1="clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
 linktozip1="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
+alternativelinktozip1="$extensionsrepo$downloadedzip1"
 folder1="clipboard-history@alexsaveau.dev"
 
 mkdir $folder1
 cd $folder1
-wget $linktozip1
+wget --server-response $linktozip1 || wget $alternativelinktozip1
 unzip $downloadedzip1
 rm $downloadedzip1
 cd $HOME
@@ -55,11 +57,12 @@ echo "└───────────────────────�
 cd $HOME
 downloadedzip2="gtk4-dingsmedius.gitlab.com.v60.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v60.shell-extension.zip"
+alternativelinktozip2="$extensionsrepo$downloadedzip2"
 folder2="gtk4-ding@smedius.gitlab.com"
 
 mkdir $folder2
 cd $folder2
-wget $linktozip2
+wget --server-response $linktozip2 || wget $alternativelinktozip2
 unzip $downloadedzip2
 rm $downloadedzip2
 cd $HOME
@@ -72,11 +75,12 @@ echo "└───────────────────────�
 cd $HOME
 downloadedzip3="tiling-assistantleleat-on-github.v45.shell-extension.zip"
 linktozip3="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v45.shell-extension.zip"
+alternativelinktozip3="$extensionsrepo$downloadedzip3"
 folder3="tiling-assistant@leleat-on-github"
 
 mkdir $folder3
 cd $folder3
-wget $linktozip3
+wget --server-response $linktozip3 || wget $alternativelinktozip3
 unzip $downloadedzip3
 rm $downloadedzip3
 cd $HOME
@@ -89,24 +93,22 @@ echo "└───────────────────────�
 cd $HOME
 downloadedzip4="dash-to-dockmicxgx.gmail.com.v84.shell-extension.zip"
 linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v84.shell-extension.zip"
+alternativelinktozip4="$extensionsrepo$downloadedzip4"
 folder4="dash-to-dock@micxgx.gmail.com"
 
 mkdir $folder4
 cd $folder4
-wget $linktozip4
+wget --server-response $linktozip4 || wget $alternativelinktozip4
 unzip $downloadedzip4
 rm $downloadedzip4
 cd $HOME
 mv $folder4 $HOME/.local/share/gnome-shell/extensions/
 
-
-
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding (_)([])(X) buttons...              │"                        
 echo "└──────────────────────────────────────────┘"
-
-
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+
 echo "┌──────────────────────────────────────────┐"
 echo "│Tweaking the file manager...              │"                        
 echo "└──────────────────────────────────────────┘"
