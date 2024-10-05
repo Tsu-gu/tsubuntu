@@ -1,4 +1,4 @@
-![logo](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu-logo-1.png)
+![logo](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu-logo.png)
 
 The main point of this script is to tweak Ubuntu to behave the way I like it, and then tweak other distros to behave as close to this setup as possible. 
 
