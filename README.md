@@ -2,6 +2,7 @@
 A config script for Ubuntu **20.04**, **22.04**, **24.04**, **24.10**, **Debian 12** and **Fedora**. 
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh`
+
 (This will auto-detect which OS you are running and launch the appropriate script.)
 
 ![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/ubuntu24tsubuntu.webp)
