@@ -1,21 +1,21 @@
 #!/bin/bash
-echo "--------------------------------------------"
-echo "            Tsubuntu for Fedora 40          "
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│         Tsubuntu for Fedora 40           │"
+echo "└──────────────────────────────────────────┘"
 # Fedora does not support gnome-software-plugin-snap
 sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor fuse fuse-libs snapd -y
 # fuse in order for all AppImages to run
 # for classic snaps to run. If you really hate snap, just remove these lines. Also I think fedora can't run snaps in confinement anyways due to using SELinux.
 sudo ln -s /var/lib/snapd/snap /snap
 
-echo "--------------------------------------------"
-echo "Adding Flathub..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Adding Flathub...                         │"                        
+echo "└──────────────────────────────────────────┘"
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-echo "--------------------------------------------"
-echo "Enabling right click > new file..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Enabling right click > new file...        │"                        
+echo "└──────────────────────────────────────────┘"
 touch $HOME/Templates/NewFile.txt
 
 # extensions making gnome usable
@@ -23,9 +23,9 @@ touch $HOME/Templates/NewFile.txt
 # Yes, this is necessary. It took me a long while to figure out why this damned script would only install one extension.
 mkdir $HOME/.local/share/gnome-shell/extensions/
 
-echo "--------------------------------------------"
-echo "Installing clipboard management extension..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing clipboard history extension... │"                        
+echo "└──────────────────────────────────────────┘"
 cd $HOME
 downloadedzip1="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
 linktozip1="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
@@ -39,9 +39,9 @@ rm $downloadedzip1
 cd $HOME
 mv $folder1 $HOME/.local/share/gnome-shell/extensions/
 
-echo "--------------------------------------------"
-echo "Installing desktop icons extension..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing desktop icons extension...     │"                        
+echo "└──────────────────────────────────────────┘"
 cd $HOME
 downloadedzip2="gtk4-dingsmedius.gitlab.com.v86.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v86.shell-extension.zip"
@@ -55,9 +55,9 @@ rm $downloadedzip2
 cd $HOME
 mv $folder2 $HOME/.local/share/gnome-shell/extensions/
 
-echo "--------------------------------------------"
-echo "Installing corner tiling extension..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing corner tiling extension...     │"                        
+echo "└──────────────────────────────────────────┘"
 cd $HOME
 downloadedzip3="tiling-assistantleleat-on-github.v48.shell-extension.zip"
 linktozip3="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v48.shell-extension.zip"
@@ -71,9 +71,9 @@ rm $downloadedzip3
 cd $HOME
 mv $folder3 $HOME/.local/share/gnome-shell/extensions/
 
-echo "--------------------------------------------"
-echo "Installing dash to dock..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing dash to dock...                │"                        
+echo "└──────────────────────────────────────────┘"
 cd $HOME
 downloadedzip4="dash-to-dockmicxgx.gmail.com.v96.shell-extension.zip"
 linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v96.shell-extension.zip"
@@ -87,35 +87,34 @@ rm $downloadedzip4
 cd $HOME
 mv $folder4 $HOME/.local/share/gnome-shell/extensions/
 
-
-
-echo "--------------------------------------------"
-echo "Adding (_)([])(X) buttons..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Adding (_)([])(X) buttons...              │"                        
+echo "└──────────────────────────────────────────┘"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 
-echo "--------------------------------------------"
-echo "Tweaking the file manager..."
-echo "--------------------------------------------"
+
+echo "┌──────────────────────────────────────────┐"
+echo "│Tweaking the file manager...              │"                        
+echo "└──────────────────────────────────────────┘"
 gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
-echo "--------------------------------------------"
-echo "Tweaking the text editor...                 "
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Tweaking the text editor...               │"                        
+echo "└──────────────────────────────────────────┘"
 gsettings set org.gnome.TextEditor show-line-numbers 'true'
 gsettings set org.gnome.TextEditor spellcheck 'false'
 
-echo "--------------------------------------------"
-echo "Remember numlock state..."
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Remember numlock state...                 │"                        
+echo "└──────────────────────────────────────────┘"
 
 gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state 'true'
 
-echo "--------------------------------------------"
-echo "Setting up useful shortcuts (try Super + E)"
-echo "--------------------------------------------"
+echo "┌──────────────────────────────────────────┐"
+echo "│Setting up shortcuts (try Super + E)      │"
+echo "└──────────────────────────────────────────┘"
 
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
@@ -154,8 +153,8 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && 
 
 
 
-
-echo "--------------------------------------------"
-echo "Restart your PC and run Finish_Setup.sh"
-echo "--------------------------------------------"
-read -p "You can find it in the Desktop folder. Press Enter to close...."
+echo "┌──────────────────────────────────────────┐"
+echo "│Restart your PC and then run              │"
+echo "│Finish_Setup.sh, located on your desktop  │"
+echo "└──────────────────────────────────────────┘"
+read -p "Press Enter to close...."
