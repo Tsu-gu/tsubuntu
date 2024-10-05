@@ -9,7 +9,6 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 ```
 
 
-![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/buntu.webp)
 # Most notable tweaks include: 
 - clicking on a running app minimizes it
 - clicking on a group of apps brings up their previews 
