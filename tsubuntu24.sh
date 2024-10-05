@@ -27,11 +27,12 @@ echo "└───────────────────────�
 cd $HOME
 downloadedzip2="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
+alternativelinktozip2="$extensionsrepo$downloadedzip2"
 folder2="clipboard-history@alexsaveau.dev"
 
 mkdir $folder2
 cd $folder2
-wget $linktozip2
+wget --server-response $linktozip2 || wget $alternativelinktozip2
 unzip $downloadedzip2
 rm $downloadedzip2
 cd $HOME
@@ -44,11 +45,12 @@ echo "└───────────────────────�
 cd $HOME
 downloadedzip2="gtk4-dingsmedius.gitlab.com.v83.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v83.shell-extension.zip"
+alternativelinktozip2="$extensionsrepo$downloadedzip2"
 folder2="gtk4-ding@smedius.gitlab.com"
 
 mkdir $folder2
 cd $folder2
-wget $linktozip2
+wget --server-response $linktozip2 || wget $alternativelinktozip2
 unzip $downloadedzip2
 rm $downloadedzip2
 cd $HOME
