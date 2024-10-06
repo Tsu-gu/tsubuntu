@@ -48,11 +48,10 @@ _I have tested each of these in a VM multiple times. if you encounter any bugs o
 **20.04 Focal Fossa**
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu20.sh && chmod +x tsubuntu20.sh && ./tsubuntu20.sh`
-* * *
+
 **Debian 12 Bookworm**
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh`
-* * *
 
 
 **Fedora 41** 
