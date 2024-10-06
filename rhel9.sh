@@ -15,7 +15,7 @@ sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor -y
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing Snap...                        │"                        
 echo "└──────────────────────────────────────────┘"
-sudo yum install snapd
+sudo yum install snapd -y
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 
