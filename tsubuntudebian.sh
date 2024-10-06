@@ -105,6 +105,26 @@ cd $HOME
 mv $folder4 $HOME/.local/share/gnome-shell/extensions/
 
 echo "┌──────────────────────────────────────────┐"
+echo "│Installing tray icons extension...        │"                        
+echo "└──────────────────────────────────────────┘"
+
+cd $HOME
+downloadedzip4="appindicatorsupportrgcjonas.gmail.com.v53.shell-extension.zip"
+linktozip4="https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v53.shell-extension.zip"
+alternativelinktozip4="$extensionsrepo$downloadedzip4"
+folder4="appindicatorsupport@rgcjonas.gmail.com"
+
+mkdir $folder4
+cd $folder4
+wget --server-response $linktozip4 || wget $alternativelinktozip4
+unzip $downloadedzip4
+rm $downloadedzip4
+cd $HOME
+mv $folder4 $HOME/.local/share/gnome-shell/extensions/
+
+
+
+echo "┌──────────────────────────────────────────┐"
 echo "│Adding (_)([])(X) buttons...              │"                        
 echo "└──────────────────────────────────────────┘"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
