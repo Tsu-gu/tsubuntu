@@ -10,7 +10,7 @@ echo "└───────────────────────�
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
 sudo dnf upgrade
 
-sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor -y
+sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor wget -y
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing Snap...                        │"                        
@@ -133,11 +133,7 @@ gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
-echo "┌──────────────────────────────────────────┐"
-echo "│Tweaking the text editor...               │"                        
-echo "└──────────────────────────────────────────┘"
-gsettings set org.gnome.TextEditor show-line-numbers 'true'
-gsettings set org.gnome.TextEditor spellcheck 'false'
+
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Remember numlock state...                 │"                        
@@ -149,8 +145,7 @@ echo "┌───────────────────────�
 echo "│Setting up shortcuts (try Super + E)      │"
 echo "└──────────────────────────────────────────┘"
 
-gsettings set org.gnome.shell.keybindings screenshot "['Print']"
-gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot "['<Shift><Super>s']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/']"
