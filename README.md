@@ -21,8 +21,8 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 - installs flatpak, adds flathub
 - install flatpak and snap plugins into gnome-software (doesn't work on Fedora)
 - installs snap
-- adds webp support to 20.04 and 22.04
-- installs mtp-tools and gvfs-backends on Debian to be able to transfer files from a connected phone
+- webp support for 20.04 and 22.04
+- mtp-tools and gvfs-backends on Debian (to be able to transfer files from a connected phone)
 # Installed extensions:
 - tray icons
 - corner tiling
