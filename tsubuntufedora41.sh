@@ -79,8 +79,8 @@ echo "│Installing dash to dock...                │"
 echo "└──────────────────────────────────────────┘"
 
 cd $HOME
-downloadedzip4="dash-to-dockmicxgx.gmail.com.v97.shell-extension.zip"
-linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v97.shell-extension.zip"
+downloadedzip4="dash-to-dockmicxgx.gmail.com.v99.shell-extension.zip"
+linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v99.shell-extension.zip"
 folder4="dash-to-dock@micxgx.gmail.com"
 
 mkdir $folder4
