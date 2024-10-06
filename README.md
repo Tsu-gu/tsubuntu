@@ -63,7 +63,8 @@ _I have tested each of these in a VM multiple times. if you encounter any bugs o
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora40.sh && chmod +x tsubuntufedora40.sh && ./tsubuntufedora40.sh`
 
-* * *
+# Showcase
 ![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/buntu.webp)
 
 
+https://youtu.be/xf739ivb9hg?si=kVIgIrPTlO2CJKq3
