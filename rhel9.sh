@@ -58,9 +58,9 @@ echo "┌───────────────────────�
 echo "│Installing desktop icons extension...     │"                        
 echo "└──────────────────────────────────────────┘"
 cd $HOME
-downloadedzip2="gtk4-dingsmedius.gitlab.com.v17.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v17.shell-extension.zip"
-folder2="gtk4-ding@smedius.gitlab.com"
+downloadedzip2="dingrastersoft.com.v63.shell-extension.zip"
+linktozip2="https://extensions.gnome.org/extension-data/dingrastersoft.com.v63.shell-extension.zip"
+folder2="ding@rastersoft.com"
 
 mkdir $folder2
 cd $folder2
@@ -163,10 +163,10 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 touch "$HOME/Desktop/Finish_Setup.sh"
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
 echo '#!/bin/bash
-gnome-extensions enable clipboard-history@alexsaveau.dev
+gnome-extensions enable clipboard-indicator@tudmotu.com
 sleep 1
 echo "Enabling the clipboard history extension..."
-gnome-extensions enable gtk4-ding@smedius.gitlab.com
+gnome-extensions enable ding@rastersoft.com
 sleep 1
 echo "Enabling the desktop icons extension..."
 gnome-extensions enable dash-to-dock@micxgx.gmail.com
