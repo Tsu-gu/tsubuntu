@@ -51,22 +51,22 @@ _I have tested each of these in a VM multiple times. if you encounter any bugs o
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu20.sh && chmod +x tsubuntu20.sh && ./tsubuntu20.sh`
 
 ## Debian
-**Debian 12 Bookworm**
+**12 Bookworm**
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh`
 
 ## Fedora
-**Fedora 41** 
+**41** 
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora41.sh && chmod +x tsubuntufedora41.sh && ./tsubuntufedora41.sh`
 
-**Fedora 40**
+**40**
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora40.sh && chmod +x tsubuntufedora40.sh && ./tsubuntufedora40.sh`
 
 ## RHEL/Rocky/Alma 
 
-**RHEL 9**
+**9**
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubunturhel9.sh && chmod +x tsubunturhel9.sh && ./tsubunturhel9.sh`
 
