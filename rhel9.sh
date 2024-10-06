@@ -3,13 +3,14 @@ echo "┌───────────────────────�
 echo "│    Tsubuntu for RHEL9 and derivatives    │"
 echo "└──────────────────────────────────────────┘"
 
-sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor 
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding EPEL...                            │"                        
 echo "└──────────────────────────────────────────┘"
-sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm -y
 sudo dnf upgrade
+
+sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor -y
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing Snap...                        │"                        
