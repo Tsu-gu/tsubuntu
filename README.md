@@ -18,9 +18,9 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 - Super + E opens the file manager
 - Ctrl + Alt + T opens the terminal
 # Installed software:
-- installs flatpak, adds flathub
-- install flatpak and snap plugins into gnome-software (doesn't work on Fedora)
-- installs snap
+- flatpak
+- snap
+- flatpak and snap plugins for gnome-software (doesn't work on Fedora)
 - webp support for 20.04 and 22.04
 - mtp-tools and gvfs-backends on Debian (to be able to transfer files from a connected phone)
 # Installed extensions:
