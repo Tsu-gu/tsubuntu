@@ -70,5 +70,8 @@ _I have tested each of these in a VM multiple times. if you encounter any bugs o
 # Showcase
 ![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/buntu.webp)
 
+![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/Screenshot from 2024-10-06 17-22-50.png)
+
+
 
 https://youtu.be/xf739ivb9hg?si=kVIgIrPTlO2CJKq3
