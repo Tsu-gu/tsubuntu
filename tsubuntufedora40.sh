@@ -167,7 +167,7 @@ sleep 1
 echo "Enabling the tiling assistant extension..."
 gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
 sleep 1
-echo "Enabling the tiling assistant extension..."
+echo "Enabling tray icons..."
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
