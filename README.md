@@ -9,7 +9,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 ```
 
 
-# Most notable tweaks include: 
+# Tweaks done to GNOME: 
 - clicking on a running app minimizes it
 - clicking on a group of apps brings up their previews 
 - adds minimize, maximize buttons to windows
