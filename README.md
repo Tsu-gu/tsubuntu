@@ -13,16 +13,22 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 - clicking on a running app minimizes it
 - clicking on a group of apps brings up their previews 
 - adds minimize, maximize buttons to windows
+- adds right click > New File
+- Super + Shift + S brings up the area screenshot
+- Super + E opens the file manager
+- Ctrl + Alt + T opens the terminal
+# Installed software:
 - installs flatpak, adds flathub
 - install flatpak and snap plugins into gnome-software (doesn't work on Fedora)
 - installs snap
 - adds webp support to 20.04 and 22.04
 - installs mtp-tools and gvfs-backends on Debian to be able to transfer files from a connected phone
-- adds right click > New File
-- Super + Shift + S brings up the area screenshot
-- Super + E opens the file manager
-- Ctrl + Alt + T opens the terminal
-- Installed extensions: Tray icons, corner tiling, clipboard manager, dash to dock, desktop icons
+# Installed extensions:
+- tray icons
+- corner tiling
+- clipboard manager
+- dash to dock
+- desktop icons
 
 _I have tested each of these in a VM multiple times. if you encounter any bugs or unexpected behaviours, feel free to open a PR._
 * * *
