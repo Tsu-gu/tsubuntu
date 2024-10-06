@@ -33,6 +33,8 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 
 _I have tested each of these in a VM multiple times. if you encounter any bugs or unexpected behaviours, feel free to open a PR._
 * * *
+# Supported and tested distros:
+
 ## Ubuntu
 **24.10 Oracular Oriole** 
 
