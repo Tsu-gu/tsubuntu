@@ -21,8 +21,9 @@ if [[ "$OS_ID" == "ubuntu" ]]; then
         exit 1
     fi
 # Check for Debian 12
-elif [[ "$OS_ID" == "debian" ]] && [[ "$OS_VERSION" == "12" ]]; then
-    wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
+elif [[ "$OS_ID" == "debian" ]]; then
+    if [[ "$OS_VERSION" == "12" ]]; then
+        wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
 # Check for Fedora 40 and 41
 elif [[ "$OS_ID" == "fedora" ]]; then
     if [[ "$OS_VERSION" == "40" ]]; then
@@ -34,6 +35,6 @@ elif [[ "$OS_ID" == "fedora" ]]; then
         exit 1
     fi
 else
-    echo "Unsupported distro: $OS_VERSION"
+    echo "Unsupported distro: $OS_VERSION. There is a good chance I fucked something up in the script."
     exit 1  
 fi
