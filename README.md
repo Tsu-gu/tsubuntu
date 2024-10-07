@@ -9,7 +9,9 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 ```
 
 
-# Tweaks done to GNOME: 
+# Tweaks
+
+## GNOME: 
 - clicking on a running app minimizes it
 - clicking on a group of apps brings up their previews 
 - adds minimize, maximize buttons to windows
@@ -17,14 +19,14 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 - Super + Shift + S brings up the area screenshot
 - Super + E opens the file manager
 - Ctrl + Alt + T opens the terminal
-# Installed software:
+## Installed software:
 - flatpak
 - snap
 - flatpak and snap plugins for gnome-software (doesn't work on Fedora)
 - webp support for 20.04 and 22.04
 - mtp-tools and gvfs-backends on Debian (to be able to transfer files from a connected phone)
 - gnome-tweaks, gdebi, gnome-extensions-app, dconf-editor, libfuse2
-# Installed extensions:
+## Installed extensions:
 - tray icons
 - corner tiling
 - clipboard manager
