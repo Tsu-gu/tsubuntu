@@ -2,7 +2,7 @@
 echo "┌──────────────────────────────────────────┐"
 echo "│         Tsubuntu for Ubuntu 22.04        │"
 echo "└──────────────────────────────────────────┘"
-sudo apt install gnome-tweaks flatpak gdebi unzip gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software webp-pixbuf-loader ufw -y
+sudo apt install gnome-tweaks flatpak gdebi unzip gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software webp-pixbuf-loader gufw -y
 # libfuse2 in order for all AppImages to run
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
