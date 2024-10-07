@@ -26,6 +26,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 - webp support for 20.04 and 22.04
 - mtp-tools and gvfs-backends on Debian (to be able to transfer files from a connected phone)
 - gnome-tweaks, gdebi, gnome-extensions-app, dconf-editor, libfuse2
+- gufw firewall
 ## Installed extensions:
 - tray icons
 - corner tiling
