@@ -32,7 +32,7 @@ elif [[ "$OS_ID" == "debian" ]]; then
         wget -q $repo/tsubuntudebian11.sh && chmod +x tsubuntudebian11.sh && ./tsubuntudebian11.sh
     elif [[ "$CODENAME" == "trixie" ]]; then
     	echo "This is just a placeholder. It likely won't work that well."
-        wget -q $repo/tsubuntu24.sh && chmod +x tsubuntu24.sh && ./tsubuntu24.sh
+        wget -q $repo/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
     else
         echo "Unsupported Debian version: $OS_VERSION"
         exit 1
