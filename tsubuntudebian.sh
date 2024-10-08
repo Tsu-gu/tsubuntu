@@ -132,6 +132,7 @@ gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize
 echo "┌──────────────────────────────────────────┐"
 echo "│Tweaking the file manager...              │"                        
 echo "└──────────────────────────────────────────┘"
+echo "file:///home/$USER/Desktop" >> ~/.config/gtk-3.0/bookmarks
 gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
