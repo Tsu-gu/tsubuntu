@@ -11,7 +11,7 @@ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noa
 sudo dnf upgrade
 
 # This was quite the jumpscare. Rocky not having wget preinstalled by default.
-sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor wget -y
+sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor wget firewall-config -y
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing Snap...                        │"                        
