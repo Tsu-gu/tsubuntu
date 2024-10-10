@@ -1,4 +1,5 @@
 #!/bin/bash
+echo "Not ready for actual use."
 echo "┌──────────────────────────────────────────┐"
 echo "│       Tsubuntu for Opensuse Tumbleweed          │"
 echo "└──────────────────────────────────────────┘"
