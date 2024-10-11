@@ -53,8 +53,8 @@ echo "┌───────────────────────�
 echo "│Installing desktop icons extension...     │"                        
 echo "└──────────────────────────────────────────┘"
 cd $HOME
-downloadedzip2="gtk4-dingsmedius.gitlab.com.v86.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v86.shell-extension.zip"
+downloadedzip2="gtk4-dingsmedius.gitlab.com.v87.shell-extension.zip"
+linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v87.shell-extension.zip"
 folder2="gtk4-ding@smedius.gitlab.com"
 
 mkdir $folder2
