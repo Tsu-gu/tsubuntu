@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "Not ready for actual use."
 echo "┌──────────────────────────────────────────┐"
 echo "│      Tsubuntu for OpenSUSE Tumbleweed    │"
 echo "└──────────────────────────────────────────┘"
@@ -190,6 +189,7 @@ echo "Enabling tray icons..."
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
+# I simply don't question it. If the command is here snap doesn't bitch about the service not being enabled
 sudo systemctl enable --now snapd.apparmor
 
 echo "┌──────────────────────────────────────────┐"
