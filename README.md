@@ -81,6 +81,12 @@ _I have tested each of these in a VM multiple times. if you encounter any bugs o
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh`
 
+## Other distros
+
+You can just grab the script of Fedora/Tumbleweed/Debian, delete the  line that installs software, and change the extensions versions according to the gnome your distro ships with. 
+
+
+
 
 # Showcase
 ![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/buntu.webp)
