@@ -14,6 +14,7 @@ sudo zypper --non-interactive install gnome-tweaks unzip gnome-extensions dconf-
 sudo systemctl enable --now snapd
 # Yes this is necessary 
 snap list
+snap warnings
 sudo systemctl enable --now snapd.apparmor
 
 echo "┌──────────────────────────────────────────┐"
