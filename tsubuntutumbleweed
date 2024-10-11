@@ -1,13 +1,18 @@
 #!/bin/bash
 echo "Not ready for actual use."
 echo "┌──────────────────────────────────────────┐"
-echo "│       Tsubuntu for Opensuse Tumbleweed          │"
+echo "│      Tsubuntu for OpenSUSE Tumbleweed    │"
 echo "└──────────────────────────────────────────┘"
-# Fedora does not support gnome-software-plugin-snap
-sudo zypper install gnome-tweaks unzip gnome-extensions-app dconf-editor snapd flatpak -y
-# fuse in order for all AppImages to run
-# for classic snaps to run. If you really hate snap, just remove these lines. Also I think fedora can't run snaps in confinement anyways due to using SELinux.
-sudo ln -s /var/lib/snapd/snap /snap
+# SUSE does not support gnome-software-plugin-snap
+
+sudo zypper addrepo --refresh https://download.opensuse.org/repositories/system:/snappy/openSUSE_Tumbleweed snappy
+sudo zypper --gpg-auto-import-keys refresh
+sudo zypper dup --from snappy
+
+sudo zypper install gnome-tweaks unzip gnome-extensions-app dconf-editor flatpak snapd -y
+
+sudo systemctl enable --now snapd
+sudo systemctl enable --now snapd.apparmor
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
