@@ -70,6 +70,7 @@ elif [[ "$rhel_version" == "9" ]]; then
     if [[ "$OS_ID" == "opensuse-tumbleweed" ]]; then
         wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
     elif [[ "$OS_ID" == "opensuse-leap" ]]; then
+        echo "LEAP"
         wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
    elif [[ "$OS_ID" == "opensuse-slowroll" ]]; then
         wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
