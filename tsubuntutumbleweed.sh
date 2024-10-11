@@ -12,7 +12,8 @@ sudo zypper --non-interactive dup --from snappy -y
 sudo zypper --non-interactive install gnome-tweaks unzip gnome-extensions dconf-editor flatpak snapd 
 
 sudo systemctl enable --now snapd
-sleep 1
+# Yes this is necessary 
+snap list
 sudo systemctl enable --now snapd.apparmor
 
 echo "┌──────────────────────────────────────────┐"
