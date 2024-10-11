@@ -5,11 +5,11 @@ echo "│      Tsubuntu for OpenSUSE Tumbleweed    │"
 echo "└──────────────────────────────────────────┘"
 # SUSE does not support gnome-software-plugin-snap
 
-sudo zypper addrepo --refresh https://download.opensuse.org/repositories/system:/snappy/openSUSE_Tumbleweed snappy -y
-sudo zypper --gpg-auto-import-keys refresh -y
-sudo zypper dup --from snappy -y
+sudo zypper --non-interactive addrepo --refresh https://download.opensuse.org/repositories/system:/snappy/openSUSE_Tumbleweed snappy 
+sudo zypper --non-interactive --gpg-auto-import-keys refresh 
+sudo zypper --non-interactive dup --from snappy -y
 
-sudo zypper install gnome-tweaks unzip gnome-extensions-app dconf-editor flatpak snapd -y
+sudo zypper --non-interactive install gnome-tweaks unzip gnome-extensions dconf-editor flatpak snapd 
 
 sudo systemctl enable --now snapd
 sudo systemctl enable --now snapd.apparmor
