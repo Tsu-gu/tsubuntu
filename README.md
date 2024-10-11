@@ -75,6 +75,13 @@ _I have tested each of these in a VM multiple times. if you encounter any bugs o
 
 `wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubunturhel9.sh && chmod +x tsubunturhel9.sh && ./tsubunturhel9.sh`
 
+## OpenSUSE 
+
+**Tumbleweed**
+
+`wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh`
+
+
 # Showcase
 ![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/buntu.webp)
 
