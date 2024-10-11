@@ -2,7 +2,7 @@
 # For Ubuntu 24.10, 24.04, 22.04, 20.04, Debian 12, and Fedora 40/41
 repo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main"
 rhel_version=$(awk -F'=' '/^VERSION_ID/ {gsub(/"/, "", $2); split($2, a, "."); print a[1]}' /etc/os-release)
-# OS_SUSE=$(awk -F'=' '/^ID=/ {gsub(/"/, "", $2); split($2, a, "-"); print a[1]}' /etc/os-release)
+OS_SUSE=$(awk -F'=' '/^ID=/ {gsub(/"/, "", $2); split($2, a, "-"); print a[1]}' /etc/os-release)
 # Get OS ID and version from /etc/os-release
 source /etc/os-release
 OS_ID=$ID
@@ -66,17 +66,17 @@ elif [[ "$rhel_version" == "9" ]]; then
     fi
 
 # Check for SUSE versions
-# elif [[ "$OS_SUSE" == "opensuse" ]]; then
-#    if [[ "$OS_ID" == "opensuse-tumbleweed" ]]; then
-#        wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
-#    elif [[ "$OS_ID" == "opensuse-leap" ]]; then
-#        wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
-#   elif [[ "$OS_ID" == "opensuse-slowroll" ]]; then
-#        wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
-#    else
-#        echo "Unsupported OpenSUSE version: $OS_ID"
-#        exit 1
-#    fi
+ elif [[ "$OS_SUSE" == "opensuse" ]]; then
+    if [[ "$OS_ID" == "opensuse-tumbleweed" ]]; then
+        wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
+    elif [[ "$OS_ID" == "opensuse-leap" ]]; then
+        wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
+   elif [[ "$OS_ID" == "opensuse-slowroll" ]]; then
+        wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
+    else
+        echo "Unsupported OpenSUSE version: $OS_ID"
+        exit 1
+    fi
     
 
     
