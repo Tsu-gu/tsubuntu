@@ -16,7 +16,6 @@ sudo systemctl enable --now snapd
 sleep 1
 snap list
 snap warnings
-sudo systemctl enable --now snapd.apparmor
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
@@ -191,9 +190,7 @@ echo "Enabling tray icons..."
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
-
-
-
+sudo systemctl enable --now snapd.apparmor
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Restart your PC and then run              │"
