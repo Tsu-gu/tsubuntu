@@ -3,7 +3,7 @@ echo "┌───────────────────────�
 echo "│         Tsubuntu for Arch Linux          │"
 echo "└──────────────────────────────────────────┘"
 
-sudo yay -Syu --noconfirm base-devel gnome-tweaks gnome-shell-extensions gnome-browser-connector unzip dconf-editor flatpak 
+sudo pacman -Syu --noconfirm base-devel gnome-tweaks gnome-shell-extensions gnome-browser-connector unzip dconf-editor flatpak 
 
 git clone https://aur.archlinux.org/snapd.git
 cd snapd
