@@ -39,7 +39,7 @@ _I have tested each of these in a VM multiple times. if you encounter any bugs o
 * * *
 # Supported and tested distros:
 
-## Ubuntu
+## ⚙Ubuntu
 **24.10 Oracular Oriole** 
 
 ```
@@ -64,14 +64,14 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu22.sh && 
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu20.sh && chmod +x tsubuntu20.sh && ./tsubuntu20.sh
 ```
 
-## Debian
+## ⚙Debian
 **12 Bookworm**
 
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
 ```
 
-## Fedora
+## ⚙Fedora
 **41** 
 
 ```
@@ -84,7 +84,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora41.
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora40.sh && chmod +x tsubuntufedora40.sh && ./tsubuntufedora40.sh
 ```
 
-## RHEL/Rocky/Alma 
+## ⚙RHEL/Rocky/Alma 
 
 **9**
 
@@ -92,7 +92,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora40.
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubunturhel9.sh && chmod +x tsubunturhel9.sh && ./tsubunturhel9.sh
 ```
 
-## OpenSUSE 
+## ⚙OpenSUSE 
 
 **Tumbleweed**
 
@@ -100,25 +100,18 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubunturhel9.sh 
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
 ```
 
-## Arch Linux
+## ⚙Arch Linux
 - tested on Endeavour OS
   
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
 
 ```
-## Manjaro
+## ⚙Manjaro
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntumanjaro.sh && chmod +x tsubuntumanjaro.sh && ./tsubuntumanjaro.sh
 
 ```
-
-## Other distros
-
-You can just grab the script of Fedora/Tumbleweed/Debian, delete the  line that installs software, and change the extensions versions according to the gnome your distro ships with. 
-
-
-
 
 # Showcase
 ![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/buntu.webp)
