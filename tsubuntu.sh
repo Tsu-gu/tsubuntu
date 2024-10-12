@@ -6,6 +6,7 @@ OS_SUSE=$(awk -F'=' '/^ID=/ {gsub(/"/, "", $2); split($2, a, "-"); print a[1]}' 
 # Get OS ID and version from /etc/os-release
 source /etc/os-release
 OS_ID=$ID
+ARCH_ID=$BUILD_ID
 OS_VERSION=$VERSION_ID
 CODENAME=$VERSION_CODENAME
 
@@ -76,6 +77,15 @@ elif [[ "$rhel_version" == "9" ]]; then
         wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
     else
         echo "Unsupported OpenSUSE version: $OS_ID"
+        exit 1
+    fi
+    
+    # Check for Arch 
+    # both endeavour and Arch have this variable in /etc/os-release. Let's hope manjaro is the same.
+ elif [[ "$ARCH_ID" == "rolling" ]]; then
+            wget -q $repo/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
+      else
+        echo "Unsupported Arch version: $OS_ID"
         exit 1
     fi
     
