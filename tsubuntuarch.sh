@@ -2,6 +2,11 @@
 echo "┌──────────────────────────────────────────┐"
 echo "│         Tsubuntu for Arch Linux          │"
 echo "└──────────────────────────────────────────┘"
+echo "│You will need to enter your password      │"
+echo "│several times as well as press enter. If  │"
+echo "│you have a better solution for installing │"
+echo "│Snap on Arch, I will implement it.        │"
+echo "└──────────────────────────────────────────┘"
 
 sudo pacman -Syu --noconfirm base-devel gnome-tweaks gnome-shell-extensions gnome-browser-connector unzip dconf-editor flatpak 
 
