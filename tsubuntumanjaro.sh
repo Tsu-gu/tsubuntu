@@ -125,6 +125,7 @@ echo "Enabling tray icons..."
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
+systemctl enable --now snapd.apparmor
 dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top false
 echo "┌──────────────────────────────────────────┐"
 echo "│Restart your PC and then run              │"
