@@ -99,6 +99,14 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubunturhel9.sh 
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
 ```
 
+## Arch Linux
+- tested on Endeavour OS
+  
+```
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
+
+```
+
 ## Other distros
 
 You can just grab the script of Fedora/Tumbleweed/Debian, delete the  line that installs software, and change the extensions versions according to the gnome your distro ships with. 
