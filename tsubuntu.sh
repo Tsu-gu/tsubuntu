@@ -81,7 +81,6 @@ elif [[ "$rhel_version" == "9" ]]; then
     fi
     
     # Check for Arch 
-    # both endeavour and Arch have this variable in /etc/os-release. Let's hope manjaro is the same.
  elif [[ "$ARCH_ID" == "rolling" ]]; then
             wget -q $repo/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
       else
