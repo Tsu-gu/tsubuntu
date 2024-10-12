@@ -79,6 +79,17 @@ elif [[ "$rhel_version" == "9" ]]; then
         echo "Unsupported OpenSUSE version: $OS_ID"
         exit 1
     fi
+
+ # Check for Manjaro
+ elif [[ "$OS_ID" == "manjaro" ]]; then
+            wget -q $repo/tsubuntumanjaro.sh && chmod +x tsubuntumanjaro.sh && ./tsubuntumanjaro.sh
+      else
+        echo "Error"
+        exit 1
+    fi
+
+
+
     
     # Check for Arch 
  elif [[ "$ARCH_ID" == "rolling" ]]; then
@@ -88,6 +99,11 @@ elif [[ "$rhel_version" == "9" ]]; then
         exit 1
     fi
     
+
+
+
+
+
 
     
 else
