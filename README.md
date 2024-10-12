@@ -101,7 +101,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntutumblewee
 ```
 
 ## Arch Linux
-- tested on Endeavour OS. Will likely cause problems on Manjaro as it comes pre-installed with its own extensions.
+- tested on Endeavour OS
   
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
