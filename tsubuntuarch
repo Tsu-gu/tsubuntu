@@ -3,9 +3,14 @@ echo "┌───────────────────────�
 echo "│         Tsubuntu for Arch Linux          │"
 echo "└──────────────────────────────────────────┘"
 
-sudo yay -S gnome-tweaks unzip gnome-extensions dconf-editor flatpak snapd 
+sudo yay -S --noconfirm base-devel gnome-tweaks gnome-software gnome-shell-extensions gnome-browser-connector unzip gnome-extensions dconf-editor flatpak 
 
-
+git clone https://aur.archlinux.org/snapd.git
+cd snapd
+makepkg -si
+sudo systemctl enable --now snapd.socket
+sudo systemctl enable --now snapd.apparmor.service
+sudo ln -s /var/lib/snapd/snap /snap
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
