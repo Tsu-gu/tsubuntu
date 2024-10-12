@@ -17,7 +17,8 @@ echo "┌───────────────────────�
 echo "│Enabling right click > new file...        │"                        
 echo "└──────────────────────────────────────────┘"
 
-touch $HOME/Templates/NewFile.txt
+# Manjaro has already set this up
+# touch $HOME/Templates/NewFile.txt
 
 # extensions making gnome usable
 
