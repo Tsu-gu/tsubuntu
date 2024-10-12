@@ -19,6 +19,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 - Super + Shift + S brings up the area screenshot
 - Super + E opens the file manager
 - Ctrl + Alt + T opens the terminal
+- Adds Desktop as a bookmark in Nautilus
 ## Installed software:
 - flatpak
 - snap
