@@ -80,22 +80,14 @@ elif [[ "$rhel_version" == "9" ]]; then
         exit 1
     fi
 
- # Check for Manjaro
- elif [[ "$OS_ID" == "manjaro" ]]; then
-            wget -q $repo/tsubuntumanjaro.sh && chmod +x tsubuntumanjaro.sh && ./tsubuntumanjaro.sh
-      else
-        echo "Error"
-        exit 1
-    fi
-
-
-
     
     # Check for Arch 
  elif [[ "$ARCH_ID" == "rolling" ]]; then
-            wget -q $repo/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
+     if [[ "$OS_ID" == "manjaro" ]]; then
+            wget -q $repo/tsubuntumanjaro.sh && chmod +x tsubuntumanjaro.sh && ./tsubuntumanjaro.sh
       else
-        echo "Unsupported Arch version: $OS_ID"
+            wget -q $repo/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
+
         exit 1
     fi
     
