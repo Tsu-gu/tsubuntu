@@ -3,8 +3,8 @@ echo "┌───────────────────────�
 echo "│           Tsubuntu for Manjaro           │"
 echo "└──────────────────────────────────────────┘"
 
-
-sudo pacman -Syu --noconfirm gnome-browser-connector unzip dconf-editor flatpak snapd
+# flatpak is preinstalled and so is everything else missing from here. Very cool
+sudo pacman -Syu --noconfirm gnome-browser-connector unzip dconf-editor snapd
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 
