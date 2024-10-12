@@ -107,6 +107,11 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntutumblewee
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
 
 ```
+## Manjaro
+```
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntumanjaro.sh && chmod +x tsubuntumanjaro.sh && ./tsubuntumanjaro.sh
+
+```
 
 ## Other distros
 
