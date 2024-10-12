@@ -46,8 +46,8 @@ echo "┌───────────────────────�
 echo "│Installing corner tiling extension...     │"                        
 echo "└──────────────────────────────────────────┘"
 cd $HOME
-downloadedzip3="tiling-assistantleleat-on-github.v49.shell-extension.zip"
-linktozip3="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v49.shell-extension.zip"
+downloadedzip3="tiling-assistantleleat-on-github.v48.shell-extension.zip"
+linktozip3="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v48.shell-extension.zip"
 folder3="tiling-assistant@leleat-on-github"
 
 mkdir $folder3
@@ -125,6 +125,7 @@ echo "Enabling tray icons..."
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
+dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top false
 echo "┌──────────────────────────────────────────┐"
 echo "│Restart your PC and then run              │"
 echo "│Finish_Setup.sh, located on your desktop  │"
