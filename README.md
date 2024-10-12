@@ -121,6 +121,8 @@ You can just grab the script of Fedora/Tumbleweed/Debian, delete the  line that 
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/rocky.png)
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/EndeavourShowcase.png)
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/TumbleweedShowcase.png)
+![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/ManjaroShowcase.png)
+
 
 
 https://youtu.be/xf739ivb9hg?si=kVIgIrPTlO2CJKq3
