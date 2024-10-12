@@ -41,22 +41,6 @@ rm $downloadedzip1
 cd $HOME
 mv $folder1 $HOME/.local/share/gnome-shell/extensions/
 
-# the version for this stayed the same. On extensions.gnome.org the version is labeled as 83.
-echo "┌──────────────────────────────────────────┐"
-echo "│Installing desktop icons extension...     │"                        
-echo "└──────────────────────────────────────────┘"
-cd $HOME
-downloadedzip2="gtk4-dingsmedius.gitlab.com.v87.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v87.shell-extension.zip"
-folder2="gtk4-ding@smedius.gitlab.com"
-
-mkdir $folder2
-cd $folder2
-wget $linktozip2
-unzip $downloadedzip2
-rm $downloadedzip2
-cd $HOME
-mv $folder2 $HOME/.local/share/gnome-shell/extensions/
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing corner tiling extension...     │"                        
@@ -73,46 +57,6 @@ unzip $downloadedzip3
 rm $downloadedzip3
 cd $HOME
 mv $folder3 $HOME/.local/share/gnome-shell/extensions/
-
-echo "┌──────────────────────────────────────────┐"
-echo "│Installing dash to dock...                │"                        
-echo "└──────────────────────────────────────────┘"
-
-cd $HOME
-downloadedzip4="dash-to-dockmicxgx.gmail.com.v99.shell-extension.zip"
-linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v99.shell-extension.zip"
-folder4="dash-to-dock@micxgx.gmail.com"
-
-mkdir $folder4
-cd $folder4
-wget $linktozip4
-unzip $downloadedzip4
-rm $downloadedzip4
-cd $HOME
-mv $folder4 $HOME/.local/share/gnome-shell/extensions/
-
-echo "┌──────────────────────────────────────────┐"
-echo "│Installing tray icons extension...        │"                        
-echo "└──────────────────────────────────────────┘"
-
-cd $HOME
-downloadedzip4="appindicatorsupportrgcjonas.gmail.com.v59.shell-extension.zip"
-linktozip4="https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v59.shell-extension.zip"
-folder4="appindicatorsupport@rgcjonas.gmail.com"
-
-mkdir $folder4
-cd $folder4
-wget $linktozip4
-unzip $downloadedzip4
-rm $downloadedzip4
-cd $HOME
-mv $folder4 $HOME/.local/share/gnome-shell/extensions/
-
-
-
-https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v59.shell-extension.zip
-
-
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding (_)([])(X) buttons...              │"                        
