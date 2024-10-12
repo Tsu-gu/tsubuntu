@@ -8,10 +8,10 @@ sudo pacman -Syu --noconfirm gnome-browser-connector unzip dconf-editor snapd
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
 
-echo "┌──────────────────────────────────────────┐"
-echo "│Adding Flathub...                         │"                        
-echo "└──────────────────────────────────────────┘"
-sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+# echo "┌──────────────────────────────────────────┐"
+# echo "│Adding Flathub...                         │"                        
+# echo "└──────────────────────────────────────────┘"
+# sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Enabling right click > new file...        │"                        
@@ -59,11 +59,11 @@ rm $downloadedzip3
 cd $HOME
 mv $folder3 $HOME/.local/share/gnome-shell/extensions/
 
-echo "┌──────────────────────────────────────────┐"
-echo "│Adding (_)([])(X) buttons...              │"                        
-echo "└──────────────────────────────────────────┘"
+# echo "┌──────────────────────────────────────────┐"
+# echo "│Adding (_)([])(X) buttons...              │"                        
+# echo "└──────────────────────────────────────────┘"
 
-gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
+# gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Tweaking the file manager...              │"                        
