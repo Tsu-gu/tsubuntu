@@ -1,8 +1,9 @@
 #!/bin/bash
 extensionsrepo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extensions/"
 echo "┌──────────────────────────────────────────┐"
-echo "│         Tsubuntu for Ubuntu 24.10        │"
+echo "│⚙        Tsubuntu for Ubuntu 24.10      ⚙ │"
 echo "└──────────────────────────────────────────┘"
+
 sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw -y
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
