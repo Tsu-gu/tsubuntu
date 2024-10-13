@@ -90,12 +90,6 @@ elif [[ "$rhel_version" == "9" ]]; then
 
         exit 1
     fi
-    
-
-
-
-
-
 
     
 else
