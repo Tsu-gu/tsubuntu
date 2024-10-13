@@ -114,12 +114,12 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntumanjaro.s
 ```
 
 # Showcase
-![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/buntu.webp)
+![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/buntu.webp)
 
-![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/rocky.png)
-![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/EndeavourShowcase.png)
-![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/TumbleweedShowcase.png)
-![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/ManjaroShowcase.png)
+![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/rocky.png)
+![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/EndeavourShowcase.png)
+![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/TumbleweedShowcase.png)
+![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/ManjaroShowcase.png)
 
 
 
