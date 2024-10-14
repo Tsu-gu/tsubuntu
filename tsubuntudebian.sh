@@ -11,7 +11,7 @@ echo "│su                                        │"
 echo "│sudo usermod -aG sudo $USER               │"
 echo "│reboot                                    │"
 echo "└──────────────────────────────────────────┘"
-sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd mtp-tools gvfs-backends gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw -y
+sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd mtp-tools gvfs-backends gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
 # libfuse2 in order for all AppImages to run, mtp-tools for being able to plug in your phone and transfer data
 sudo systemctl enable --now snapd.socket
 # for classic snaps to run. If you really hate snap, just remove these lines.
