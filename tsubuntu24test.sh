@@ -110,7 +110,7 @@ echo "│app with support for Snap, Flatpak and    │"
 echo "│native packages. This makes the default   │"
 echo "│Snap Store redundant.                     │"
 echo -e "\e[1;31m└──────────────────────────────────────────┘\e[0m"
-read -p "Do you want to remove the Snap Store? [y/n]: " choice
+read -p "│Remove the Snap Store? [y/n]:             │" choice
 
 
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
@@ -120,9 +120,7 @@ else
     echo "│Understandable. Keeping the snap-store.   │"
     echo "└──────────────────────────────────────────┘"
 fi
-echo "┌──────────────────────────────────────────┐"
-read -p "│Enable firewall? [y/n]:                   │" choice
-echo "└──────────────────────────────────────────┘"
+ read -p "│Enable firewall?                    [y/n]:│" choice
 
 
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
