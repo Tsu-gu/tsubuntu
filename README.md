@@ -123,4 +123,4 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntumanjaro.s
 
 
 
-https://youtu.be/xf739ivb9hg?si=kVIgIrPTlO2CJKq3
+https://youtu.be/xf739ivb9hg
