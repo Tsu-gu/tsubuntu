@@ -9,22 +9,10 @@ flatpak install -assumeyes flathub it.mijorus.gearlever org.qbittorrent.qBittorr
 
 
 # filen install and integration into the desktop
-wget https://cdn.filen.io/desktop/release/filen_x86_64.AppImage
-mkdir $HOME/AppImages/
-cp filen_x86_64.AppImage $HOME/AppImages/filen.appimage
-rm filen_x86_64.AppImage
-chmod +x $HOME/AppImages/filen.appimage
+# They have a deb now, soooo.
+wget https://cdn.filen.io/@filen/desktop/release/latest/Filen_linux_amd64.deb
 
-wget https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/filen.png
-mkdir $HOME/AppImages/.icons/
-mv filen.png $HOME/AppImages/.icons/
 
-wget https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/filen.desktop
-awk -v home="$HOME" '{gsub("/home/tsugu", home); print}' filen.desktop > new_filen.desktop
-cp new_filen.desktop $HOME/.local/share/applications/filen.desktop
-chmod +x $HOME/.local/share/applications/filen.desktop
-rm new_filen.desktop
-rm filen.desktop
 # Note to self: make sure filen autostarts.
 echo "--------------------------------------------"
 read -p "Press Enter to close...."
