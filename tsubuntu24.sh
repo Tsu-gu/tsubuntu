@@ -24,6 +24,8 @@ mkdir $HOME/.local/share/gnome-shell/extensions/
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing clipboard history extension... │"                        
 echo "└──────────────────────────────────────────┘"
+# Alternatively you can also do 
+# `sudo apt install gnome-shell-extension-gpaste` and activate it.
 cd $HOME
 downloadedzip2="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
