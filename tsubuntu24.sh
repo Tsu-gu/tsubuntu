@@ -44,6 +44,7 @@ echo "┌───────────────────────�
 echo "│Installing desktop icons extension and    │"
 echo "│disabling the broken one...               │"
 echo "└──────────────────────────────────────────┘"
+# This will soon be removed as a fixed version has landed in noble-proposed
 cd $HOME
 downloadedzip2="gtk4-dingsmedius.gitlab.com.v83.shell-extension.zip"
 linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v83.shell-extension.zip"
