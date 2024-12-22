@@ -11,17 +11,19 @@ echo "│su                                        │"
 echo "│sudo usermod -aG sudo $USER               │"
 echo "│reboot                                    │"
 echo "└──────────────────────────────────────────┘"
-sudo apt install gnome-shell-extension-appindicator gnome-shell-extension-gpaste gnome-shell-extension-dashtodock gnome-shell-extension-desktop-icons-ng gnome-shell-extension-tiling-assistant gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd mtp-tools gvfs-backends gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
+sudo apt install gnome-shell-extension-appindicator gnome-shell-extension-gpaste gnome-shell-extension-dashtodock gnome-shell-extension-desktop-icons-ng gnome-shell-extension-tiling-assistant gnome-tweaks wget 
+
+# flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd mtp-tools gvfs-backends gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
 # libfuse2 in order for all AppImages to run, mtp-tools for being able to plug in your phone and transfer data
-sudo systemctl enable --now snapd.socket
+# sudo systemctl enable --now snapd.socket
 # for classic snaps to run. If you really hate snap, just remove these lines.
-sudo ln -s /var/lib/snapd/snap /snap
+# sudo ln -s /var/lib/snapd/snap /snap
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
 echo "└──────────────────────────────────────────┘"
 
-sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+# sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 echo "┌──────────────────────────────────────────┐"
 echo "│Enabling right click > new file...        │"                        
 echo "└──────────────────────────────────────────┘"
