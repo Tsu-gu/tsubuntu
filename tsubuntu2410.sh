@@ -31,21 +31,7 @@ echo "┌───────────────────────�
 echo "│Installing clipboard history extension... │"                        
 echo "└──────────────────────────────────────────┘"
 
-cd $HOME
-downloadedzip2="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
-alternativelinktozip2="$extensionsrepo$downloadedzip2"
-folder2="clipboard-history@alexsaveau.dev"
-
-mkdir $folder2
-cd $folder2
-wget --server-response $linktozip2 || wget $alternativelinktozip2
-unzip $downloadedzip2
-rm $downloadedzip2
-cd $HOME
-mv $folder2 $HOME/.local/share/gnome-shell/extensions/
-
-
+gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Tweaking the file manager and the dock... │"                        
