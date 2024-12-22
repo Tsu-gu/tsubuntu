@@ -87,13 +87,10 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Primary><Shift>Escape'
 
 
-touch "$HOME/Desktop/Finish_Setup.sh"
+wget -q $extensionsrepo/ubuntu24setup.sh
+cp ubuntu24setup.sh $HOME/Desktop/Finish_Setup.sh
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
-echo '#!/bin/bash
-gnome-extensions enable clipboard-history@alexsaveau.dev
-sleep 1
-rm "$HOME/Desktop/Finish_Setup.sh"
-' >> "$HOME/Desktop/Finish_Setup.sh"
+
 echo -e "\e[1;31m┌──────────────────────────────────────────┐\e[0m"
 echo "│This script installed a software center   │"
 echo "│app with support for Snap, Flatpak and    │"
