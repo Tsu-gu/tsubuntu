@@ -3,7 +3,9 @@ extensionsrepo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extension
 echo "┌──────────────────────────────────────────┐"
 echo "│        Tsubuntu for Ubuntu 24.04         │"
 echo "└──────────────────────────────────────────┘"
-sudo apt install gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
+# sudo apt install gnome-shell-extension-gpaste gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
+sudo apt install gnome-shell-extension-gpaste -y
+
 # libfuse2 in order for all AppImages to run
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
@@ -24,21 +26,10 @@ mkdir $HOME/.local/share/gnome-shell/extensions/
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing clipboard history extension... │"                        
 echo "└──────────────────────────────────────────┘"
-# Alternatively you can also do 
-# `sudo apt install gnome-shell-extension-gpaste` and activate it.
-cd $HOME
-downloadedzip2="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
-alternativelinktozip2="$extensionsrepo$downloadedzip2"
-folder2="clipboard-history@alexsaveau.dev"
+# This has to be bound to something else as by default it's also Super V for whatever reason. 
+gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
 
-mkdir $folder2
-cd $folder2
-wget --server-response $linktozip2 || wget $alternativelinktozip2
-unzip $downloadedzip2
-rm $downloadedzip2
-cd $HOME
-mv $folder2 $HOME/.local/share/gnome-shell/extensions/
+
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing desktop icons extension and    │"
@@ -96,17 +87,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Primary><Shift>Escape'
 
 
-touch "$HOME/Desktop/Finish_Setup.sh"
+wget -q $extensionsrepo/ubuntu24setup.sh
+cp ubuntu24setup.sh $HOME/Desktop/Finish_Setup.sh
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
-echo '#!/bin/bash
-gnome-extensions enable clipboard-history@alexsaveau.dev
-sleep 1
-gnome-extensions disable ding@rastersoft.com
-sleep 1
-gnome-extensions enable gtk4-ding@smedius.gitlab.com
-sleep 1
-rm "$HOME/Desktop/Finish_Setup.sh"
-' >> "$HOME/Desktop/Finish_Setup.sh"
 echo -e "\e[1;31m┌──────────────────────────────────────────┐\e[0m"
 echo "│This script installed a software center   │"
 echo "│app with support for Snap, Flatpak and    │"
