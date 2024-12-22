@@ -11,7 +11,7 @@ echo "│su                                        │"
 echo "│sudo usermod -aG sudo $USER               │"
 echo "│reboot                                    │"
 echo "└──────────────────────────────────────────┘"
-sudo apt install gnome-tweaks flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd mtp-tools gvfs-backends gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
+sudo apt install gnome-shell-extension-appindicator gnome-shell-extension-gpaste gnome-shell-extension-dashtodock gnome-shell-extension-desktop-icons-ng gnome-shell-extension-tiling-assistant gnome-tweaks wget flatpak unzip gdebi gnome-extensions-app dconf-editor libfuse2 snapd mtp-tools gvfs-backends gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
 # libfuse2 in order for all AppImages to run, mtp-tools for being able to plug in your phone and transfer data
 sudo systemctl enable --now snapd.socket
 # for classic snaps to run. If you really hate snap, just remove these lines.
@@ -27,102 +27,11 @@ echo "│Enabling right click > new file...        │"
 echo "└──────────────────────────────────────────┘"
 touch $HOME/Templates/NewFile.txt
 
-# extensions making gnome usable
-
-# Yes, this is necessary. It took me a long while to figure out why this damned script would only install one extension.
-mkdir $HOME/.local/share/gnome-shell/extensions/
-
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing clipboard history extension... │"                        
 echo "└──────────────────────────────────────────┘"
-cd $HOME
-downloadedzip1="clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
-linktozip1="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v41.shell-extension.zip"
-alternativelinktozip1="$extensionsrepo$downloadedzip1"
-folder1="clipboard-history@alexsaveau.dev"
-
-mkdir $folder1
-cd $folder1
-wget --server-response $linktozip1 || wget $alternativelinktozip1
-unzip $downloadedzip1
-rm $downloadedzip1
-cd $HOME
-mv $folder1 $HOME/.local/share/gnome-shell/extensions/
-
-echo "┌──────────────────────────────────────────┐"
-echo "│Installing desktop icons extension...     │"                        
-echo "└──────────────────────────────────────────┘"
-
-
-cd $HOME
-downloadedzip2="gtk4-dingsmedius.gitlab.com.v60.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v60.shell-extension.zip"
-alternativelinktozip2="$extensionsrepo$downloadedzip2"
-folder2="gtk4-ding@smedius.gitlab.com"
-
-mkdir $folder2
-cd $folder2
-wget --server-response $linktozip2 || wget $alternativelinktozip2
-unzip $downloadedzip2
-rm $downloadedzip2
-cd $HOME
-mv $folder2 $HOME/.local/share/gnome-shell/extensions/
-
-echo "┌──────────────────────────────────────────┐"
-echo "│Installing corner tiling extension...     │"                        
-echo "└──────────────────────────────────────────┘"
-
-cd $HOME
-downloadedzip3="tiling-assistantleleat-on-github.v45.shell-extension.zip"
-linktozip3="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v45.shell-extension.zip"
-alternativelinktozip3="$extensionsrepo$downloadedzip3"
-folder3="tiling-assistant@leleat-on-github"
-
-mkdir $folder3
-cd $folder3
-wget --server-response $linktozip3 || wget $alternativelinktozip3
-unzip $downloadedzip3
-rm $downloadedzip3
-cd $HOME
-mv $folder3 $HOME/.local/share/gnome-shell/extensions/
-
-echo "┌──────────────────────────────────────────┐"
-echo "│Installing dash to dock...                │"                        
-echo "└──────────────────────────────────────────┘"
-
-cd $HOME
-downloadedzip4="dash-to-dockmicxgx.gmail.com.v84.shell-extension.zip"
-linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v84.shell-extension.zip"
-alternativelinktozip4="$extensionsrepo$downloadedzip4"
-folder4="dash-to-dock@micxgx.gmail.com"
-
-mkdir $folder4
-cd $folder4
-wget --server-response $linktozip4 || wget $alternativelinktozip4
-unzip $downloadedzip4
-rm $downloadedzip4
-cd $HOME
-mv $folder4 $HOME/.local/share/gnome-shell/extensions/
-
-echo "┌──────────────────────────────────────────┐"
-echo "│Installing tray icons extension...        │"                        
-echo "└──────────────────────────────────────────┘"
-
-cd $HOME
-downloadedzip4="appindicatorsupportrgcjonas.gmail.com.v53.shell-extension.zip"
-linktozip4="https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v53.shell-extension.zip"
-alternativelinktozip4="$extensionsrepo$downloadedzip4"
-folder4="appindicatorsupport@rgcjonas.gmail.com"
-
-mkdir $folder4
-cd $folder4
-wget --server-response $linktozip4 || wget $alternativelinktozip4
-unzip $downloadedzip4
-rm $downloadedzip4
-cd $HOME
-mv $folder4 $HOME/.local/share/gnome-shell/extensions/
-
-
+# This has to be bound to something else as by default it's also Super V for whatever reason. 
+gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding (_)([])(X) buttons...              │"                        
@@ -167,28 +76,11 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'gnome-terminal'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding '<Primary><Alt>t'
 
+  
 
-# I know how stupid this looks but when I tried to put the content of dock-setup.sh into this echo section it would not work properly. 
-touch "$HOME/Desktop/Finish_Setup.sh"
+wget -q $extensionsrepo/debiansetup.sh
+cp debiansetup.sh $HOME/Desktop/Finish_Setup.sh
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
-echo '#!/bin/bash
-gnome-extensions enable clipboard-history@alexsaveau.dev
-sleep 1
-echo "Enabling the clipboard history extension..."
-gnome-extensions enable gtk4-ding@smedius.gitlab.com
-sleep 1
-echo "Enabling the desktop icons extension..."
-gnome-extensions enable dash-to-dock@micxgx.gmail.com
-sleep 1
-echo "Enabling the dash to dock extension..."
-gnome-extensions enable tiling-assistant@leleat-on-github
-sleep 1
-echo "Enabling the tiling assistant extension..."
-gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
-sleep 1
-echo "Enabling tray icons..."
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
-' >> "$HOME/Desktop/Finish_Setup.sh"
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Restart your PC and then run              │"
