@@ -87,20 +87,9 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Primary><Shift>Escape'
 
 
-touch "$HOME/Desktop/Finish_Setup.sh"
+wget -q $extensionsrepo/ubuntu24setup.sh
+cp ubuntu24setup.sh $HOME/Desktop/Finish_Setup.sh
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
-echo '#!/bin/bash
-gnome-extensions enable GPaste@gnome-shell-extensions.gnome.org
-sleep 1
-gsettings set org.gnome.GPaste images-support 'true'
-gsettings set org.gnome.GPaste show-history '<Super>V'
-gsettings set org.gnome.GPaste max-displayed-history-size 10
-gnome-extensions disable ding@rastersoft.com
-sleep 1
-gnome-extensions enable gtk4-ding@smedius.gitlab.com
-sleep 1
-rm "$HOME/Desktop/Finish_Setup.sh"
-' >> "$HOME/Desktop/Finish_Setup.sh"
 echo -e "\e[1;31m┌──────────────────────────────────────────┐\e[0m"
 echo "│This script installed a software center   │"
 echo "│app with support for Snap, Flatpak and    │"
