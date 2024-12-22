@@ -4,13 +4,12 @@ echo "┌───────────────────────�
 echo "│⚙        Tsubuntu for Ubuntu 24.10      ⚙ │"
 echo "└──────────────────────────────────────────┘"
 
-sudo apt install gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
+sudo apt install gnome-shell-extension-gpaste gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
 echo "└──────────────────────────────────────────┘"
 
  sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
 
 
 echo "┌──────────────────────────────────────────┐"
@@ -88,7 +87,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 
 
 wget -q $extensionsrepo/ubuntu24setup.sh
-cp ubuntu24setup.sh $HOME/Desktop/Finish_Setup.sh
+cp ubuntu2410setup.sh $HOME/Desktop/Finish_Setup.sh
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
 
 echo -e "\e[1;31m┌──────────────────────────────────────────┐\e[0m"
