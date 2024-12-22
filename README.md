@@ -27,6 +27,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 - mtp-tools and gvfs-backends on Debian (to be able to transfer files from a connected phone)
 - gnome-tweaks, gdebi, gnome-extensions-app, dconf-editor, libfuse2
 - gufw(Ubuntu and Debian)/firewall-config(Fedora and RHEL)
+- bash auto completion
 ## Installed extensions:
 - tray icons
 - corner tiling
