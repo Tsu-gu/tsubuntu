@@ -72,7 +72,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Primary><Shift>Escape'
 
 
-wget -q $extensionsrepo/ubuntu24setup.sh
+wget -q $extensionsrepo/ubuntu2410setup.sh
 cp ubuntu2410setup.sh $HOME/Desktop/Finish_Setup.sh
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
 
