@@ -108,10 +108,7 @@ rm $downloadedzip4
 cd $HOME
 mv $folder4 $HOME/.local/share/gnome-shell/extensions/
 
-
-
-https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v59.shell-extension.zip
-
+# https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v59.shell-extension.zip
 
 
 echo "┌──────────────────────────────────────────┐"
