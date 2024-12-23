@@ -110,7 +110,6 @@ mv $folder4 $HOME/.local/share/gnome-shell/extensions/
 
 # https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v59.shell-extension.zip
 
-
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding (_)([])(X) buttons...              │"                        
 echo "└──────────────────────────────────────────┘"
@@ -140,7 +139,6 @@ echo "┌───────────────────────�
 echo "│Setting up shortcuts (try Super + E)      │"
 echo "└──────────────────────────────────────────┘"
 
-
 gsettings set org.gnome.shell.keybindings screenshot "['Print']"
 gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
@@ -154,7 +152,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "[
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ name 'terminal'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'gnome-terminal'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding '<Primary><Alt>t'
-
 
 # I know how stupid this looks but when I tried to put the content of dock-setup.sh into this echo section it would not work properly. 
 touch "$HOME/Desktop/Finish_Setup.sh"
@@ -177,10 +174,6 @@ sleep 1
 echo "Enabling tray icons..."
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
 ' >> "$HOME/Desktop/Finish_Setup.sh"
-
-
-
-
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Restart your PC and then run              │"
