@@ -33,7 +33,7 @@ elif [[ "$OS_ID" == "debian" ]]; then
         wget -q $repo/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
     elif [[ "$OS_VERSION" == "11" ]]; then
     	echo "This doesn't exist yet."
-        wget -q $repo/tsubuntudebian11.sh && chmod +x tsubuntudebian11.sh && ./tsubuntudebian11.sh
+        wget -q $repo/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
     elif [[ "$CODENAME" == "trixie" ]]; then
         wget -q $repo/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
     else
@@ -44,12 +44,12 @@ elif [[ "$OS_ID" == "debian" ]]; then
 # Check for Fedora versions
 elif [[ "$OS_ID" == "fedora" ]]; then
     if [[ "$OS_VERSION" == "40" ]]; then
-        wget -q $repo/tsubuntufedora40.sh && chmod +x tsubuntufedora40.sh && ./tsubuntufedora40.sh
+        wget -q $repo/others/tsubuntufedora40.sh && chmod +x tsubuntufedora40.sh && ./tsubuntufedora40.sh
     elif [[ "$OS_VERSION" == "41" ]]; then
-        wget -q $repo/tsubuntufedora41.sh && chmod +x tsubuntufedora41.sh && ./tsubuntufedora41.sh
+        wget -q $repo/others/tsubuntufedora41.sh && chmod +x tsubuntufedora41.sh && ./tsubuntufedora41.sh
     elif [[ "$OS_VERSION" == "42" ]]; then
     	echo "This doesn't exist yet."
-        wget -q $repo/tsubuntufedora42.sh && chmod +x tsubuntufedora42.sh && ./tsubuntufedora42.sh
+        wget -q $repo/others/tsubuntufedora42.sh && chmod +x tsubuntufedora42.sh && ./tsubuntufedora42.sh
     else
         echo "Unsupported Fedora version: $OS_VERSION"
         exit 1
@@ -70,12 +70,12 @@ elif [[ "$rhel_version" == "9" ]]; then
 # Check for SUSE versions
  elif [[ "$OS_SUSE" == "opensuse" ]]; then
     if [[ "$OS_ID" == "opensuse-tumbleweed" ]]; then
-        wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
+        wget -q $repo/others/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
     elif [[ "$OS_ID" == "opensuse-leap" ]]; then
         echo "LEAP"
-        wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
+        wget -q $repo/others/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
    elif [[ "$OS_ID" == "opensuse-slowroll" ]]; then
-        wget -q $repo/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
+        wget -q $repo/others/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
     else
         echo "Unsupported OpenSUSE version: $OS_ID"
         exit 1
@@ -85,9 +85,9 @@ elif [[ "$rhel_version" == "9" ]]; then
     # Check for Arch 
  elif [[ "$ARCH_ID" == "rolling" ]]; then
      if [[ "$OS_ID" == "manjaro" ]]; then
-            wget -q $repo/tsubuntumanjaro.sh && chmod +x tsubuntumanjaro.sh && ./tsubuntumanjaro.sh
+            wget -q $repo/others/tsubuntumanjaro.sh && chmod +x tsubuntumanjaro.sh && ./tsubuntumanjaro.sh
       else
-            wget -q $repo/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
+            wget -q $repo/others/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
 
         exit 1
     fi
