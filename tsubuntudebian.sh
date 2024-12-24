@@ -76,8 +76,6 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ command 'gnome-terminal'
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/ binding '<Primary><Alt>t'
 
-  
-
 wget -q $extensionsrepo/debiansetup.sh
 cp debiansetup.sh $HOME/Desktop/Finish_Setup.sh
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
