@@ -75,13 +75,13 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh
 **41** 
 
 ```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora41.sh && chmod +x tsubuntufedora41.sh && ./tsubuntufedora41.sh
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntufedora41.sh && chmod +x tsubuntufedora41.sh && ./tsubuntufedora41.sh
 ```
 
 **40**
 
 ```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora40.sh && chmod +x tsubuntufedora40.sh && ./tsubuntufedora40.sh
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntufedora40.sh && chmod +x tsubuntufedora40.sh && ./tsubuntufedora40.sh
 ```
 
 ## ⚙RHEL/Rocky/Alma 
@@ -89,7 +89,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntufedora40.
 **9**
 
 ```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubunturhel9.sh && chmod +x tsubunturhel9.sh && ./tsubunturhel9.sh
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubunturhel9.sh && chmod +x tsubunturhel9.sh && ./tsubunturhel9.sh
 ```
 
 ## ⚙OpenSUSE 
@@ -97,19 +97,19 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubunturhel9.sh 
 **Tumbleweed**
 
 ```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
 ```
 
 ## ⚙Arch Linux
 - tested on Endeavour OS
   
 ```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
 
 ```
 ## ⚙Manjaro
 ```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntumanjaro.sh && chmod +x tsubuntumanjaro.sh && ./tsubuntumanjaro.sh
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntumanjaro.sh && chmod +x tsubuntumanjaro.sh && ./tsubuntumanjaro.sh
 
 ```
 
