@@ -94,7 +94,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubunturh
 
 ## ⚙OpenSUSE 
 
-**Tumbleweed**
+**Tumbleweed & Leap**
 
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
