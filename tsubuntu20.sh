@@ -6,7 +6,7 @@ echo "└───────────────────────�
 
 # I tend to avoid PPAs, but having webp support is worth it
 sudo add-apt-repository ppa:ubuntuhandbook1/webp-pixbuf-loader -y
-sudo apt install webp-pixbuf-loader gnome-tweaks gdebi flatpak unzip dconf-editor gnome-shell-extensions gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw -y
+sudo apt install webp-pixbuf-loader gnome-tweaks gdebi flatpak unzip dconf-editor gnome-shell-extensions gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
