@@ -1,5 +1,5 @@
 #!/bin/bash
-# Fun fact: this was my first distro 
+# Fun fact: this was my first distro, so I thought why not also make the script work for it. All that was needed was to add the ppa for webp support and to change the area screenshot shortcut.
 echo "┌──────────────────────────────────────────┐"
 echo "│         Tsubuntu for Ubuntu 20.04        │"
 echo "└──────────────────────────────────────────┘"
@@ -23,15 +23,11 @@ echo "│Enabling webp support...                  │"
 echo "└──────────────────────────────────────────┘"
 xdg-mime default org.gnome.eog.desktop image/webp
 
-
-
-
 # extensions making gnome usable
 
 # Yes, this is necessary. It took me a long while to figure out why this damned script would only install one extension.
 
 mkdir $HOME/.local/share/gnome-shell/extensions/
-
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing clipboard history extension... │"                        
@@ -68,9 +64,6 @@ rm $downloadedzip1
 cd $HOME
 mv $folder1 $HOME/.local/share/gnome-shell/extensions/
 
-
-
-
 echo "┌──────────────────────────────────────────┐"
 echo "│Tweaking the file manager and the dock... │"                        
 echo "└──────────────────────────────────────────┘"
@@ -86,12 +79,10 @@ echo "┌───────────────────────�
 echo "│Remember numlock state...                 │"                        
 echo "└──────────────────────────────────────────┘"
 
-
 gsettings set org.gnome.desktop.peripherals.keyboard remember-numlock-state 'true'
 echo "┌──────────────────────────────────────────┐"
 echo "│Setting up shortcuts (try Super + E)      │"
 echo "└──────────────────────────────────────────┘"
-
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot "['<Shift><Super>s']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys home "['<Super>e']"
@@ -117,7 +108,7 @@ echo "│app with support for Snap, Flatpak and    │"
 echo "│native packages. This makes the default   │"
 echo "│Snap Store redundant.                     │"
 echo -e "\e[1;31m└──────────────────────────────────────────┘\e[0m"
-read -p "Do you want to remove the Snap Store? [y/n]: " choice
+read -p "│Remove the Snap Store?              [y/n]:│" choice
 
 
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
@@ -127,6 +118,19 @@ else
     echo "│Understandable. Keeping the snap-store.   │"
     echo "└──────────────────────────────────────────┘"
 fi
+ read -p "│Enable firewall?                    [y/n]:│" choice
+
+
+if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+    sudo ufw default deny incoming
+    sudo ufw default allow outgoing
+    sudo ufw enable
+else
+    echo "┌──────────────────────────────────────────┐"
+    echo "│Understandable.                           │"
+    echo "└──────────────────────────────────────────┘"
+fi
+
     echo "┌──────────────────────────────────────────┐"
     echo "│Restart your PC and then run              │"
     echo "│Finish_Setup.sh, located on your desktop  │"
