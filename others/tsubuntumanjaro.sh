@@ -127,6 +127,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && 
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
 systemctl enable --now snapd.apparmor
+# Change the dock's app launcher to be on the bottom of the panel rather than on the top.
 dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top false
 echo "┌──────────────────────────────────────────┐"
 echo "│Restart your PC and then run              │"
