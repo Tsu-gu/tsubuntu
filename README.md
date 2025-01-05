@@ -6,7 +6,7 @@ The main point of this script is to tweak Ubuntu to behave the way I like it, an
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh
 
 ```
-
+Reporting any bugs or issues found is greatly appreciated.
 
 # Tweaks
 
