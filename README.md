@@ -2,7 +2,7 @@
 
 The main point of this script is to tweak Ubuntu to behave the way I like it, and then tweak other distros to behave as close to this setup as possible. I mainly focus on **Ubuntu** and **Debian**.
 
-The way I make these scripts is not to always turn distros into a 1:1 copy of Ubuntu. For example Manjaro uses their nice theme, I'm not touching that. Most of the distros here ship with stock GNOME so I won't forcibly install Yaru and hope for the best. What makes Ubuntu special for me aren't its colors, but its functionality. That's what these scripts try to replicate.
+The way I make these scripts is not to always turn distros into a 1:1 copy of Ubuntu. For example Manjaro uses their own theme, so I'm not touching that. Most of the distros here ship with stock GNOME so I won't forcibly install Yaru and hope for the best. What makes Ubuntu special for me aren't its colors, but its functionality. That's what these scripts try to replicate.
 ```
                                                     
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh
