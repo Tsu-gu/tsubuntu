@@ -44,10 +44,10 @@ _I have tested each of these in a VM multiple times. if you encounter any bugs o
 # Supported and tested distros:
 
 ## ⚙Ubuntu
-**24.10 Oracular Oriole** 
+**25.04 Plucky Puffin** 
 
 ```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2410.sh && chmod +x tsubuntu2410.sh && ./tsubuntu2410.sh
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2504.sh && chmod +x tsubuntu2504.sh && ./tsubuntu2504.sh
 ```
 
 **24.04 Noble Numbat**
