@@ -22,9 +22,6 @@ touch $HOME/Templates/NewFile.txt
 # Yes, this is necessary. It took me a long while to figure out why this damned script would only install one extension.
 mkdir $HOME/.local/share/gnome-shell/extensions/
 
-echo "┌──────────────────────────────────────────┐"
-echo "│Installing clipboard history extension... │"                        
-echo "└──────────────────────────────────────────┘"
 # This has to be bound to something else as by default it's also Super V for whatever reason. 
 gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
 
