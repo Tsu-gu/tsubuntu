@@ -29,26 +29,6 @@ echo "└───────────────────────�
 gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
 
 
-
-echo "┌──────────────────────────────────────────┐"
-echo "│Installing desktop icons extension and    │"
-echo "│disabling the broken one...               │"
-echo "└──────────────────────────────────────────┘"
-# This will soon be removed as a fixed version has landed in noble-proposed
-cd $HOME
-downloadedzip2="gtk4-dingsmedius.gitlab.com.v83.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v83.shell-extension.zip"
-alternativelinktozip2="$extensionsrepo$downloadedzip2"
-folder2="gtk4-ding@smedius.gitlab.com"
-
-mkdir $folder2
-cd $folder2
-wget --server-response $linktozip2 || wget $alternativelinktozip2
-unzip $downloadedzip2
-rm $downloadedzip2
-cd $HOME
-mv $folder2 $HOME/.local/share/gnome-shell/extensions/
-
 echo "┌──────────────────────────────────────────┐"
 echo "│Tweaking the file manager and the dock... │"                        
 echo "└──────────────────────────────────────────┘"
