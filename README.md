@@ -11,7 +11,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
   - [Installed extensions](#installed-extensions)
 - [Supported distros](#supported-and-tested-distros)
 - [Showcase (screenshots)](#showcase)
-- [Unityfy Ubuntu without extensions](#unityfy)
+- [Unityfy GNOME without extensions](#unityfy)
   
 The main point of this script is to tweak Ubuntu to behave the way I like it, and then tweak other distros to behave as close to this setup as possible. I mainly focus on **Ubuntu** and **Debian**.
 
@@ -136,7 +136,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntuma
 https://youtu.be/xf739ivb9hg
 ***
 # Unityfy
-**This is not part of the script but with just two commands you can make Ubuntu's GNOME resemble Unity that much more**
+**This is not part of the script but with just two commands you can make GNOME resemble Unity that much more**
 
 ```
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
