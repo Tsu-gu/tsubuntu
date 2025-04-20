@@ -4,6 +4,7 @@
   - [Installed software](#installed-software)
   - [Installed extensions](#installed-extensions)
 - [Supported distros](#supported-and-tested-distros)
+- [Showcase (screenshots)](#showcase)
   
 The main point of this script is to tweak Ubuntu to behave the way I like it, and then tweak other distros to behave as close to this setup as possible. I mainly focus on **Ubuntu** and **Debian**.
 
@@ -11,7 +12,7 @@ The way I make these scripts is not to always turn distros into a 1:1 copy of Ub
 
 What makes Ubuntu special for me aren't its colors, but its functionality. That's what these scripts try to replicate.
 ```
-                                                    
+          
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh
 
 ```
