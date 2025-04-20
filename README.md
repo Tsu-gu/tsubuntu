@@ -11,6 +11,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
   - [Installed extensions](#installed-extensions)
 - [Supported distros](#supported-and-tested-distros)
 - [Showcase (screenshots)](#showcase)
+- [Unityfy Ubuntu without extensions](#unityfy)
   
 The main point of this script is to tweak Ubuntu to behave the way I like it, and then tweak other distros to behave as close to this setup as possible. I mainly focus on **Ubuntu** and **Debian**.
 
@@ -127,12 +128,17 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntuma
 
 # Showcase
 ![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/buntu.webp)
-
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/rocky.png)
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/EndeavourShowcase.png)
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/TumbleweedShowcase.png)
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/ManjaroShowcase.png)
 
-
-
 https://youtu.be/xf739ivb9hg
+
+# Unityfy
+```
+gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
+dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top true
+```
+![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/ubuntu-gnome-unity-1.png)
+![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/ubuntu-gnome-unity-2.png)
