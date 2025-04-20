@@ -145,3 +145,6 @@ dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top true
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/ubuntu-gnome-unity-1.png)
 
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/ubuntu-gnome-unity-2.png)
+
+There's also an option to make the side panel look even more like unity but I found that it's completely broken. Apps will disappear, you can't add new ones, etc. If you still want to give it a go:
+`gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items true`
