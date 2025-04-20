@@ -136,6 +136,8 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntuma
 https://youtu.be/xf739ivb9hg
 ***
 # Unityfy
+**This is not part of the script but with just two commands you can make Ubuntu's GNOME resemble Unity that much more**
+
 ```
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
 dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top true
