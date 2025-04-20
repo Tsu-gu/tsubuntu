@@ -1,5 +1,6 @@
 ![logo](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/tsubuntu-logo-fedora-debian-buntu.png)
-
+- [Tweaks](#tweaks)
+  - [Gnome](##gnome) 
 The main point of this script is to tweak Ubuntu to behave the way I like it, and then tweak other distros to behave as close to this setup as possible. I mainly focus on **Ubuntu** and **Debian**.
 
 The way I make these scripts is not to always turn distros into a 1:1 copy of Ubuntu. For example Manjaro uses their own theme, so I'm not touching that. Most of the distros here ship with stock GNOME so I won't forcibly install Yaru and Ubuntu's font and hope for the best.
