@@ -134,11 +134,12 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntuma
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/ManjaroShowcase.png)
 
 https://youtu.be/xf739ivb9hg
-
+***
 # Unityfy
 ```
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
 dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top true
 ```
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/ubuntu-gnome-unity-1.png)
+
 ![screenshot2](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/ubuntu-gnome-unity-2.png)
