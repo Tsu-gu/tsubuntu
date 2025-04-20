@@ -1,4 +1,10 @@
 ![logo](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/tsubuntu-logo-fedora-debian-buntu.png)
+```
+          
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh
+
+```
+
 - [Tweaks](#tweaks)
   - [Gnome](#gnome)
   - [Installed software](#installed-software)
@@ -11,11 +17,7 @@ The main point of this script is to tweak Ubuntu to behave the way I like it, an
 The way I make these scripts is not to always turn distros into a 1:1 copy of Ubuntu. For example Manjaro uses their own theme, so I'm not touching that. Most of the distros here ship with stock GNOME so I won't forcibly install Yaru and Ubuntu's font and hope for the best.
 
 What makes Ubuntu special for me aren't its colors, but its functionality. That's what these scripts try to replicate.
-```
-          
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh
 
-```
 Reporting any bugs or issues found is greatly appreciated.
 
 # Tweaks
@@ -46,7 +48,6 @@ Reporting any bugs or issues found is greatly appreciated.
 - dash to dock
 - desktop icons
 
-_I have tested each of these in a VM multiple times. if you encounter any bugs or unexpected behaviours, feel free to open a PR._
 * * *
 # Supported and tested distros:
 
