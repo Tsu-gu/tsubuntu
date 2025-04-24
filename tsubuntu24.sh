@@ -15,7 +15,7 @@ sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flat
 echo "┌──────────────────────────────────────────┐"
 echo "│Enabling right click > new file...        │"                        
 echo "└──────────────────────────────────────────┘"
-touch $HOME/Templates/NewFile.txt
+test -f $HOME/Templates/NewFile.txt || touch $HOME/Templates/NewFile.txt
 
 # extensions making gnome usable
 
