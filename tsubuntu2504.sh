@@ -15,10 +15,9 @@ sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flat
 echo "┌──────────────────────────────────────────┐"
 echo "│Enabling right click > new file...        │"                        
 echo "└──────────────────────────────────────────┘"
-touch $HOME/Templates/NewFile.txt
-
+test -f $HOME/Templates/NewFile.txt || touch $HOME/Templates/NewFile.txt
 # extensions making gnome usable
-
+# This isn't necessary anymore but creating the directory doesn't negatively impact anything
 # Yes, this is necessary. It took me a long while to figure out why this damned script would only install one extension.
 mkdir $HOME/.local/share/gnome-shell/extensions/
 
