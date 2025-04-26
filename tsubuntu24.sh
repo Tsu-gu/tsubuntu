@@ -98,6 +98,18 @@ else
     echo "└──────────────────────────────────────────┘"
 fi
 
+ read -p "│Disable upgrades to new versions?   [y/n]:│" choice
+
+
+if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+    sudo sed -i 's/normal$/never/g' /etc/update-manager/release-upgrades
+else
+    echo "┌──────────────────────────────────────────┐"
+    echo "│Understandable.                           │"
+    echo "└──────────────────────────────────────────┘"
+fi
+
+
     echo "┌──────────────────────────────────────────┐"
     echo "│Restart your PC and then run              │"
     echo "│Finish_Setup.sh, located on your desktop  │"
