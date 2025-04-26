@@ -102,7 +102,7 @@ fi
 
 
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
-    sudo sed -i 's/normal$/never/g' /etc/update-manager/release-upgrades
+    sudo sed -i 's/lts$/never/g' /etc/update-manager/release-upgrades
 else
     echo "┌──────────────────────────────────────────┐"
     echo "│Understandable.                           │"
