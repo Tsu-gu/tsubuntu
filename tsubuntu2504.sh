@@ -3,7 +3,7 @@ extensionsrepo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extension
 echo "┌──────────────────────────────────────────┐"
 echo "│        Tsubuntu for Ubuntu 25.04         │"
 echo "└──────────────────────────────────────────┘"
-sudo apt install gnome-shell-extension-gpaste gnome-tweaks flatpak gnome-shell-extensions-prefs dconf-editor libfuse2t64 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
+sudo apt install gnome-shell-extension-gpaste gnome-tweaks flatpak dconf-editor libfuse2t64 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
 
 # libfuse2t64 in order for all AppImages to run
 echo "┌──────────────────────────────────────────┐"
