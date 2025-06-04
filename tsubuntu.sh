@@ -39,7 +39,7 @@ elif [[ "$OS_ID" == "debian" ]]; then
     	echo "This doesn't exist yet."
         wget -q $repo/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
     elif [[ "$CODENAME" == "trixie" ]]; then
-        wget -q $repo/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
+        wget -q $repo/tsubuntudebian13.sh && chmod +x tsubuntudebian13.sh && ./tsubuntudebian13.sh
     else
         echo "Unsupported Debian version: $OS_VERSION"
         exit 1
