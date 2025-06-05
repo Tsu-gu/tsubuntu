@@ -1,5 +1,5 @@
 #!/bin/bash
-# For Ubuntu 24.10, 24.04, 22.04, 20.04, Debian 12, and Fedora 40/41
+# For Ubuntu 25.04, 24.04, 22.04, 20.04, Debian 12, 13, and Fedora 40/41
 repo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main"
 rhel_version=$(awk -F'=' '/^VERSION_ID/ {gsub(/"/, "", $2); split($2, a, "."); print a[1]}' /etc/os-release)
 OS_SUSE=$(awk -F'=' '/^ID=/ {gsub(/"/, "", $2); split($2, a, "-"); print a[1]}' /etc/os-release)
@@ -36,10 +36,11 @@ elif [[ "$OS_ID" == "debian" ]]; then
     if [[ "$OS_VERSION" == "12" ]]; then
         wget -q $repo/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
     elif [[ "$OS_VERSION" == "11" ]]; then
-    	echo "This doesn't exist yet."
         wget -q $repo/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
     elif [[ "$CODENAME" == "trixie" ]]; then
         wget -q $repo/tsubuntudebian13.sh && chmod +x tsubuntudebian13.sh && ./tsubuntudebian13.sh
+    elif [[ "$CODENAME" == "13" ]]; then
+        wget -q $repo/tsubuntudebian13.sh && chmod +x tsubuntudebian13.sh && ./tsubuntudebian13.sh    
     else
         echo "Unsupported Debian version: $OS_VERSION"
         exit 1
