@@ -50,7 +50,7 @@ Reporting any bugs or issues found is greatly appreciated.
 - desktop icons
 
 * * *
-# Supported and tested distros:
+# Tested distros:
 
 ## ⚙Ubuntu
 **25.04 Plucky Puffin** 
@@ -78,11 +78,26 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu20.sh && 
 ```
 
 ## ⚙Debian
+**13 Trixie**
+
+```
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
+```
 **12 Bookworm**
 
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
 ```
+
+## ⚙RHEL/Rocky/Alma 
+
+**9**
+
+```
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubunturhel9.sh && chmod +x tsubunturhel9.sh && ./tsubunturhel9.sh
+```
+
+# Distros I adapted the script for but I don't test them
 
 ## ⚙Fedora
 **41** 
@@ -97,13 +112,6 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntufe
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntufedora40.sh && chmod +x tsubuntufedora40.sh && ./tsubuntufedora40.sh
 ```
 
-## ⚙RHEL/Rocky/Alma 
-
-**9**
-
-```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubunturhel9.sh && chmod +x tsubunturhel9.sh && ./tsubunturhel9.sh
-```
 
 ## ⚙OpenSUSE 
 
