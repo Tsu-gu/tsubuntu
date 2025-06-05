@@ -9,7 +9,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
   - [Gnome](#gnome)
   - [Installed software](#installed-software)
   - [Installed extensions](#installed-extensions)
-- [Supported distros](#supported-and-tested-distros)
+- [Supported distros](#tested-distros)
 - [Showcase (screenshots)](#showcase)
 - [Unityfy GNOME without extensions](#unityfy)
   
