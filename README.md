@@ -50,6 +50,7 @@ Reporting any bugs or issues found is greatly appreciated.
 - desktop icons
 
 * * *
+
 # Tested distros:
 
 ## ⚙Ubuntu
@@ -96,6 +97,8 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubunturhel9.sh && chmod +x tsubunturhel9.sh && ./tsubunturhel9.sh
 ```
+
+* * *
 
 # Distros I adapted the script for but I don't test them
 
