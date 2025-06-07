@@ -128,7 +128,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntutu
 ```
 
 ## ⚙Arch Linux
-- tested on Endeavour OS because I have better things to do than installing Arch
+- tested on Endeavour OS
   
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
