@@ -49,6 +49,7 @@ Reporting any bugs or issues found is greatly appreciated.
 - dash to dock
 - desktop icons
 
+Ubuntu already comes with all of these except for a clipboard manager
 * * *
 
 # Tested distros:
