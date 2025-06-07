@@ -103,6 +103,8 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubunturh
 
 # Distros I adapted the script for but I don't test them
 
+I don't use these so I don't really have the time to update the scripts.
+
 ## ⚙Fedora
 **41** 
 
