@@ -131,6 +131,22 @@ else
     echo "└──────────────────────────────────────────┘"
 fi
 
+read -p "Attach Ubuntu Pro now?                [y/n]: " choice
+if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+    xdg-open 'https://ubuntu.com/pro/dashboard'
+    read -p "Please paste your Ubuntu Pro token: " token
+    if [[ -n "$token" ]]; then
+        sudo pro attach "$token"
+    else
+        echo "No token entered. Skipping Ubuntu Pro attach."
+    fi
+else
+    echo "┌──────────────────────────────────────────┐"
+    echo "│Understandable. Skipping Ubuntu Pro.     │"
+    echo "└──────────────────────────────────────────┘"
+fi
+
+
     echo "┌──────────────────────────────────────────┐"
     echo "│Restart your PC and then run              │"
     echo "│Finish_Setup.sh, located on your desktop  │"
