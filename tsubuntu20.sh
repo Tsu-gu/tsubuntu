@@ -131,16 +131,13 @@ else
     echo "└──────────────────────────────────────────┘"
 fi
 
-echo "Focal Fossa (20.04) reached the end of its standard support, however it still has 5 more years ahead of itself if you just create an account."
+echo "Focal Fossa (20.04) reached the end of its standard"
+echo "support, however it still has 5 more years ahead of"
+echo "itself if you just create an account."
 read -p "Attach Ubuntu Pro now?                [y/n]: " choice
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
     xdg-open 'https://ubuntu.com/pro/dashboard'
-    read -p "Please paste your Ubuntu Pro token: " token
-    if [[ -n "$token" ]]; then
-        sudo pro attach "$token"
-    else
-        echo "No token entered. Skipping Ubuntu Pro attach."
-    fi
+   
 else
     echo "┌──────────────────────────────────────────┐"
     echo "│Understandable. Skipping Ubuntu Pro.     │"
