@@ -93,6 +93,8 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh
 
 ## ⚙RHEL/Rocky/Alma 
 
+RHEL 10 refuses to boot up in a VM.
+
 **9**
 
 ```
