@@ -12,6 +12,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 - [Supported distros](#tested-distros)
 - [Showcase (screenshots)](#showcase)
 - [Unityfy GNOME without extensions](#unityfy)
+- [Future plans](#future-plans) 
   
 The main point of this script is to tweak Ubuntu to behave the way I like it, and then tweak other distros to behave as close to this setup as possible. I mainly focus on **Ubuntu** and **Debian**.
 
