@@ -61,8 +61,8 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/ binding '<Primary><Shift>Escape'
 
 
-wget -q $extensionsrepo/ubuntu2504setup.sh
-cp ubuntu2504setup.sh $HOME/Desktop/Finish_Setup.sh
+wget -q $extensionsrepo/ubuntu2510setup.sh
+cp ubuntu2510setup.sh $HOME/Desktop/Finish_Setup.sh
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
 echo -e "\e[1;31m┌──────────────────────────────────────────┐\e[0m"
 echo "│This script installed a software center   │"
