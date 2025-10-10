@@ -11,6 +11,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
   - [Installed extensions](#installed-extensions)
 - [Pro tips](#pro-tips)
   - [OEM Installation](#oem-installation)
+  - [Picking a different flavour during install](#picking-a-different-flavour-during-install)
 - [Supported distros](#tested-distros)
 - [Showcase (screenshots)](#showcase)
 - [Unityfy GNOME without extensions](#unityfy)
@@ -59,6 +60,13 @@ In the past you could boot up the ISO and select OEM install from GRUB. In new U
 ```
 sudo mkdir -p /usr/share/desktop-provision
 sudo bash -c 'echo "mode: oem" > /usr/share/desktop-provision/whitelabel.yaml'
+```
+
+## Picking a different flavour during install
+You can install other flavours from other ISOs with the new installer by doing:
+```
+sudo mkdir -p /usr/share/desktop-provision
+sudo bash -c 'echo "flavor: kubuntu" > /usr/share/desktop-provision/whitelabel.yaml'
 ```
 
 * * *
