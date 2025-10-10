@@ -59,7 +59,10 @@ Reporting any bugs or issues found is greatly appreciated.
 Ubuntu already comes with all of these except for a clipboard manager
 # Pro Tips
 ## OEM installation
-In the past you could boot up the ISO and select OEM install from GRUB. In new Ubuntu you need to boot it up and do:
+In the past you could boot up the ISO and select OEM install from GRUB.
+<img width="781" height="338" alt="image" src="https://github.com/user-attachments/assets/4d1ba7eb-47e3-4ef8-81d3-10f012eb97ac" />
+
+In new Ubuntu you need to boot it up and do:
 ```
 sudo mkdir -p /usr/share/desktop-provision
 sudo bash -c 'echo "mode: oem" > /usr/share/desktop-provision/whitelabel.yaml'
