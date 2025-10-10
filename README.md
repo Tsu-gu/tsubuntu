@@ -55,7 +55,7 @@ Reporting any bugs or issues found is greatly appreciated.
 - clipboard manager
 - dash to dock
 - desktop icons
-- 
+  
 Ubuntu already comes with all of these except for a clipboard manager
 # Pro Tips
 ## OEM installation
