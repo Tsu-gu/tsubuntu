@@ -56,6 +56,13 @@ Ubuntu already comes with all of these except for a clipboard manager
 # Tested distros:
 
 ## ⚙Ubuntu
+
+**25.10 Questing Quokka** 
+
+```
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2510.sh && chmod +x tsubuntu2510.sh && ./tsubuntu2510.sh
+```
+
 **25.04 Plucky Puffin** 
 
 ```
