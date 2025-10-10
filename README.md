@@ -14,6 +14,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
   - [Picking a different flavour during install](#picking-a-different-flavour-during-install)
   - [Managing snap permissions](#managing-snap-permissions)
   - [Newly installed VLC from the App Center crashes](#newly-installed-vlc-from-the-app-center-crashes)
+  - [Startup Apps is missing](#startup-apps-is-missing)
 
 - [Supported distros](#tested-distros)
 - [Showcase (screenshots)](#showcase)
