@@ -74,6 +74,8 @@ sudo bash -c 'echo "flavor: kubuntu" > /usr/share/desktop-provision/whitelabel.y
 ## Managing snap permissions
 You can actually manage permissions of snaps straight from Settings > Apps
 There you will also find the option for autostarting them on new Ubuntu.
+<img width="990" height="650" alt="image" src="https://github.com/user-attachments/assets/58c6d6b3-dbf1-41b6-95f2-88a77a925c78" />
+
 
 ## Newly installed VLC from the App Center crashes
 VLC still uses Core18 for their Snap, which is what the software center mainly contains.
