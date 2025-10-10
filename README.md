@@ -88,6 +88,13 @@ sudo rm /var/cache/fontconfig/*
 rm ~/.cache/fontconfig/*
 fc-cache -r
 ```
+## Startup Apps is missing
+It got removed with GNOME 49. You're supposed to use Settings > Apps and tick autostart. Very limited, doesn't show you all autostarting apps, doesn't allow for setting options the apps should launch with.
+
+Install [Ignition](https://flathub.org/en/apps/io.github.flattool.Ignition) or a similar app to bring the functionality back.
+
+<img width="607" height="534" alt="image" src="https://github.com/user-attachments/assets/71e6e041-e43c-409b-bb59-8976b1af2cb3" />
+
 
 * * *
 
