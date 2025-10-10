@@ -11,12 +11,12 @@ echo "--------------------------------------------"
 echo "gsettings set org.gnome.GPaste show-history '<Super>V'" > $HOME/Desktop/ReadMe.txt
 echo "--------------------------------------------"
 echo "┌──────────────────────────────────────────┐"
-echo "│ Ubuntu 25.10 is using GNOME 49 which     │
-echo "│ broke Startup Applications. That's why   │
+echo "│ Ubuntu 25.10 is using GNOME 49 which     │"
+echo "│ broke Startup Applications. That's why   │"
 echo "│ you can't see the app in the app menu.   │"
 echo "└──────────────────────────────────────────┘"
 echo "I recommend installing 'Ignition' from Flathub as a replacement."
 echo "--------------------------------------------"
-echo "flatpak install io.github.flattool.Ignition"
+echo " flatpak install io.github.flattool.Ignition"
 echo "--------------------------------------------"
 
