@@ -12,6 +12,9 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
 - [Pro tips](#pro-tips)
   - [OEM Installation](#oem-installation)
   - [Picking a different flavour during install](#picking-a-different-flavour-during-install)
+  - [Managing snap permissions](#managing-snap-permissions)
+  - [Newly installed VLC from the App Center crashes](#newly-installed-vlc-from-the-app-center-crashes)
+
 - [Supported distros](#tested-distros)
 - [Showcase (screenshots)](#showcase)
 - [Unityfy GNOME without extensions](#unityfy)
@@ -67,6 +70,18 @@ You can install other flavours from other ISOs with the new installer by doing:
 ```
 sudo mkdir -p /usr/share/desktop-provision
 sudo bash -c 'echo "flavor: kubuntu" > /usr/share/desktop-provision/whitelabel.yaml'
+```
+## Managing snap permissions
+You can actually manage permissions of snaps straight from Settings > Apps
+There you will also find the option for autostarting them on new Ubuntu.
+
+## Newly installed VLC from the App Center crashes
+VLC still uses Core18 for their Snap, which is what the software center mainly contains.
+You can fix it by doing:
+```
+sudo rm /var/cache/fontconfig/*
+rm ~/.cache/fontconfig/*
+fc-cache -r
 ```
 
 * * *
