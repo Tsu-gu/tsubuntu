@@ -62,6 +62,7 @@ Ubuntu already comes with all of these except for a clipboard manager
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2510.sh && chmod +x tsubuntu2510.sh && ./tsubuntu2510.sh
 ```
+_Note: This release features GNOME 49 which broke Startup Applications. I recommend installing [Ignition](https://flathub.org/en/apps/io.github.flattool.Ignition)._
 
 **25.04 Plucky Puffin** 
 
