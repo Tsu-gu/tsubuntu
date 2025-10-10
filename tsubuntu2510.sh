@@ -16,10 +16,6 @@ echo "┌───────────────────────�
 echo "│Enabling right click > new file...        │"                        
 echo "└──────────────────────────────────────────┘"
 test -f $HOME/Templates/NewFile.txt || touch $HOME/Templates/NewFile.txt
-# extensions making gnome usable
-# This isn't necessary anymore but creating the directory doesn't negatively impact anything
-# Yes, this is necessary. It took me a long while to figure out why this damned script would only install one extension.
-mkdir $HOME/.local/share/gnome-shell/extensions/
 
 # This has to be bound to something else as by default it's also Super V for whatever reason. 
 gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
