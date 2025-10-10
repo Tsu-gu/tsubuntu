@@ -9,6 +9,8 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
   - [Gnome](#gnome)
   - [Installed software](#installed-software)
   - [Installed extensions](#installed-extensions)
+- [Pro tips](#pro-tips)
+  - [OEM Installation](#oem-installation)
 - [Supported distros](#tested-distros)
 - [Showcase (screenshots)](#showcase)
 - [Unityfy GNOME without extensions](#unityfy)
@@ -49,8 +51,16 @@ Reporting any bugs or issues found is greatly appreciated.
 - clipboard manager
 - dash to dock
 - desktop icons
-
+- 
 Ubuntu already comes with all of these except for a clipboard manager
+# Pro Tips
+## OEM installation
+In the past you could boot up the ISO and select OEM install from GRUB. In new Ubuntu you need to boot it up and do:
+```
+sudo mkdir -p /usr/share/desktop-provision
+sudo bash -c 'echo "mode: oem" > /usr/share/desktop-provision/whitelabel.yaml'
+```
+
 * * *
 
 # Tested distros:
