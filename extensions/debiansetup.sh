@@ -20,6 +20,34 @@ sleep 1
 echo "Enabling tray icons..."
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
 
+touch "$HOME/Desktop/Finish_Setup.sh"
+chmod +x "$HOME/Desktop/Finish_Setup.sh"
+echo '#!/bin/bash
+gnome-extensions enable clipboard-history@alexsaveau.dev
+sleep 1
+echo "Enabling the clipboard history extension..."
+gnome-extensions enable gtk4-ding@smedius.gitlab.com
+sleep 1
+echo "Enabling the desktop icons extension..."
+gnome-extensions enable dash-to-dock@micxgx.gmail.com
+sleep 1
+echo "Enabling the dash to dock extension..."
+gnome-extensions enable tiling-assistant@leleat-on-github
+sleep 1
+echo "Enabling the tiling assistant extension..."
+gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
+sleep 1
+echo "Enabling tray icons..."
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
+
+# InstallAppImageIntegrator.sh
+touch "$HOME/Desktop/InstallAppImageIntegrator.sh"
+echo "#!/bin/bash" > "$HOME/Desktop/InstallAppImageIntegrator.sh"
+echo "notify-send -a Tsubuntu \"Installing app, please wait a few minutes\"" >> "$HOME/Desktop/InstallAppImageIntegrator.sh"
+echo "flatpak install it.mijorus.gearlever -y" >> "$HOME/Desktop/InstallAppImageIntegrator.sh"
+echo "notify-send -a Tsubuntu \"GearLever installed\"" >> "$HOME/Desktop/InstallAppImageIntegrator.sh"
+chmod +x "$HOME/Desktop/InstallAppImageIntegrator.sh"
+
 # enable super + v to bring up the clipboard
 touch $HOME/Desktop/ReadMe.txt
 echo "Type this into the terminal after a few restarts if you want the clipboard to appear after pressing Super + V like on Windows or Plasma. Don't ask me why it can't be included in the Finish_Setup. It just doesn't work." > $HOME/Desktop/ReadMe.txt
