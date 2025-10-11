@@ -6,7 +6,7 @@ echo "└───────────────────────�
 
 # I tend to avoid PPAs, but having webp support is worth it
 sudo add-apt-repository ppa:ubuntuhandbook1/webp-pixbuf-loader -y
-sudo apt install webp-pixbuf-loader gnome-tweaks gdebi flatpak unzip dconf-editor gnome-shell-extensions gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
+sudo apt install webp-pixbuf-loader gnome-tweaks flatpak unzip dconf-editor gnome-shell-extensions gufw timeshift -y
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
@@ -102,24 +102,8 @@ gnome-extensions enable tiling-assistant@leleat-on-github
 sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
-echo -e "\e[1;31m┌──────────────────────────────────────────┐\e[0m"
-echo "│This script installed a software center   │"
-echo "│app with support for Snap, Flatpak and    │"
-echo "│native packages. This makes the default   │"
-echo "│Snap Store redundant.                     │"
-echo -e "\e[1;31m└──────────────────────────────────────────┘\e[0m"
-read -p "│Remove the Snap Store?              [y/n]:│" choice
 
-
-if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
-    sudo snap remove snap-store
-else
-    echo "┌──────────────────────────────────────────┐"
-    echo "│Understandable. Keeping the snap-store.   │"
-    echo "└──────────────────────────────────────────┘"
-fi
  read -p "│Enable firewall?                    [y/n]:│" choice
-
 
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
     sudo ufw default deny incoming
