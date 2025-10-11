@@ -52,9 +52,9 @@ Reporting any bugs or issues found is greatly appreciated.
 - bash auto completion
 ### Can be installed later
 So far I tested this on Ubuntu only. You right click on the script, run it and a notification will tell you once the install finishes.
-- Bazaar
-- Gearlever
-- Ignition
+- Bazaar (I decided to abandon GNOME Software with the extensions and keep App Center, and give users the option to install a Flatpak store)
+- Gearlever (AppImage integration, you just drag and drop the files into its window)
+- Ignition (Replaces Startup Applications which got broken by GNOME 49)
 ## Installed extensions:
 - tray icons
 - corner tiling
@@ -113,7 +113,6 @@ Install [Ignition](https://flathub.org/en/apps/io.github.flattool.Ignition) or a
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2510.sh && chmod +x tsubuntu2510.sh && ./tsubuntu2510.sh
 ```
-_Note: This release features GNOME 49 which broke Startup Applications. I recommend installing [Ignition](https://flathub.org/en/apps/io.github.flattool.Ignition)._
 
 **25.04 Plucky Puffin** 
 
