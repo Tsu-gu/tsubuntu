@@ -53,8 +53,9 @@ elif [[ "$OS_ID" == "fedora" ]]; then
     elif [[ "$OS_VERSION" == "41" ]]; then
         wget -q $repo/others/tsubuntufedora41.sh && chmod +x tsubuntufedora41.sh && ./tsubuntufedora41.sh
     elif [[ "$OS_VERSION" == "42" ]]; then
-    	echo "This doesn't exist yet."
         wget -q $repo/others/tsubuntufedora42.sh && chmod +x tsubuntufedora42.sh && ./tsubuntufedora42.sh
+    elif [[ "$OS_VERSION" == "43" ]]; then
+        wget -q $repo/others/tsubuntufedora43.sh && chmod +x tsubuntufedora43.sh && ./tsubuntufedora43.sh
     else
         echo "Unsupported Fedora version: $OS_VERSION"
         exit 1
