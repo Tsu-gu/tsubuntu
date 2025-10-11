@@ -14,7 +14,8 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
   - [Picking a different flavour during install](#picking-a-different-flavour-during-install)
   - [Managing snap permissions](#managing-snap-permissions)
   - [Newly installed VLC from the App Center crashes](#newly-installed-vlc-from-the-app-center-crashes)
-  - [Startup Apps is missing](#startup-apps-is-missing)
+  - [Unable to install "PACKAGE": snap "PACKAGE" has "install-snap" change in progress](#unable-to-install-package-snap-package-has-install-snap-change-in-progress)
+  - [An update broke an app](#an-update-broke-an-app)
 
 - [Supported distros](#tested-distros)
 - [Showcase (screenshots)](#showcase)
@@ -101,6 +102,21 @@ Install [Ignition](https://flathub.org/en/apps/io.github.flattool.Ignition) or a
 
 <img width="607" height="534" alt="image" src="https://github.com/user-attachments/assets/71e6e041-e43c-409b-bb59-8976b1af2cb3" />
 
+## Unable to install "PACKAGE": snap "PACKAGE" has "install-snap" change in progress
+You won't see this preferably ever but if you encounter it, all you have to do is:
+```
+snap changes
+...
+123  Doing   2024-04-28T10:40:11Z  -  Install "PACKAGE" snap
+...
+sudo snap abort 123
+```
+## An update broke an app
+Snap keeps several backup versions, you just have to revert to the previous one and preferable hold it so it doesn't update to the broken version.
+```
+snap revert app
+snap refresh --hold app
+```
 
 * * *
 
