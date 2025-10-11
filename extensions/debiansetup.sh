@@ -64,6 +64,14 @@ echo "flatpak install io.github.kolunmi.Bazaar -y" >> "$HOME/Desktop/InstallFlat
 echo "notify-send -a Tsubuntu \"Bazaar installed\"" >> "$HOME/Desktop/InstallFlatpakAppStore.sh"
 chmod +x "$HOME/Desktop/InstallFlatpakAppStore.sh"
 
+# InstallSnapAppCentre.sh
+touch "$HOME/Desktop/InstallSnapAppCentre.sh"
+echo "#!/bin/bash" > "$HOME/Desktop/InstallSnapAppCentre.shh"
+echo "notify-send -a Tsubuntu \"Installing app, please wait a few minutes\"" >> "$HOME/Desktop/InstallSnapAppCentre.sh"
+echo "pkexec snap install snap-store" >> "$HOME/Desktop/InstallSnapAppCentre.sh"
+echo "notify-send -a Tsubuntu \"App Centre installed\"" >> "$HOME/Desktop/InstallSnapAppCentre.sh"
+chmod +x "$HOME/Desktop/InstallSnapAppCentre.sh"
+
 # enable super + v to bring up the clipboard
 touch $HOME/Desktop/ReadMe.txt
 echo "Type this into the terminal after a few restarts if you want the clipboard to appear after pressing Super + V like on Windows or Plasma. Don't ask me why it can't be included in the Finish_Setup. It just doesn't work." > $HOME/Desktop/ReadMe.txt
