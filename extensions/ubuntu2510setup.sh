@@ -10,15 +10,19 @@ echo "Type this into the terminal after a few restarts if you want the clipboard
 echo "--------------------------------------------"
 echo "gsettings set org.gnome.GPaste show-history '<Super>V'" >> $HOME/Desktop/ReadMe.txt
 echo "--------------------------------------------"
-echo "┌──────────────────────────────────────────┐"
-echo "│  Ubuntu 25.10 is using GNOME 49 which    │"
-echo "│ broke Startup Applications. That's why   │"
-echo "│ you can't see the app in the app menu.   │"
-echo "│                                          │"
-echo "│    I recommend installing 'Ignition'     │"
-echo "│     from Flathub as a replacement.       │"
-echo "└──────────────────────────────────────────┘"
-echo "--------------------------------------------"
-echo " flatpak install io.github.flattool.Ignition"
-echo "--------------------------------------------"
+
+touch $HOME/Desktop/InstallStartupApps.sh
+echo "#!/bin/bash" > $HOME/Desktop/InstallStartupApps.sh
+echo "flatpak install io.github.flattool.Ignition -y" >> $HOME/Desktop/InstallStartupApps.sh
+chmod +x $HOME/Desktop/InstallStartupApps.sh
+
+touch $HOME/Desktop/InstallFlatpakAppStore.sh
+echo "#!/bin/bash" > $HOME/Desktop/InstallFlatpakAppStore.sh
+echo "flatpak install io.github.kolunmi.Bazaar -y" >> $HOME/Desktop/InstallFlatpakAppStore.sh
+chmod +x $HOME/Desktop/InstallFlatpakAppStore.sh
+
+touch $HOME/Desktop/InstallAppImageIntegrator.sh
+echo "#!/bin/bash" > $HOME/Desktop/InstallAppImageIntegrator.sh
+echo "flatpak install it.mijorus.gearlever -y" >> $HOME/Desktop/InstallAppImageIntegrator.sh
+chmod +x $HOME/Desktop/InstallAppImageIntegrator.sh
 
