@@ -19,7 +19,7 @@ if [[ "$OS_ID" == "ubuntu" ]]; then
     elif [[ "$OS_VERSION" == "20.04" ]]; then
         wget -q $repo/tsubuntu20.sh && chmod +x tsubuntu20.sh && ./tsubuntu20.sh
     elif [[ "$OS_VERSION" == "24.10" ]]; then
-        wget -q $repo/tsubuntu2410.sh && chmod +x tsubuntu2410.sh && ./tsubuntu2410.sh
+        echo "End of Life Ubuntu version, don't use it"
     elif [[ "$OS_VERSION" == "25.04" ]]; then
         wget -q $repo/tsubuntu2504.sh && chmod +x tsubuntu2504.sh && ./tsubuntu2504.sh
     elif [[ "$OS_VERSION" == "25.10" ]]; then
