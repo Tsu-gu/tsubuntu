@@ -15,6 +15,7 @@ touch "$HOME/Desktop/InstallStartupApps.sh"
 echo "#!/bin/bash" > "$HOME/Desktop/InstallStartupApps.sh"
 echo "notify-send -a Tsubuntu \"Installing app, please wait a few minutes\"" >> "$HOME/Desktop/InstallStartupApps.sh"
 echo "flatpak install io.github.flattool.Ignition -y" >> "$HOME/Desktop/InstallStartupApps.sh"
+echo "notify-send -a Tsubuntu \"Ignition installed\"" >> "$HOME/Desktop/InstallStartupApps.sh"
 chmod +x "$HOME/Desktop/InstallStartupApps.sh"
 
 # InstallFlatpakAppStore.sh
@@ -22,6 +23,7 @@ touch "$HOME/Desktop/InstallFlatpakAppStore.sh"
 echo "#!/bin/bash" > "$HOME/Desktop/InstallFlatpakAppStore.sh"
 echo "notify-send -a Tsubuntu \"Installing app, please wait a few minutes\"" >> "$HOME/Desktop/InstallFlatpakAppStore.sh"
 echo "flatpak install io.github.kolunmi.Bazaar -y" >> "$HOME/Desktop/InstallFlatpakAppStore.sh"
+echo "notify-send -a Tsubuntu \"Bazaar installed\"" >> "$HOME/Desktop/InstallFlatpakAppStore.sh"
 chmod +x "$HOME/Desktop/InstallFlatpakAppStore.sh"
 
 # InstallAppImageIntegrator.sh
@@ -29,5 +31,6 @@ touch "$HOME/Desktop/InstallAppImageIntegrator.sh"
 echo "#!/bin/bash" > "$HOME/Desktop/InstallAppImageIntegrator.sh"
 echo "notify-send -a Tsubuntu \"Installing app, please wait a few minutes\"" >> "$HOME/Desktop/InstallAppImageIntegrator.sh"
 echo "flatpak install it.mijorus.gearlever -y" >> "$HOME/Desktop/InstallAppImageIntegrator.sh"
+echo "notify-send -a Tsubuntu \"GearLever installed\"" >> "$HOME/Desktop/InstallAppImageIntegrator.sh"
 chmod +x "$HOME/Desktop/InstallAppImageIntegrator.sh"
 
