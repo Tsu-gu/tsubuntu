@@ -160,7 +160,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubunturh
 
 # Distros I adapted the script for but I don't test them
 
-I don't use these so I don't really have the time to update the scripts.
+I don't use these so I don't really have the time to update the scripts. If you care abnout any of these, feel free to send in a PR.
 
 ## ⚙Fedora
 **41** 
