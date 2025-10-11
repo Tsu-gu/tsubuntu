@@ -2,9 +2,9 @@
 echo "┌──────────────────────────────────────────┐"
 echo "│         Tsubuntu for Fedora 42           │"
 echo "└──────────────────────────────────────────┘"
-# Fedora does not support gnome-software-plugin-snap
-sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor snapd firewall-config bash-completion -y
-# fuse in order for all AppImages to run
+# Fedora does not support gnome-software-plugin-snap, giving option to install App Centre instead
+sudo dnf install gnome-tweaks unzip gnome-extensions-app dconf-editor snapd firewall-config bash-completion fuse-libs -y
+# fuse-libs in order for all AppImages to run
 # for classic snaps to run. If you really hate snap, just remove these lines. Also I think fedora can't run snaps in confinement anyways due to using SELinux.
 sudo ln -s /var/lib/snapd/snap /snap
 
