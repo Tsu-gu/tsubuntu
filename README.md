@@ -52,10 +52,11 @@ Reporting any bugs or issues found is greatly appreciated.
 - gufw(Ubuntu and Debian)/firewall-config(Fedora and RHEL)
 - bash auto completion
 ### Can be installed later
-So far I tested this on Ubuntu only. You right click on the script, run it and a notification will tell you once the install finishes.
+You right click on the script, run it and a notification will tell you once the install finishes.
 - Bazaar (I decided to abandon GNOME Software with the extensions and keep App Center, and give users the option to install a Flatpak store)
 - Gearlever (AppImage integration, you just drag and drop the files into its window)
 - Ignition (Replaces Startup Applications which got broken by GNOME 49)
+- App Center (aka snap-store, the main app store for snaps on Ubuntu.)
 ## Installed extensions:
 - tray icons
 - corner tiling
