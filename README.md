@@ -50,6 +50,11 @@ Reporting any bugs or issues found is greatly appreciated.
 - gnome-tweaks, gdebi, gnome-extensions-app, dconf-editor, libfuse2
 - gufw(Ubuntu and Debian)/firewall-config(Fedora and RHEL)
 - bash auto completion
+### Can be installed later
+So far I tested this on Ubuntu only. You right click on the script, run it and a notification will tell you once the install finishes.
+- Bazaar
+- Gearlever
+- Ignition
 ## Installed extensions:
 - tray icons
 - corner tiling
