@@ -173,6 +173,13 @@ gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
 sleep 1
 echo "Enabling tray icons..."
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/dock-setup.sh && chmod +x dock-setup.sh && ./dock-setup.sh
+# InstallAppImageIntegrator.sh
+touch "$HOME/Desktop/InstallAppImageIntegrator.sh"
+echo "#!/bin/bash" > "$HOME/Desktop/InstallAppImageIntegrator.sh"
+echo "notify-send -a Tsubuntu \"Installing app, please wait a few minutes\"" >> "$HOME/Desktop/InstallAppImageIntegrator.sh"
+echo "flatpak install it.mijorus.gearlever -y" >> "$HOME/Desktop/InstallAppImageIntegrator.sh"
+echo "notify-send -a Tsubuntu \"GearLever installed\"" >> "$HOME/Desktop/InstallAppImageIntegrator.sh"
+chmod +x "$HOME/Desktop/InstallAppImageIntegrator.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
 read -p "│Install Snap App Centre?            [y/n]:│" choice                                                    
