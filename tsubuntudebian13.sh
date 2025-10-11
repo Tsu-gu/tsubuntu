@@ -11,7 +11,7 @@ echo "│su                                        │"
 echo "│sudo usermod -aG sudo $USER               │"
 echo "│reboot                                    │"
 echo "└──────────────────────────────────────────┘"
-sudo apt install gnome-shell-extension-appindicator gnome-shell-extension-gpaste gnome-shell-extension-dashtodock gnome-shell-extension-desktop-icons-ng gnome-shell-extension-tiling-assistant gnome-tweaks wget bash-completion command-not-found flatpak unzip gdebi gnome-shell-extensions-prefs dconf-editor libfuse2t64 snapd mtp-tools gvfs-backends gufw timeshift -y
+sudo apt install gnome-shell-extension-appindicator notify-send gnome-shell-extension-gpaste gnome-shell-extension-dashtodock gnome-shell-extension-desktop-icons-ng gnome-shell-extension-tiling-assistant gnome-tweaks wget bash-completion command-not-found flatpak unzip gdebi gnome-shell-extensions-prefs dconf-editor libfuse2t64 snapd mtp-tools gvfs-backends gufw timeshift -y
 # libfuse2 in order for all AppImages to run, mtp-tools for being able to plug in your phone and transfer data
 sudo systemctl enable --now snapd.socket
 # for classic snaps to run. If you really hate snap, just remove these lines.
