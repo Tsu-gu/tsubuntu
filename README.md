@@ -166,6 +166,14 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
 ```
+## ⚙Fedora
+40 - 43 
+
+* * *
+
+# Distros I adapted the script for but I don't test them
+
+I don't use these so I don't really have the time to update the scripts. If you care abnout any of these, feel free to send in a PR.
 
 ## ⚙RHEL/Rocky/Alma 
 
@@ -176,26 +184,6 @@ RHEL 10 refuses to boot up in a VM.
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubunturhel9.sh && chmod +x tsubunturhel9.sh && ./tsubunturhel9.sh
 ```
-
-* * *
-
-# Distros I adapted the script for but I don't test them
-
-I don't use these so I don't really have the time to update the scripts. If you care abnout any of these, feel free to send in a PR.
-
-## ⚙Fedora
-**41** 
-
-```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntufedora41.sh && chmod +x tsubuntufedora41.sh && ./tsubuntufedora41.sh
-```
-
-**40**
-
-```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntufedora40.sh && chmod +x tsubuntufedora40.sh && ./tsubuntufedora40.sh
-```
-
 
 ## ⚙OpenSUSE 
 
