@@ -29,10 +29,10 @@ echo "┌───────────────────────�
 echo "│Installing clipboard history extension... │"                        
 echo "└──────────────────────────────────────────┘"
 cd $HOME
-downloadedzip1="clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
-linktozip1="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v45.shell-extension.zip"
+downloadedzip1="clipboard-historyalexsaveau.dev.v47.shell-extension.zip"
+linktozip1="https://extensions.gnome.org/extension-data/clipboard-historyalexsaveau.dev.v47.shell-extension.zip"
 folder1="clipboard-history@alexsaveau.dev"
-
+# https://extensions.gnome.org/extension/4839/clipboard-history/
 mkdir $folder1
 cd $folder1
 wget $linktozip1
@@ -46,10 +46,10 @@ echo "┌───────────────────────�
 echo "│Installing desktop icons extension...     │"                        
 echo "└──────────────────────────────────────────┘"
 cd $HOME
-downloadedzip2="gtk4-dingsmedius.gitlab.com.v87.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v87.shell-extension.zip"
+downloadedzip2="gtk4-dingsmedius.gitlab.com.v117.shell-extension.zip"
+linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v117.shell-extension.zip"
 folder2="gtk4-ding@smedius.gitlab.com"
-
+# https://extensions.gnome.org/extension/5263/gtk4-desktop-icons-ng-ding/
 mkdir $folder2
 cd $folder2
 wget $linktozip2
@@ -62,10 +62,10 @@ echo "┌───────────────────────�
 echo "│Installing corner tiling extension...     │"                        
 echo "└──────────────────────────────────────────┘"
 cd $HOME
-downloadedzip3="tiling-assistantleleat-on-github.v49.shell-extension.zip"
-linktozip3="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v49.shell-extension.zip"
+downloadedzip3="tiling-assistantleleat-on-github.v53.shell-extension.zip"
+linktozip3="https://extensions.gnome.org/extension-data/tiling-assistantleleat-on-github.v53.shell-extension.zip"
 folder3="tiling-assistant@leleat-on-github"
-
+# https://extensions.gnome.org/extension/3733/tiling-assistant/
 mkdir $folder3
 cd $folder3
 wget $linktozip3
@@ -79,10 +79,10 @@ echo "│Installing dash to dock...                │"
 echo "└──────────────────────────────────────────┘"
 
 cd $HOME
-downloadedzip4="dash-to-dockmicxgx.gmail.com.v99.shell-extension.zip"
-linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v99.shell-extension.zip"
+downloadedzip4="dash-to-dockmicxgx.gmail.com.v102.shell-extension.zip"
+linktozip4="https://extensions.gnome.org/extension-data/dash-to-dockmicxgx.gmail.com.v102.shell-extension.zip"
 folder4="dash-to-dock@micxgx.gmail.com"
-
+# https://extensions.gnome.org/extension/307/dash-to-dock/
 mkdir $folder4
 cd $folder4
 wget $linktozip4
@@ -96,9 +96,10 @@ echo "│Installing tray icons extension...        │"
 echo "└──────────────────────────────────────────┘"
 
 cd $HOME
-downloadedzip4="appindicatorsupportrgcjonas.gmail.com.v59.shell-extension.zip"
-linktozip4="https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v59.shell-extension.zip"
+downloadedzip4="appindicatorsupportrgcjonas.gmail.com.v61.shell-extension.zip"
+linktozip4="https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v61.shell-extension.zip"
 folder4="appindicatorsupport@rgcjonas.gmail.com"
+# https://extensions.gnome.org/extension/615/appindicator-support/
 
 mkdir $folder4
 cd $folder4
@@ -107,8 +108,6 @@ unzip $downloadedzip4
 rm $downloadedzip4
 cd $HOME
 mv $folder4 $HOME/.local/share/gnome-shell/extensions/
-
-# https://extensions.gnome.org/extension-data/appindicatorsupportrgcjonas.gmail.com.v59.shell-extension.zip
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding (_)([])(X) buttons...              │"                        
