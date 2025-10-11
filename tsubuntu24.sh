@@ -3,7 +3,7 @@ extensionsrepo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extension
 echo "┌──────────────────────────────────────────┐"
 echo "│        Tsubuntu for Ubuntu 24.04         │"
 echo "└──────────────────────────────────────────┘"
-sudo apt install gnome-shell-extension-gpaste gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software gufw timeshift -y
+sudo apt install gnome-shell-extension-gpaste gnome-tweaks flatpak unzip gnome-extensions-app dconf-editor libfuse2 gufw timeshift -y
 
 # libfuse2 in order for all AppImages to run
 echo "┌──────────────────────────────────────────┐"
@@ -69,23 +69,8 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/or
 wget -q $extensionsrepo/ubuntu24setup.sh
 cp ubuntu24setup.sh $HOME/Desktop/Finish_Setup.sh
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
-echo -e "\e[1;31m┌──────────────────────────────────────────┐\e[0m"
-echo "│This script installed a software center   │"
-echo "│app with support for Snap, Flatpak and    │"
-echo "│native packages. This makes the default   │"
-echo "│Snap Store redundant.                     │"
-echo -e "\e[1;31m└──────────────────────────────────────────┘\e[0m"
-read -p "│Remove the Snap Store?              [y/n]:│" choice
 
-
-if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
-    sudo snap remove snap-store
-else
-    echo "┌──────────────────────────────────────────┐"
-    echo "│Understandable. Keeping the snap-store.   │"
-    echo "└──────────────────────────────────────────┘"
-fi
- read -p "│Enable firewall?                    [y/n]:│" choice
+read -p "│Enable firewall?                    [y/n]:│" choice
 
 
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
