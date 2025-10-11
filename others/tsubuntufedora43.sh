@@ -181,7 +181,7 @@ echo "notify-send -a Tsubuntu \"GearLever installed\"" >> "$HOME/Desktop/Install
 chmod +x "$HOME/Desktop/InstallAppImageIntegrator.sh"
 # InstallSnapAppCentre.sh
 touch "$HOME/Desktop/InstallSnapAppCentre.sh"
-echo "#!/bin/bash" > "$HOME/Desktop/InstallSnapAppCentre.shh"
+echo "#!/bin/bash" > "$HOME/Desktop/InstallSnapAppCentre.sh"
 echo "notify-send -a Tsubuntu \"Installing app, please wait a few minutes\"" >> "$HOME/Desktop/InstallSnapAppCentre.sh"
 echo "pkexec snap install snap-store" >> "$HOME/Desktop/InstallSnapAppCentre.sh"
 echo "notify-send -a Tsubuntu \"App Centre installed\"" >> "$HOME/Desktop/InstallSnapAppCentre.sh"
