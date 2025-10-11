@@ -94,16 +94,6 @@ else
     echo "└──────────────────────────────────────────┘"
 fi
 
-read -p "│Install Snap App Centre?            [y/n]:│" choice                                                    
-
-if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
-    sudo snap install snap-store
-else
-    echo "┌──────────────────────────────────────────┐"
-    echo "│Understandable. Skipping.                 │"
-    echo "└──────────────────────────────────────────┘"
-fi
-
 echo "┌──────────────────────────────────────────┐"
 echo "│Restart your PC and then run              │"
 echo "│Finish_Setup.sh, located on your desktop  │"
