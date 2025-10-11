@@ -1,0 +1,1 @@
+You can actually get an ything into this menu by placing files into $HOME/Templates
