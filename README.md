@@ -168,7 +168,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh
 ```
 ## ⚙Fedora
 40 - 43 
-
+Launch it by using the main command
 * * *
 
 # Distros I adapted the script for but I don't test them
