@@ -2,14 +2,13 @@
 echo "┌──────────────────────────────────────────┐"
 echo "│         Tsubuntu for Ubuntu 22.04        │"
 echo "└──────────────────────────────────────────┘"
-sudo apt install gnome-tweaks flatpak gdebi unzip gnome-extensions-app dconf-editor libfuse2 gnome-software-plugin-snap gnome-software-plugin-flatpak gnome-software webp-pixbuf-loader gufw timeshift -y
+sudo apt install gnome-tweaks flatpak gdebi unzip gnome-extensions-app dconf-editor libfuse2 webp-pixbuf-loader gufw timeshift -y
 # libfuse2 in order for all AppImages to run
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
 echo "└──────────────────────────────────────────┘"
 
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Enabling right click > new file...        │"                        
@@ -106,22 +105,6 @@ sleep 1
 rm "$HOME/Desktop/Finish_Setup.sh"
 ' >> "$HOME/Desktop/Finish_Setup.sh"
 
-echo -e "\e[1;31m┌──────────────────────────────────────────┐\e[0m"
-echo "│This script installed a software center   │"
-echo "│app with support for Snap, Flatpak and    │"
-echo "│native packages. This makes the default   │"
-echo "│Snap Store redundant.                     │"
-echo -e "\e[1;31m└──────────────────────────────────────────┘\e[0m"
-read -p "│Remove the Snap Store?              [y/n]:│" choice
-
-
-if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
-    sudo snap remove snap-store
-else
-    echo "┌──────────────────────────────────────────┐"
-    echo "│Understandable. Keeping the snap-store.   │"
-    echo "└──────────────────────────────────────────┘"
-fi
  read -p "│Enable firewall?                    [y/n]:│" choice
 
 
