@@ -9,7 +9,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && ch
   - [Gnome](#gnome)
   - [Installed software](#installed-software)
   - [Installed extensions](#installed-extensions)
-- [Pro tips](#pro-tips)
+- [Ubuntu pro tips](#ubuntu-pro-tips)
   - [OEM Installation](#oem-installation)
   - [Picking a different flavour during install](#picking-a-different-flavour-during-install)
   - [Managing snap permissions](#managing-snap-permissions)
@@ -64,7 +64,7 @@ So far I tested this on Ubuntu only. You right click on the script, run it and a
 - desktop icons
   
 Ubuntu already comes with all of these except for a clipboard manager
-# Pro Tips
+# Ubuntu pro tips
 ## OEM installation
 In the past you could boot up the ISO and select OEM install from GRUB.
 <img width="781" height="338" alt="image" src="https://github.com/user-attachments/assets/4d1ba7eb-47e3-4ef8-81d3-10f012eb97ac" />
