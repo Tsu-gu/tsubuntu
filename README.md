@@ -161,9 +161,12 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
 ```
 ## ⚙Fedora
-40 - 43 
-Launch it by using the main command. Fedora 43 has recently been tested by me in a VM.
-* * *
+
+**43**
+
+```
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntufedora43.sh && chmod +x tsubuntufedora43.sh && ./tsubuntufedora43.sh
+```
 
 # Distros I adapted the script for but I don't test them
 
