@@ -46,9 +46,9 @@ echo "┌───────────────────────�
 echo "│Installing desktop icons extension...     │"                        
 echo "└──────────────────────────────────────────┘"
 cd $HOME
-downloadedzip2="gtk4-dingsmedius.gitlab.com.v117.shell-extension.zip"
-linktozip2="https://extensions.gnome.org/extension-data/gtk4-dingsmedius.gitlab.com.v117.shell-extension.zip"
-folder2="gtk4-ding@smedius.gitlab.com"
+downloadedzip2="dingrastersoft.com.v80.shell-extension.zip"
+linktozip2="https://extensions.gnome.org/extension-data/dingrastersoft.com.v80.shell-extension.zip"
+folder2="ding@rastersoft.com"
 # https://extensions.gnome.org/extension/5263/gtk4-desktop-icons-ng-ding/
 mkdir $folder2
 cd $folder2
