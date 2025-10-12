@@ -148,6 +148,7 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu22.sh && 
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu20.sh && chmod +x tsubuntu20.sh && ./tsubuntu20.sh
 ```
+I actually adapted the script for this as Focal was my first distro. 
 
 ## ⚙Debian
 **13 Trixie**
