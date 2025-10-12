@@ -131,12 +131,6 @@ snap refresh --hold app
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2510.sh && chmod +x tsubuntu2510.sh && ./tsubuntu2510.sh
 ```
 
-**25.04 Plucky Puffin** 
-
-```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2504.sh && chmod +x tsubuntu2504.sh && ./tsubuntu2504.sh
-```
-
 **24.04 Noble Numbat**
 
 ```
