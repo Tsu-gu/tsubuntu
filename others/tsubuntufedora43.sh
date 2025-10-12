@@ -159,7 +159,7 @@ echo '#!/bin/bash
 gnome-extensions enable clipboard-history@alexsaveau.dev
 sleep 1
 echo "Enabling the clipboard history extension..."
-gnome-extensions enable gtk4-ding@smedius.gitlab.com
+gnome-extensions enable ding@rastersoft.com
 sleep 1
 echo "Enabling the desktop icons extension..."
 gnome-extensions enable dash-to-dock@micxgx.gmail.com
