@@ -45,7 +45,6 @@ Reporting any bugs or issues found is greatly appreciated.
 ## Installed software:
 - flatpak
 - snap
-- flatpak and snap plugins for gnome-software (doesn't work on Fedora)
 - webp support for 20.04 and 22.04
 - mtp-tools and gvfs-backends on Debian (to be able to transfer files from a connected phone)
 - gnome-tweaks, gdebi, gnome-extensions-app, dconf-editor, libfuse2
