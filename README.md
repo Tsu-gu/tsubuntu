@@ -47,11 +47,11 @@ Reporting any bugs or issues found is greatly appreciated.
 - snap
 - webp support for 20.04 and 22.04
 - mtp-tools and gvfs-backends on Debian (to be able to transfer files from a connected phone)
-- gnome-tweaks, gdebi, gnome-extensions-app, dconf-editor, libfuse2
-- gufw(Ubuntu and Debian)/firewall-config(Fedora and RHEL)
+- gnome-tweaks, gnome-extensions-app, dconf-editor, libfuse2
+- gufw (Ubuntu and Debian)
 - bash auto completion
 ### Can be installed later
-You right click on the script, run it and a notification will tell you once the install finishes.
+You right click on the script placed onto the desktop, run it and a notification will tell you once the install finishes.
 - Bazaar (I decided to abandon GNOME Software with the extensions and keep App Center, and give users the option to install a Flatpak store)
 - Gearlever (AppImage integration, you just drag and drop the files into its window)
 - Ignition (Replaces Startup Applications which got broken by GNOME 49)
@@ -64,6 +64,7 @@ You right click on the script, run it and a notification will tell you once the 
 - desktop icons
   
 Ubuntu already comes with all of these except for a clipboard manager
+
 # Ubuntu tips
 ## OEM installation
 In the past you could boot up the ISO and select OEM install from GRUB.
