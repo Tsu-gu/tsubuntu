@@ -19,9 +19,6 @@ test -f $HOME/Templates/NewFile.txt || touch $HOME/Templates/NewFile.txt
 
 # extensions making gnome usable
 
-# Yes, this is necessary. It took me a long while to figure out why this damned script would only install one extension.
-mkdir $HOME/.local/share/gnome-shell/extensions/
-
 echo "┌──────────────────────────────────────────┐"
 echo "│Installing clipboard history extension... │"                        
 echo "└──────────────────────────────────────────┘"
