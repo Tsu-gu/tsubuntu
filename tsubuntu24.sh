@@ -37,6 +37,7 @@ gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
 gsettings set org.gnome.nautilus.preferences default-folder-viewer 'list-view'
+# Feel free to delete the minimize-or-previews if you want to keep how dash to dock handles clicking on multiple opened apps by default
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize-or-previews'
 gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'quit'
 
