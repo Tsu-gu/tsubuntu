@@ -41,7 +41,7 @@ Reporting any bugs or issues found is greatly appreciated.
 - Super + E opens the file manager
 - Ctrl + Alt + T opens the terminal
 - Adds Desktop as a bookmark in Nautilus
-- Super+ V opens clipboard manager (Ubuntu only)
+- Super+ V opens clipboard manager (Ubuntu and Debian only, I don't have the time to figure out how to bind this using other extensions than Gpaste)
 ## Installed software:
 - flatpak
 - snap
