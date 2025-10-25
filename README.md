@@ -56,6 +56,7 @@ You right click on the script placed onto the desktop, run it and a notification
 - Gearlever (AppImage integration, you just drag and drop the files into its window)
 - Ignition (Replaces Startup Applications which got broken by GNOME 49)
 - App Center (aka snap-store, the main app store for snaps on Ubuntu.)
+- Menu Editor
 ## Installed extensions:
 - tray icons
 - corner tiling
