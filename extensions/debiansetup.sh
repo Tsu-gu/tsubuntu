@@ -72,6 +72,21 @@ echo "pkexec snap install snap-store" >> "$HOME/Desktop/InstallSnapAppCentre.sh"
 echo "notify-send -a Tsubuntu \"App Centre installed\"" >> "$HOME/Desktop/InstallSnapAppCentre.sh"
 chmod +x "$HOME/Desktop/InstallSnapAppCentre.sh"
 
+# InstallMenuEditor.sh
+touch "$HOME/Desktop/InstallMenuEditor.sh"
+echo "notify-send -a Tsubuntu \"Installing app, please wait a few minutes\"" >> "$HOME/Desktop/InstallMenuEditor.sh"
+echo "flatpak install page.codeberg.libre_menu_editor.LibreMenuEditor -y" >> "$HOME/Desktop/InstallMenuEditor.sh"
+echo "notify-send -a Tsubuntu \"Main Menu installed\"" >> "$HOME/Desktop/InstallMenuEditor.sh"
+chmod +x "$HOME/Desktop/InstallMenuEditor.sh"
+
+# InstallAllRecommended
+touch "$HOME/Desktop/InstallAllRecommended.sh"
+echo "notify-send -a Tsubuntu \"Installing recommended apps, please wait a few minutes\"" >> "$HOME/Desktop/InstallAllRecommended.sh"
+echo "pkexec snap install snap-store" >> "$HOME/Desktop/InstallSnapAppCentre.sh"
+echo "flatpak install page.codeberg.libre_menu_editor.LibreMenuEditor it.mijorus.gearlever io.github.kolunmi.Bazaar -y" >> "$HOME/Desktop/InstallAllRecommended.sh"
+echo "notify-send -a Tsubuntu \"Recommended apps installed\"" >> "$HOME/Desktop/InstallAllRecommended.sh"
+chmod +x "$HOME/Desktop/InstallAllRecommended.sh"
+
 # enable super + v to bring up the clipboard
 touch $HOME/Desktop/ReadMe.txt
 echo "Type this into the terminal after a few restarts if you want the clipboard to appear after pressing Super + V like on Windows or Plasma. Don't ask me why it can't be included in the Finish_Setup. It just doesn't work." > $HOME/Desktop/ReadMe.txt
