@@ -24,9 +24,9 @@ twitch_download() {
     
     echo "VOD ID: $vod_id"
     
-    # Get VOD metadata using TwitchDownloaderCLI info command
+    # Get VOD metadata using twitchdownloader info command
     echo "Fetching VOD metadata..."
-    metadata=$(TwitchDownloaderCLI info --id "$vod_id" --format raw 2>/dev/null)
+    metadata=$(twitchdownloader info --id "$vod_id" --format raw 2>/dev/null)
     
     if [ $? -ne 0 ]; then
         echo "Warning: Could not fetch VOD metadata. Will use fallback naming."
@@ -66,7 +66,7 @@ twitch_download() {
     
     # Download the VOD
     echo "Starting download..."
-    TwitchDownloaderCLI videodownload --id "$vod_id" -o "$output_file"
+    twitchdownloader videodownload --id "$vod_id" -o "$output_file"
     
     if [ $? -eq 0 ]; then
         echo "Download complete: $output_file"
