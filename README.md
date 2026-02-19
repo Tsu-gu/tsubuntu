@@ -236,3 +236,5 @@ There's also an option to make the side panel look even more like unity but I fo
 # Future plans
 
 I would like to support **Ubuntu Core Desktop** once it releases. Instead of apt installing flatpak and similar I imagine somehow installing a distrobox container and loading it with the necessary software. Or who knows how that will be done.
+
+Add `gsettings set org.gnome.SessionManager logout-prompt false` to skip the 3rd confirmation you actually want to shut off the PC
