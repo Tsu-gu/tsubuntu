@@ -5,7 +5,8 @@ echo "│     Tsubuntu for Ubuntu 26.04 LTS        │"
 echo "└──────────────────────────────────────────┘"
 sudo apt install gnome-shell-extension-gpaste gnome-tweaks flatpak dconf-editor libfuse2t64 gnome-shell-extension-manager gufw timeshift software-properties-gtk -y
 
-# libfuse2t64 in order for all AppImages to run
+# libfuse2t64 in order for all AppImages to run. Many AppImages are built depending on this old version. Like it or not you either have it installed or half of them won't run. 
+# software-properties-gtk to return the driver manager and Software & Updates
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
 echo "└──────────────────────────────────────────┘"
