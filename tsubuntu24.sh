@@ -72,13 +72,31 @@ cp ubuntu24setup.sh $HOME/Desktop/Finish_Setup.sh
 chmod +x "$HOME/Desktop/Finish_Setup.sh"
 
 read -p "│Enable firewall?                    [y/n]:│" choice
-
-
 if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
     sudo ufw default deny incoming
     sudo ufw default allow outgoing
     sudo ufw enable
 else
+    echo "┌──────────────────────────────────────────┐"
+    echo "│Understandable.                           │"
+    echo "└──────────────────────────────────────────┘"
+fi
+
+read -p "│Skip shut down confirmation?        [y/n]:│" choice
+if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+    gsettings set org.gnome.SessionManager logout-prompt false
+else
+    gsettings set org.gnome.SessionManager logout-prompt true
+    echo "┌──────────────────────────────────────────┐"
+    echo "│Understandable.                           │"
+    echo "└──────────────────────────────────────────┘"
+fi
+
+read -p "│Move app launcher to the top of the panel? [y/n]:│" choice
+if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+    dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top true
+else
+    dconf write /org/gnome/shell/extensions/dash-to-dock/show-apps-at-top false
     echo "┌──────────────────────────────────────────┐"
     echo "│Understandable.                           │"
     echo "└──────────────────────────────────────────┘"
