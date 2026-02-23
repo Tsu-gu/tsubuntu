@@ -3,7 +3,7 @@ extensionsrepo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extension
 echo "┌──────────────────────────────────────────┐"
 echo "│     Tsubuntu for Ubuntu 26.04 LTS        │"
 echo "└──────────────────────────────────────────┘"
-sudo apt install gnome-shell-extension-gpaste gnome-tweaks flatpak dconf-editor libfuse2t64 gnome-shell-extension-manager gufw timeshift software-properties-gtk -y
+sudo apt install gir1.2-gda-5.0 gir1.2-gsound-1.0 gnome-tweaks flatpak dconf-editor libfuse2t64 gnome-shell-extension-manager gufw timeshift software-properties-gtk -y
 
 # libfuse2t64 in order for all AppImages to run. Many AppImages are built depending on this old version. Like it or not you either have it installed or half of them won't run. 
 # software-properties-gtk to return the driver manager and Software & Updates
@@ -18,8 +18,16 @@ echo "│Enabling right click > new file...        │"
 echo "└──────────────────────────────────────────┘"
 test -f $HOME/Templates/NewFile.txt || touch $HOME/Templates/NewFile.txt
 
+echo "┌──────────────────────────────────────────┐"
+echo "│Installing a clipboard manager            │"                        
+echo "└──────────────────────────────────────────┘"
 # This has to be bound to something else as by default it's also Super V for whatever reason. 
 gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
+
+cd $HOME/Downloads
+wget https://github.com/boerdereinar/copyous/releases/download/v1.3.0/copyous@boerdereinar.dev.zip
+gnome-extensions install -f ~/Downloads/copyous@boerdereinar.dev.zip
+
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Tweaking the file manager and the dock... │"                        
