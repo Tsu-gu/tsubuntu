@@ -5,7 +5,7 @@ dconf write /org/gnome/shell/extensions/copyous/show-at-pointer true
 dconf write /org/gnome/shell/extensions/copyous/clipboard-orientation "'vertical'"
 dconf write /org/gnome/shell/extensions/copyous/dynamic-item-height true
 dconf write /org/gnome/shell/extensions/copyous/open-clipboard-dialog-shortcut "['<Super>v']"
-
+dconf write /org/gnome/shell/extensions/copyous/history-length 15
 
 # InstallAllRecommended
 touch "$HOME/Desktop/InstallAllRecommended.sh"
