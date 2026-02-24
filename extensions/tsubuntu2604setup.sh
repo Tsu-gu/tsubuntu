@@ -2,7 +2,7 @@
 gnome-extensions enable copyous@boerdereinar.dev
 sleep 1
 dconf write /org/gnome/shell/extensions/copyous/show-at-pointer true 
-dconf write /org/gnome/shell/extensions/copyous/clipboard-orientation 'vertical'
+dconf write /org/gnome/shell/extensions/copyous/clipboard-orientation "'vertical'"
 dconf write /org/gnome/shell/extensions/copyous/dynamic-item-height true
 dconf write /org/gnome/shell/extensions/copyous/open-clipboard-dialog-shortcut "['<Super>v']"
 
