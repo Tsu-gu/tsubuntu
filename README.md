@@ -1,3 +1,5 @@
+Clipboard history is broken for 26.04 because GUHnome
+
 ![logo](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/tsubuntu-logo-fedora-debian-buntu.png)
 ```
           
