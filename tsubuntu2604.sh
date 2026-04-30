@@ -25,7 +25,7 @@ echo "└───────────────────────�
 gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
 
 cd $HOME/Downloads
-wget https://github.com/boerdereinar/copyous/releases/download/v1.3.0/copyous@boerdereinar.dev.zip
+wget https://github.com/boerdereinar/copyous/releases/download/v2.0.0/copyous@boerdereinar.dev.zip
 gnome-extensions install -f ~/Downloads/copyous@boerdereinar.dev.zip
 
 
