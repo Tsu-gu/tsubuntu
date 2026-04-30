@@ -125,6 +125,11 @@ snap refresh --hold app
 # Tested distros:
 
 ## ⚙Ubuntu
+**26.04 Resolute Raccoon** 
+
+```
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2604.sh && chmod +x tsubuntu2604.sh && ./tsubuntu2604.sh
+```
 
 **25.10 Questing Quokka** 
 
