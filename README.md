@@ -33,8 +33,6 @@ Reporting any bugs or issues found is greatly appreciated.
 # Tweaks
 
 ## GNOME: 
-- clicking on a running app minimizes it
-- clicking on a group of apps brings up their previews 
 - adds minimize, maximize buttons to windows
 - adds right click > New File
 - Super + Shift + S brings up the area screenshot
