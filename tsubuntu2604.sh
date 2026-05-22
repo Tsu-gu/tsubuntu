@@ -5,8 +5,11 @@ echo "│     Tsubuntu for Ubuntu 26.04 LTS        │"
 echo "└──────────────────────────────────────────┘"
 sudo apt install gir1.2-gda-5.0 gir1.2-gsound-1.0 gnome-tweaks flatpak dconf-editor libfuse2t64 gnome-shell-extension-manager gufw timeshift software-properties-gtk gst-audio-thumbnailer gst-video-thumbnailer -y
 
-# libfuse2t64 in order for all AppImages to run. Many AppImages are built depending on this old version. Like it or not you either have it installed or half of them won't run. 
-# software-properties-gtk to return the driver manager and Software & Updates
+# gir1.2-gda-5.0 - clipboard manager dependency
+# libfuse2t64 - in order for all AppImages to run. Many AppImages are built depending on this old version. Like it or not you either have it installed or half of them won't run. 
+# software-properties-gtk - to return the driver manager and Software & Updates
+# gst-audio-thumbnailer gst-video-thumbnailer - thumbnails in nautilus
+
 echo "┌──────────────────────────────────────────┐"
 echo "│Adding Flathub...                         │"                        
 echo "└──────────────────────────────────────────┘"
