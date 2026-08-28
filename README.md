@@ -187,26 +187,6 @@ RHEL 10 refuses to boot up in a VM.
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubunturhel9.sh && chmod +x tsubunturhel9.sh && ./tsubunturhel9.sh
 ```
 
-## ⚙OpenSUSE 
-
-**Tumbleweed & Leap**
-
-```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntutumbleweed.sh && chmod +x tsubuntutumbleweed.sh && ./tsubuntutumbleweed.sh
-```
-
-## ⚙Arch Linux
-- tested on Endeavour OS
-  
-```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntuarch.sh && chmod +x tsubuntuarch.sh && ./tsubuntuarch.sh
-
-```
-## ⚙Manjaro
-```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntumanjaro.sh && chmod +x tsubuntumanjaro.sh && ./tsubuntumanjaro.sh
-
-```
 
 # Showcase
 ![screenshot1](https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/showcase/buntu.webp)
