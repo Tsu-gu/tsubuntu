@@ -48,6 +48,7 @@ Reporting any bugs or issues found is greatly appreciated.
 - gnome-tweaks, gnome-extensions-app, dconf-editor, libfuse2
 - gufw (Ubuntu and Debian)
 - bash auto completion
+- bazaar by default on Ubuntu 
 ### Can be installed later
 You right click on the script placed onto the desktop, run it and a notification will tell you once the install finishes.
 - Bazaar (I decided to abandon GNOME Software with the extensions and keep App Center, and give users the option to install a Flatpak store)
