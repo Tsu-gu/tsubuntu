@@ -40,7 +40,7 @@ gnome-extensions install -f ~/Downloads/copyous@boerdereinar.dev.zip
 echo "┌──────────────────────────────────────────┐"
 echo "│Tweaking the file manager and the dock... │"                        
 echo "└──────────────────────────────────────────┘"
-echo "file:///home/$USER/Desktop" >> ~/.config/gtk-3.0/bookmarks
+grep -qxF "file:///home/$USER/Desktop" ~/.config/gtk-3.0/bookmarks || echo "file:///home/$USER/Desktop" >> ~/.config/gtk-3.0/bookmarks
 gsettings set org.gnome.nautilus.preferences show-create-link 'true'
 gsettings set org.gnome.nautilus.preferences show-delete-permanently 'true'
 gsettings set org.gtk.Settings.FileChooser sort-directories-first 'true'
