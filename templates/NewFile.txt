@@ -1,1 +1,1 @@
-
+Sample text so GNOME associates this as a text file and you can just double click on it
