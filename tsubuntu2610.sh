@@ -1,7 +1,7 @@
 #!/bin/bash
 extensionsrepo="https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/extensions/"
 echo "┌──────────────────────────────────────────┐"
-echo "│     Tsubuntu for Ubuntu 26.10 LTS        │"
+echo "│     Tsubuntu for Ubuntu 26.10            │"
 echo "└──────────────────────────────────────────┘"
 sudo apt install gir1.2-gda-5.0 gir1.2-gsound-1.0 gnome-tweaks flatpak bazaar dconf-editor libfuse2t64 gnome-shell-extension-manager gufw timeshift software-properties-gtk gst-audio-thumbnailer gst-video-thumbnailer -y
 
