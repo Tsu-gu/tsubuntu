@@ -19,7 +19,8 @@ sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flat
 echo "┌──────────────────────────────────────────┐"
 echo "│Enabling right click > new file...        │"                        
 echo "└──────────────────────────────────────────┘"
-test -f $HOME/Templates/NewFile.txt || touch $HOME/Templates/NewFile.txt
+test -f $HOME/Templates/NewFile.txt || wget -O $HOME/Templates/NewFile.txt https://raw.githubusercontent.com/Tsu-gu/tsubuntu/refs/heads/main/templates/NewFile.txt
+test -f $HOME/Templates/NewFile.txt || wget -O $HOME/Templates/NewFile.md https://raw.githubusercontent.com/Tsu-gu/tsubuntu/refs/heads/main/templates/NewFile.md
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Making the dock slightly transparent      │"                        
