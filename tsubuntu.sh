@@ -25,7 +25,9 @@ if [[ "$OS_ID" == "ubuntu" ]]; then
     elif [[ "$OS_VERSION" == "25.10" ]]; then
         wget -q $repo/tsubuntu2510.sh && chmod +x tsubuntu2510.sh && ./tsubuntu2510.sh
     elif [[ "$OS_VERSION" == "26.04" ]]; then
-        wget -q $repo/tsubuntu2604.sh && chmod +x tsubuntu2604.sh && ./tsubuntu2604.sh    
+        wget -q $repo/tsubuntu2604.sh && chmod +x tsubuntu2604.sh && ./tsubuntu2604.sh   
+    elif [[ "$OS_VERSION" == "26.10" ]]; then
+        wget -q $repo/tsubuntu2610.sh && chmod +x tsubuntu2610.sh && ./tsubuntu2610.sh    
     else
         echo "Unsupported Ubuntu version: $OS_VERSION"
         exit 1
