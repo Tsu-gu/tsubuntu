@@ -128,6 +128,19 @@ else
     echo "└──────────────────────────────────────────┘"
 fi
 
+echo "Jammy Jellyfish (22.04) will soon reach the end of its"
+echo "standard support, however it still has 5 more years"
+echo "ahead of itself if you just create an account."
+read -p "Attach Ubuntu Pro now?                [y/n]: " choice
+if [[ "$choice" == "y" || "$choice" == "Y" ]]; then
+    xdg-open 'https://ubuntu.com/pro/dashboard'
+   
+else
+    echo "┌──────────────────────────────────────────┐"
+    echo "│Understandable. Skipping Ubuntu Pro.     │"
+    echo "└──────────────────────────────────────────┘"
+fi
+
     echo "┌──────────────────────────────────────────┐"
     echo "│Restart your PC and then run              │"
     echo "│Finish_Setup.sh, located on your desktop  │"
