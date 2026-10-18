@@ -20,7 +20,7 @@ echo "┌───────────────────────�
 echo "│Enabling right click > new file...        │"                        
 echo "└──────────────────────────────────────────┘"
 test -f $HOME/Templates/NewFile.txt || wget -O $HOME/Templates/NewFile.txt https://raw.githubusercontent.com/Tsu-gu/tsubuntu/refs/heads/main/templates/NewFile.txt
-test -f $HOME/Templates/NewFile.txt || wget -O $HOME/Templates/NewFile.md https://raw.githubusercontent.com/Tsu-gu/tsubuntu/refs/heads/main/templates/NewFile.md
+test -f $HOME/Templates/NewFile.md || wget -O $HOME/Templates/NewFile.md https://raw.githubusercontent.com/Tsu-gu/tsubuntu/refs/heads/main/templates/NewFile.md
 
 echo "┌──────────────────────────────────────────┐"
 echo "│Making the dock slightly transparent      │"                        
