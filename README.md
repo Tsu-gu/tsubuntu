@@ -124,16 +124,17 @@ snap refresh --hold app
 # Tested distros:
 
 ## ⚙Ubuntu
+
+**Any new interim release (like 26.10)**
+```
+          
+wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu.sh && chmod +x tsubuntu.sh && ./tsubuntu.sh
+
+```
 **26.04 Resolute Raccoon** 
 
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2604.sh && chmod +x tsubuntu2604.sh && ./tsubuntu2604.sh
-```
-
-**25.10 Questing Quokka** 
-
-```
-wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntu2510.sh && chmod +x tsubuntu2510.sh && ./tsubuntu2510.sh
 ```
 
 **24.04 Noble Numbat**
@@ -166,6 +167,11 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh && chmod +x tsubuntudebian.sh && ./tsubuntudebian.sh
 ```
+
+# Distros I adapted the script for but I don't test them
+
+I don't use these so I don't really have the time to update the scripts. If you care about any of these, feel free to send in a PR.
+
 ## ⚙Fedora
 
 **43**
@@ -173,11 +179,6 @@ wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/tsubuntudebian.sh
 ```
 wget -q https://raw.githubusercontent.com/Tsu-gu/tsubuntu/main/others/tsubuntufedora43.sh && chmod +x tsubuntufedora43.sh && ./tsubuntufedora43.sh
 ```
-
-# Distros I adapted the script for but I don't test them
-
-I don't use these so I don't really have the time to update the scripts. If you care abnout any of these, feel free to send in a PR.
-
 ## ⚙RHEL/Rocky/Alma 
 
 RHEL 10 refuses to boot up in a VM.
